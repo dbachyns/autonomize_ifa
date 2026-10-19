@@ -15,6 +15,7 @@ load_dotenv()
 class Settings:
     reader: str = os.getenv("FORM_AGENT_READER", "openai")
     openai_model: str = os.getenv("OPENAI_MODEL", "gpt-6-luna")
+    agent_model: str = os.getenv("FORM_AGENT_MODEL") or os.getenv("OPENAI_MODEL", "gpt-6-luna")  # Q&A / summaries
     claude_model: str = os.getenv("CLAUDE_MODEL", "claude-opus-5-5")
     ollama_host: str = os.getenv("OLLAMA_HOST", "http://localhost:11434")
     ollama_model: str = os.getenv("OLLAMA_MODEL", "qwen2.5vl:7b")

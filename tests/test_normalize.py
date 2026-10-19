@@ -48,3 +48,16 @@ def test_values():
 )
 def test_label_to_key(label, key):
     assert label_to_key(label) == key
+
+
+@pytest.mark.parametrize("text, iso", [
+    ("2-Dec-97", "1997-12-02"),
+    ("DEC 14 89", "1989-12-14"),
+    ("JUNE 1995", "1995-06-01"),
+    ("2/18/80 7:00 P.M.", "1980-02-18"),
+    ("October 16, 19 92", "1992-10-16"),
+    ("Jan. 5, 1998", "1998-01-05"),
+    ("12.10.98", "1998-12-10"),
+])
+def test_parse_date_scanned_formats(text, iso):
+    assert parse_date(text).isoformat() == iso

@@ -30,8 +30,10 @@ def clean(text: str | None) -> str | None:
 
 
 _DATE_FORMATS = [
-    "%m/%d/%Y", "%m/%d/%y", "%m-%d-%Y", "%m-%d-%y", "%Y-%m-%d", "%m.%d.%Y",
+    "%m/%d/%Y", "%m/%d/%y", "%m-%d-%Y", "%m-%d-%y", "%Y-%m-%d", "%m.%d.%Y", "%m.%d.%y",
     "%B %d, %Y", "%b %d, %Y", "%B %d %Y", "%b %d %Y", "%d %B %Y", "%d %b %Y",
+    "%d-%b-%y", "%d-%b-%Y", "%b %d %y", "%B %d, %y", "%b %d, %y",
+    "%B %Y", "%b %Y",  # month and year only: the 1st of the month
 ]
 
 
@@ -40,7 +42,11 @@ def parse_date(text: str | None) -> date | None:
     if not text:
         return None
     # OCR often inserts spaces around separators: "8/ 31/ 98", "12 /10 /98".
-    compact = re.sub(r"\s*([/\-.])\s*", r"\1", text).rstrip(".")
+    text = re.sub(r"\s+\d{1,2}:\d{2}.*$", "", text)  # trailing time: "2/18/80 7:00 P.M."
+    text = re.sub(r"\b([A-Za-z]{3,4})\.", r"\1", text)  # "Jan. 5, 1998", "Sept. 1998"
+    text = re.sub(r"\bSept\b", "Sep", text, flags=re.I)
+    text = re.sub(r"\b(1[89]|20) (\d{2})$", r"\1\2", text)  # split year: "October 16, 19 92"
+    compact = re.sub(r"\s*([/\-])\s*", r"\1", text).rstrip(".")
     for fmt in _DATE_FORMATS:
         try:
             parsed = datetime.strptime(compact, fmt).date()

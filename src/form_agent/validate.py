@@ -61,7 +61,8 @@ def check_value(name: str, value: str | None, value_kind: str, label: str = "", 
                               message=f"Date {parsed.isoformat()} is implausible."))
     elif value_kind == "phone":
         d = digits(value) or ""
-        if not (len(d) == 10 or (len(d) == 11 and d[0] == "1")):
+        # 7 digits is a local number; more than 11 is usually several numbers in one field.
+        if len(d) < 7 or len(d) in (8, 9) or (len(d) == 11 and d[0] != "1"):
             flags.append(Flag(rule="phone_length", severity="warning", fields=[name],
                               message=f"Phone/fax '{value}' has {len(d)} digits; US numbers have 10."))
     elif value_kind == "code":
@@ -81,6 +82,16 @@ def check_value(name: str, value: str | None, value_kind: str, label: str = "", 
 def _is_birth_date(name: str, label: str) -> bool:
     text = f"{name} {label}".lower()
     return "dob" in text or "birth" in text
+
+
+# Flags produced while reading (pixel/OCR verification); everything else comes from `validate`.
+READER_RULES = {"checkbox_corrected", "checkbox_uncertain", "ocr_disagrees", "ocr_not_found"}
+
+
+def revalidate(record: FormRecord, today: date | None = None) -> FormRecord:
+    """Re-run the validation rules on a cached record, keeping the reader's own flags."""
+    kept = [f for f in record.flags if f.rule in READER_RULES]
+    return record.model_copy(update={"flags": [*kept, *validate(record, today)]})
 
 
 def validate(record: FormRecord, today: date | None = None) -> list[Flag]:
