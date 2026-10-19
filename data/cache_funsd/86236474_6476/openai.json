@@ -1,0 +1,113 @@
+{
+  "doc_id": "86236474_6476",
+  "source_file": "external/funsd/dataset/testing_data/images/86236474_6476.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:14.807203Z",
+    "seconds": 22.52,
+    "cost_usd": 0.0011048
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "NEWPORT LIGHTS HEAVY UP PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "Mrs. K.A. Sparrow",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "R.G. Ryan",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "SUBMISSION DATE:",
+        "key": "submission_date",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "JUNE 7",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "AUG. 2",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "OCT. 7",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "Distribution allowance was very effective in accomplishing our objectives. All accounts have purchased introductory products.",
+        "label": "DIRECT ACCOUNT/WHOLESALERS:",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Eagle Foods is the only Void.",
+        "label": "DIRECT ACCOUNT CHAINS:",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Reception from these accounts is most positive with a solid incentive to purchase.",
+        "label": "NON—DIRECT ACCOUNT CHAINS:",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Has been most helpful in acquiring desireable distribution when needed by Sales Reps.",
+        "label": "EFFECTIVENESS OF THE RETAIL (1.00 OFF CARTON) DISTRIBUTION ALLOWANCE:",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "The 40c off promotions continue to be well received at the retail stores and by consumers, as well.",
+        "label": "40c OFF PACK – GENERAL MARKET:",
+        "section": "PROMOTIONAL ACTIVITY",
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

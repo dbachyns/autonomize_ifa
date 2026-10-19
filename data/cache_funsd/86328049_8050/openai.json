@@ -1,0 +1,576 @@
+{
+  "doc_id": "86328049_8050",
+  "source_file": "external/funsd/dataset/testing_data/images/86328049_8050.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:48.051684Z",
+    "seconds": 33.24,
+    "cost_usd": 0.0020558
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "TELECOPY INFORMATION",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Date",
+        "key": "date",
+        "value": "Feb-24-99",
+        "value_type": "date",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Time",
+        "key": "time",
+        "value": "10:53",
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "From",
+        "key": "from",
+        "value": "HUNTON WILLI",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "T-",
+        "key": "t",
+        "value": "122",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "P.",
+        "key": "p",
+        "value": "01/04",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "F-",
+        "key": "f",
+        "value": "066",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Company",
+        "key": "company",
+        "value": "HUNTON & WILLIAMS",
+        "value_type": "name",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "Riverfront Plaza, 951 East Byrd Street, Richmond, Virginia 23219-4074",
+        "value_type": "address",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telephone",
+        "key": "phone",
+        "value": "(804)788-8200",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telecopier Nos.",
+        "key": "telecopier_nos",
+        "value": "(804)788-8218",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telecopier Nos.",
+        "key": "telecopier_nos",
+        "value": "(804)788-8219",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telecopier Nos.",
+        "key": "telecopier_nos",
+        "value": "(804)788-8669",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Location",
+        "key": "location",
+        "value": "2nd Floor Telecopier",
+        "value_type": "text",
+        "source": "printed",
+        "section": "HUNTON & WILLIAMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Ken Forrest",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "212-403-2211",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Tom Frederick",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "312-558-5700",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Tom Griffin",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "617-523-1231",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Even Hurwitz",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "202-942-5999",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Barry Levin/Curt Caton",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "415-772-6268",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Barbara Robbins",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "212-403-2033",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Greg Stone/Ron Olson",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "213-687-3702",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Bill Allinder/Jeff Nelson",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "816-421-2708",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Steve Krighbaum",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "917-663-5593",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Tom Stoever",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "303-832-0428",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Judy Bernstein-Gaeta",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "202-942-5999",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Dal Burton",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "404-581-8330",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Andy McGaan",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "312-861-2200",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "James Wilson",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "336-335-7707",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Eric Sarner/Doug Flemming/Peter McKenna",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "212-735-2000",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Thomas McKim",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "336-741-0671",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "D. Scott Wise",
+        "value_type": "name",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NO.:",
+        "key": "fax",
+        "value": "212-450-4800",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "TO:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Pages (Including Cover)",
+        "key": "pages",
+        "value": "4",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Original to follow in mail:",
+        "key": "original_to_follow_in_mail",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

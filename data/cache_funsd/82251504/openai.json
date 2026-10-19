@@ -1,0 +1,163 @@
+{
+  "doc_id": "82251504",
+  "source_file": "external/funsd/dataset/testing_data/images/82251504.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:31:11.536262Z",
+    "seconds": 28.34,
+    "cost_usd": 0.0015647999999999999
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "Retail Excel Progress Report",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "To:",
+        "key": "to",
+        "value": "R. W. Caldarella",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "From:",
+        "key": "from",
+        "value": "Kent B. Mills",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Area:",
+        "key": "area",
+        "value": "5",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Region:",
+        "key": "region",
+        "value": "17",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Submission for:",
+        "key": "submission_for",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "July 31",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "August 29",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "September 30",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "October 31",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "November 28",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "December 30",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "Chains: This program has been successful to date with chains where our \"Flex Payment\" was not in place. The chains where we were using the \"Flex Payment\" system we have not been as successful. The P.O.S. requirements of the P-1 Plan with Q1 Companies is difficult to obtain.",
+        "label": null,
+        "section": "Acceptance/Response",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Additional P.V. merchandising is being secured quickly.\n\nAdditional monies have assisted Region 17 in fighting PM Exclusives and PM/RJR co-existence situations.",
+        "label": null,
+        "section": "Independents",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "The displays are easily assembled and durable. Some questions have been raised concerning the inability to be flush with the counter and/or up against the register. As well as the ability to place this on the Back Bar if the settlement goes through.",
+        "label": null,
+        "section": "Hardware Evaluation/Effectiveness",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Not available at this time",
+        "label": null,
+        "section": "Permanent Advertising Evaluation/Effectiveness/Acceptance",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "11/05/97 11:03 813 884 0863 LORILLARD_TAMPA ---> GREENSBOR 002/003 #17",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "82251504",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

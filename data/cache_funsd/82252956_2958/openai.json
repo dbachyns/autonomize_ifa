@@ -1,0 +1,259 @@
+{
+  "doc_id": "82252956_2958",
+  "source_file": "external/funsd/dataset/testing_data/images/82252956_2958.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:31:17.933877Z",
+    "seconds": 34.73,
+    "cost_usd": 0.0017813
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "OLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S - PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "K. A. Sparrow",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "D. J. Landro",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SUBJECT:",
+        "key": "subject",
+        "value": "OLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S - PROGRESS REPORT",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "REGION:",
+        "key": "region",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": "Milw. South",
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REP",
+        "key": "number_rep",
+        "value": "7",
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": "Milw. North",
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REP",
+        "key": "number_rep",
+        "value": "7",
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Form number",
+        "key": "form",
+        "value": "82252956",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "SUBMISSION DATE",
+        "key": "submission_date",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "MAY 12",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "JUN 23",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "AUG 4",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "SEP 15",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": null,
+        "section": "DISTRIBUTION",
+        "page": 1,
+        "headers": [
+          "NAME OF ACCOUNT",
+          "IND/OR VOLUME",
+          "NO. OF STORES",
+          "NAME OF ACCOUNT",
+          "IND/OR VOLUME",
+          "NO. OF STORES"
+        ],
+        "rows": [
+          [
+            "Walgreen Drug",
+            "144/14",
+            "93",
+            null,
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "text",
+          "text",
+          "number",
+          "text",
+          "text",
+          "number"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

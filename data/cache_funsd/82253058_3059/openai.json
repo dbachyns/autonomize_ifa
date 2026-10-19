@@ -1,0 +1,171 @@
+{
+  "doc_id": "82253058_3059",
+  "source_file": "external/funsd/dataset/testing_data/images/82253058_3059.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:54.948229Z",
+    "seconds": 251.75,
+    "cost_usd": 0.0015703
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "COMPETITIVE PRODUCT INTRODUCTION PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "MRS. K. A. SPARROW",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "R.G. Ryan",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "12/10/96",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MANUFACTURER:",
+        "key": "manufacturer",
+        "value": "R. J. Reynolds",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BRAND:",
+        "key": "brand",
+        "value": "Camel Menthol",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TYPE OF PACKINGS:",
+        "key": "type_of_packings",
+        "value": "Full Flavor Box and Light Box",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "REPORTING PERIODS:",
+        "key": "reporting_periods",
+        "value": "NOV X",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TEST MARKET GEOGRAPHY:",
+        "key": "test_market_geography",
+        "value": "All of Region 7.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PRICE POINT: FULL",
+        "key": "price_point_full",
+        "value": "$11.89",
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "P/V $",
+        "key": "p_v",
+        "value": null,
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "Merchandising the top tray of permanent counter displays and labeling carton fixtures in the Camel section. Also placing metal signs and temporary counter displays.",
+        "label": null,
+        "section": "SALES FORCE INVOLVEMENT:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Product is being introduced to all Direct Accounts in the Region. Acceptance is spotty at this time.",
+        "label": null,
+        "section": "DISTRIBUTORS – ACCEPTANCE/INTRO TERMS/INTRO DEALS:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Assembly of promotional products and shipment to retail. Indianapolis Direct Accounts are reported to be receiving B1G1F product.",
+        "label": null,
+        "section": "DISTRIBUTOR INVOLVEMENT:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Chain acceptance has been very good.",
+        "label": null,
+        "section": "CHAINS – ACCEPTANCE/MERCHANDISING ALLOWANCE",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Acceptance is better at high volume locations than at lower volume retail calls.",
+        "label": null,
+        "section": "INDEPENDENTS – ACCEPTANCE/MERCHANDISING ALLOWANCE",
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

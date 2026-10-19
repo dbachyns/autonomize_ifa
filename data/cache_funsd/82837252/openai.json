@@ -1,0 +1,168 @@
+{
+  "doc_id": "82837252",
+  "source_file": "external/funsd/dataset/testing_data/images/82837252.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:31:50.680972Z",
+    "seconds": 18.98,
+    "cost_usd": 0.0011068
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "NEW COMPETITIVE PRODUCTS",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "REPORTED BY:",
+        "key": "reported_by",
+        "value": "BOBBY MILLS, REGIONAL SALES MGR., INDIANAPOLIS, IN",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "8/10/90",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TIME:",
+        "key": "time",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SOURCE OF INFORMATION:",
+        "key": "source_of_information",
+        "value": "HALL RODECAP, NOBLESVILLE, IN",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MANUFACTURER:",
+        "key": "manufacturer",
+        "value": "B & W",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BRAND NAME:",
+        "key": "brand_name",
+        "value": "VICEROY KING BOX AND VICEROY LIGHTS KING BOX",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TYPE OF PRODUCT:",
+        "key": "type_of_product",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SIZE OR SIZES:",
+        "key": "size_or_sizes",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LIST PRICE:",
+        "key": "list_price",
+        "value": null,
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "EXTENT OF DISTRIBUTION:",
+        "key": "extent_of_distribution",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OTHER INFORMATION:",
+        "key": "other_information",
+        "value": "SEE ATTACHED INFORMATION SHEET",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "A. H. Tisch\nR. H. Orcutt\nM. A. Peterson\nT. H. Maud\nL. Gordon\nJ. P. Mastandrea\nG. Telford\nF. J. Schultz\nA. W. Spears\nN. P. Ruffalo\nT. L. Achey\nP. J. McCann\nA. J. Giacolo\nJ. J. Tatulli\nL. H. Kersh\nJ. R. Slater\nS. T. Jones\nR. S. Goldbrunner\nE. R. Harrow",
+        "label": "CC:",
+        "section": null,
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "MKR",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "82837252",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

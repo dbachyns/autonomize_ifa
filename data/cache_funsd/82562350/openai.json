@@ -1,0 +1,187 @@
+{
+  "doc_id": "82562350",
+  "source_file": "external/funsd/dataset/testing_data/images/82562350.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:03.430959Z",
+    "seconds": 40.9,
+    "cost_usd": 0.0011803
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "Fax",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "To:",
+        "key": "to",
+        "value": "Mr. Randy Spell",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "From:",
+        "key": "from",
+        "value": "Rick Redfield",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax:",
+        "key": "fax",
+        "value": null,
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date:",
+        "key": "date",
+        "value": "May 1, 2000",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "Mr. Fred Paternostro",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax:",
+        "key": "fax",
+        "value": "952 894-9690",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Re:",
+        "key": "re",
+        "value": "Legal - Iowa",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Pages:",
+        "key": "pages",
+        "value": "4",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "205 River Ridge Circle P.O. Box 1589 Burnsville, MN 55337",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telephone:",
+        "key": "phone",
+        "value": "(952) 894-2238",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Fax options",
+        "key": "fax_options",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "Urgent",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "For Review",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Please Comment",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Please Reply",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Please Recycle",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "Attached is the Iowa Department of Revenue and Finance Minimum Legal Prices on Cigarettes as of April 3, 2000. I am attempting to obtain a copy of the actual Fair Trade Law and will forward as soon as obtained.\n\nRick",
+        "label": "Comments:",
+        "section": "Comments",
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

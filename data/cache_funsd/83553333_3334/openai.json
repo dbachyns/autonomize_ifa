@@ -1,0 +1,163 @@
+{
+  "doc_id": "83553333_3334",
+  "source_file": "external/funsd/dataset/testing_data/images/83553333_3334.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:00.835115Z",
+    "seconds": 23.49,
+    "cost_usd": 0.0012343
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "Fax Transmittal",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Sender",
+        "key": "sender",
+        "value": "Charles Duggan",
+        "value_type": "name",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date",
+        "key": "date",
+        "value": "November 12, 1999",
+        "value_type": "date",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Number of Pages (this page included)",
+        "key": "number_of_pages",
+        "value": "6",
+        "value_type": "number",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Sender Voice Number",
+        "key": "sender_voice",
+        "value": "212-450-4785",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "If problems receiving this fax, call",
+        "key": "if_problems_receiving_this_fax_call",
+        "value": "212-450-4785",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Sender Fax Number",
+        "key": "sender_fax",
+        "value": "212-450-3785",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Reference",
+        "key": "reference",
+        "value": "17555-002",
+        "value_type": "id",
+        "source": "filled",
+        "section": "Sender",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Message:",
+        "key": "message",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [
+      {
+        "title": null,
+        "section": null,
+        "page": 1,
+        "headers": [
+          "To",
+          "Fax Number",
+          "Company",
+          "Recipient Phone Number"
+        ],
+        "rows": [
+          [
+            "Thomas M. Sobol",
+            "617-439-3278",
+            "Brown Rudnick Freed & Gesmer",
+            "617-330-9000"
+          ],
+          [
+            "Joseph F. Rice",
+            "843-720-9290",
+            "Ness, Motley, Loadholt, Richardson & Poole",
+            "843-720-9000"
+          ],
+          [
+            "Robert V. Costello Jeffrey D. Woolf",
+            "617-722-0286",
+            "Schneider, Reilly, Zabin & Costello",
+            "617-227-7500"
+          ],
+          [
+            "Richard M. Heimann",
+            "415-956-1008",
+            "Lieff, Cabraser & Heimann",
+            "415-956-1000"
+          ],
+          [
+            "Michael P. Thornton",
+            "617-720-2445",
+            "Thornton, Early & Naumes",
+            "617-720-1333"
+          ]
+        ],
+        "column_types": [
+          "name",
+          "phone",
+          "text",
+          "phone"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

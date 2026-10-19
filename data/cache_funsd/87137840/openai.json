@@ -1,0 +1,231 @@
+{
+  "doc_id": "87137840",
+  "source_file": "external/funsd/dataset/testing_data/images/87137840.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:35:01.072682Z",
+    "seconds": 23.84,
+    "cost_usd": 0.0013388
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "TEST ARTICLE RECEIPT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TA #:",
+        "key": "ta",
+        "value": "T07281A",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SPONSOR'S NAME:",
+        "key": "sponsor_s_name",
+        "value": "Lorillard",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TEST ARTICLE IDENTIFICATION:",
+        "key": "test_article_identification",
+        "value": "B220",
+        "value_type": "code",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LOT #:",
+        "key": "lot",
+        "value": "012590",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SHIPPED VIA:",
+        "key": "shipped_via",
+        "value": "Direct Express",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PHYSICAL DESCRIPTION:",
+        "key": "physical_description",
+        "value": "Clear brown liquid",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NO. OF CONTAINERS:",
+        "key": "no_of_containers",
+        "value": "one",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "GROSS WEIGHT:",
+        "key": "gross_weight",
+        "value": "Not provided",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NET WEIGHT (if provided):",
+        "key": "net_weight",
+        "value": "100 g",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "EXPIRATION DATE:",
+        "key": "expiration_date",
+        "value": "Not provided",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SPECIAL HANDLING REQUIREMENTS:",
+        "key": "special_handling_requirements",
+        "value": "Store refrigerated in dark.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RECEIVED BY:",
+        "key": "received_by",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "03/01/90",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "STUDY DIRECTOR/DEPARTMENT:",
+        "key": "study_director_department",
+        "value": "Ray David",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SIGNATURE OF DEPARTMENT CONSIGNEE:",
+        "key": "signature_of_department_consignee",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "03/01/90",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "CONDITION OF SHIPMENT:",
+        "key": "condition_of_shipment",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "GOOD",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "BROKEN",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "LEAKED",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

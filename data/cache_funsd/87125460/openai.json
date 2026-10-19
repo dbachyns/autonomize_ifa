@@ -1,0 +1,157 @@
+{
+  "doc_id": "87125460",
+  "source_file": "external/funsd/dataset/testing_data/images/87125460.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:51.459538Z",
+    "seconds": 21.86,
+    "cost_usd": 0.0011662999999999999
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "FINAL REPORT AMENDMENT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "STUDY NAME",
+        "key": "study_name",
+        "value": "Induction of Hepatic Enzymes in Rats (B202)",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "STUDY NUMBER",
+        "key": "study",
+        "value": "I-7016.401",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "INITIATION DATE",
+        "key": "initiation_date",
+        "value": "October 27, 1986",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE OF FINAL REPORT",
+        "key": "date_of_final_report",
+        "value": "February 26, 1987",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PART OF FINAL REPORT TO BE AMENDED (EXACT LOCATION)",
+        "key": "part_of_final_report_to_be_amended",
+        "value": "Page 14 and Table 4",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "REASON FOR THE AMENDMENT",
+        "key": "reason_for_the_amendment",
+        "value": "Request from sponsor",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "AMENDMENT (Attach additional sheets as necessary)",
+        "key": "amendment",
+        "value": "see attached",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "8/7/87",
+        "value_type": "date",
+        "source": "filled",
+        "section": "APPROVALS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "STUDY DIRECTOR",
+        "key": "study_director",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "APPROVALS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "08/14/87",
+        "value_type": "date",
+        "source": "filled",
+        "section": "APPROVALS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "QUALITY ASSURANCE",
+        "key": "quality_assurance",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "APPROVALS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RECEIVED",
+        "key": "received",
+        "value": "AUG 2 1987",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

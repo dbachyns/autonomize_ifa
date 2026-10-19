@@ -1,0 +1,179 @@
+{
+  "doc_id": "86263525",
+  "source_file": "external/funsd/dataset/testing_data/images/86263525.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:29.593951Z",
+    "seconds": 24.31,
+    "cost_usd": 0.0013742000000000001
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "RECORDS RETENTION SCHEDULE RECONCILIATION",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "DEPARTMENT NAME",
+        "key": "department_name",
+        "value": "SCIENCE & TECHNOLOGY",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COST CENTER NUMBER",
+        "key": "cost_center",
+        "value": "141",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "INDEX BINDERS CONSOLIDATED BY:",
+        "key": "index_binders_consolidated_by",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "INDEX BINDER RE-LABELED BY:",
+        "key": "index_binder_re_labeled_by",
+        "value": "Connie Mallory",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "2/15/90",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RETENTION & RECOMMENDATION FILE REORGANIZED AND RE-LABELED BY:",
+        "key": "retention_and_recommendation_file_reorganized_and_re_labeled_by",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:",
+        "key": "records_retention_schedule_placed_in_index_binder_and_in_file_by",
+        "value": "Wayne Baughan",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "4/18/90",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BOXES CREATED FOR HARD COPY PERMANENT RETENTION RECORDS BY:",
+        "key": "boxes_created_for_hard_copy_permanent_retention_records_by",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RECORDS TRANSFER INVENTORY FORMS UPDATED BY:",
+        "key": "records_transfer_inventory_forms_updated_by",
+        "value": "Wayne Baughan",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "7/25/90",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

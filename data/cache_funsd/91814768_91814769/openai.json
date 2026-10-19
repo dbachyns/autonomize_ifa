@@ -1,0 +1,282 @@
+{
+  "doc_id": "91814768_91814769",
+  "source_file": "external/funsd/dataset/testing_data/images/91814768_91814769.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:36:47.383566Z",
+    "seconds": 38.45,
+    "cost_usd": 0.0061422
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "REPORT OF CORPORATE TREASURER",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "File with:",
+        "key": "file_with",
+        "value": "Director, Office of Campaign & Political Finance, One Ashburton Place, Boston, MA 02108",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Form",
+        "key": "form",
+        "value": "CPF 22 (formerly CPF 10)",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name of Treasurer",
+        "key": "name_of_treasurer",
+        "value": "M. Alfred Peterson; Assistant Treasurer: Peter J. Marzullo",
+        "value_type": "name",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name of Corporation",
+        "key": "name_of_corporation",
+        "value": "Lorillard Tobacco Company",
+        "value_type": "name",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address of Corporation",
+        "key": "address_of_corporation",
+        "value": "One Park Avenue New York, NY 10016-5895",
+        "value_type": "address",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Question No.",
+        "key": "question_no",
+        "value": "1",
+        "value_type": "number",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "relating to (Describe question briefly)",
+        "key": "relating_to",
+        "value": "Tobacco Excise Tax Increase",
+        "value_type": "text",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "(Election Date)",
+        "key": null,
+        "value": "November 3, 1992",
+        "value_type": "date",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "(Name of City/Town or State)*",
+        "key": null,
+        "value": "Massachusetts",
+        "value_type": "text",
+        "source": "filled",
+        "section": "REPORT OF CORPORATE TREASURER",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Reporting Period Beginning",
+        "key": "reporting_period_beginning",
+        "value": "October 16, 19 92",
+        "value_type": "date",
+        "source": "filled",
+        "section": "FILL IN DATES",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "and Ending",
+        "key": "and_ending",
+        "value": "November 5, 1992",
+        "value_type": "date",
+        "source": "filled",
+        "section": "FILL IN DATES",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Treasurer Signature",
+        "key": "treasurer_signature",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "FILL IN DATES",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date",
+        "key": "date",
+        "value": "March 30, 1993",
+        "value_type": "date",
+        "source": "filled",
+        "section": "FILL IN DATES",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Total Expenditures or Disbursements on This Report",
+        "key": "total_expenditures_or_disbursements_on_this_report",
+        "value": "48,085.00",
+        "value_type": "money",
+        "source": "filled",
+        "section": "EXPENDITURES OR DISBURSEMENTS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Total Expenditures or Disbursements Previously Reported",
+        "key": "total_expenditures_or_disbursements_previously_reported",
+        "value": "508,789.00",
+        "value_type": "money",
+        "source": "filled",
+        "section": "EXPENDITURES OR DISBURSEMENTS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Total Expenditures or Disbursements to Date",
+        "key": "total_expenditures_or_disbursements_to_date",
+        "value": "556,874.00",
+        "value_type": "money",
+        "source": "filled",
+        "section": "EXPENDITURES OR DISBURSEMENTS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "CHECK ONE",
+        "key": "check_one",
+        "section": "Office Use Only",
+        "page": 1,
+        "options": [
+          {
+            "label": "60th Day Prior to Election",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "5th Day of the Month",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "20th Day of the Month",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Final",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": null,
+        "section": "EXPENDITURES OR DISBURSEMENTS",
+        "page": 1,
+        "headers": [
+          "Date Paid",
+          "To Whom Paid (Alphabetical Listing Mandatory)",
+          "Address",
+          "Purpose",
+          "Amount or Value**"
+        ],
+        "rows": [
+          [
+            "10/26/92",
+            "Committee Against Unfair Taxes",
+            "P.O. Box 5979, Boston, MA 02114",
+            "Oppose Tax Increase",
+            "28,482.00"
+          ],
+          [
+            "10/30/92",
+            "Committee Against Unfair Taxes",
+            "P.O. Box 5979, Boston, MA 02114",
+            "Oppose Tax Increase",
+            "19,603.00"
+          ]
+        ],
+        "column_types": [
+          "date",
+          "name",
+          "address",
+          "text",
+          "money"
+        ]
+      }
+    ],
+    "text_blocks": [
+      {
+        "text": "Assistant Treasurer",
+        "label": null,
+        "section": "FILL IN DATES",
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

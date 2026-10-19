@@ -1,0 +1,113 @@
+{
+  "doc_id": "87086073",
+  "source_file": "external/funsd/dataset/testing_data/images/87086073.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:37:28.486952Z",
+    "seconds": 185.28,
+    "cost_usd": 0.0100862
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "DECISION TREE ESTIMATION OF TOXIC RISK",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "NAME",
+        "key": "name",
+        "value": "J. D. Ergle and R. F. Dufresne",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "August 14, 1990",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COMPOUND NAME",
+        "key": "compound_name",
+        "value": "vanitrope",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "STRUCTURE",
+        "key": "structure",
+        "value": "[Chemical structure drawing; visible labels: CH₃CH₂O and OH]",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ESTIMATED TOXICITY CLASS",
+        "key": "estimated_toxicity_class",
+        "value": "III",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LORILLARD COMPOUND CODE NUMBER",
+        "key": "lorillard_compound_code",
+        "value": "B134",
+        "value_type": "code",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COMMENTS",
+        "key": "comments",
+        "value": "This ethoxy substituted aromatic falls into class III.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FORM",
+        "key": "form",
+        "value": "145 80",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

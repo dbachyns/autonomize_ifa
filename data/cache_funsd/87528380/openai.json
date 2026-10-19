@@ -1,0 +1,606 @@
+{
+  "doc_id": "87528380",
+  "source_file": "external/funsd/dataset/testing_data/images/87528380.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:36:20.354353Z",
+    "seconds": 57.85,
+    "cost_usd": 0.0029582
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "PROPOSAL",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Company",
+        "key": "company",
+        "value": "STOUT INDUSTRIES, INC.",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "6425 W. FLORISSANT AVE., ST. LOUIS, MO. 63136",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone",
+        "key": "phone",
+        "value": "(314) 385-2280",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Proposal number",
+        "key": "proposal",
+        "value": "10675",
+        "value_type": "id",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TO",
+        "key": "to",
+        "value": "Lorillard Corporation",
+        "value_type": "name",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ADDRESS",
+        "key": "address",
+        "value": "666 Fifth Avenue",
+        "value_type": "address",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CITY",
+        "key": "city",
+        "value": "New York",
+        "value_type": "text",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "STATE",
+        "key": "state",
+        "value": "New York 10103",
+        "value_type": "address",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Attn:",
+        "key": "attn",
+        "value": "Mr. Robert Kennedy",
+        "value_type": "name",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FOR",
+        "key": "for",
+        "value": "Metal \"Pack\" Plaque",
+        "value_type": "text",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "October 16, 1987",
+        "value_type": "date",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "YOUR REPRESENTATIVE",
+        "key": "your_representative",
+        "value": "Mr. A. D. Steinberg",
+        "value_type": "name",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ITEM:",
+        "key": "item",
+        "value": "Harley Davidson Metal Plaque",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SIZE:",
+        "key": "size",
+        "value": "17¾ x 23½\"",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "GAUGE",
+        "key": "gauge",
+        "value": ".025\"",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COLORS:",
+        "key": "colors",
+        "value": "Transparent gold, opaque black, white and orange",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BASE COLOR",
+        "key": "base_color",
+        "value": "Aluminum",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NUMBER OF",
+        "key": "number_of",
+        "value": "4",
+        "value_type": "number",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PACKING: PER CARTON",
+        "key": "packing_per_carton",
+        "value": "10",
+        "value_type": "number",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PER CRATE",
+        "key": "per_crate",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PER BUNDLE",
+        "key": "per_bundle",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OTHER:",
+        "key": "other",
+        "value": "Price is based on reproduction of customer supplied \"Pack\" box.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Tooling:",
+        "key": "tooling",
+        "value": "Form die, brass emboss die to achieve detail on eagle.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "QUANTITIES:",
+        "key": "quantities",
+        "value": "500 Plaques",
+        "value_type": "text",
+        "source": "filled",
+        "section": "QUANTITIES / PRICE",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "One time tooling @",
+        "key": "one_time_tooling",
+        "value": "$3,015.00",
+        "value_type": "money",
+        "source": "filled",
+        "section": "QUANTITIES / PRICE",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PRICE:",
+        "key": "price",
+        "value": "$9.18 each",
+        "value_type": "money",
+        "source": "filled",
+        "section": "QUANTITIES / PRICE",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Steel tips",
+        "key": "steel_tips",
+        "value": "$1,045.00",
+        "value_type": "money",
+        "source": "filled",
+        "section": "QUANTITIES / PRICE",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DROP SHIPPING:",
+        "key": "drop_shipping",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "BILLING",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PER SHIPMENT.",
+        "key": "per_shipment",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "BILLING",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Reference number",
+        "key": "reference",
+        "value": "87528380",
+        "value_type": "id",
+        "source": "filled",
+        "section": "CONDITIONS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TERMS —",
+        "key": "terms",
+        "value": "NET 10 DAYS",
+        "value_type": "text",
+        "source": "printed",
+        "section": "TERMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "MATERIAL:",
+        "key": "material",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "options": [
+          {
+            "label": "STEEL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "ALUMINUM",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "OTHER",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "FACE",
+        "key": "face",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "options": [
+          {
+            "label": "SINGLE FACE",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "DOUBLE FACE",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "HOLES:",
+        "key": "holes",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "options": [
+          {
+            "label": "YES",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "NO",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "CORNERS:",
+        "key": "corners",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "options": [
+          {
+            "label": "ROUND",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "SQUARE",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "ANGLE",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "CUT TO SHAPE",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "EDGES:",
+        "key": "edges",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "options": [
+          {
+            "label": "HEMMED",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "CURLED",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "EMBOSSED",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "BEADED BORDER",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "FRAME",
+        "key": "frame",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "options": [
+          {
+            "label": "STAMP FRAME",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "RIGHT ANGLE BEND",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "BACK FRAME",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "BILLING:",
+        "key": "billing",
+        "section": "BILLING",
+        "page": 1,
+        "options": [
+          {
+            "label": "BILL AS MANUFACTURE.",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "BILL AS SHIP FOR,",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "6 MOS.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "12 MOS.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "WAREHOUSING:",
+        "key": "warehousing",
+        "section": "BILLING",
+        "page": 1,
+        "options": [
+          {
+            "label": "SHIP IMMEDIATELY.",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "6 MOS. WHSE.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "12 MOS. WHSE.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

@@ -1,0 +1,320 @@
+{
+  "doc_id": "86230203_0206",
+  "source_file": "external/funsd/dataset/testing_data/images/86230203_0206.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:05.286162Z",
+    "seconds": 33.59,
+    "cost_usd": 0.0018633
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "MAVERICK SPECIALS - PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "K. A. Sparrow",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "F. Strickland",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SUBJECT:",
+        "key": "subject",
+        "value": "MAVERICK SPECIALS - PROGRESS REPORT",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "SUBMISSION DATE",
+        "key": "submission_date",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "DEC 13",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "FEB 24",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "JAN 25",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "APR 4",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "REGION:",
+        "key": "region",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "options": [
+          {
+            "label": "FULL",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "PARTIAL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "DIVISION:",
+        "key": "division",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "options": [
+          {
+            "label": "FULL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "PARTIAL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": "DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS",
+        "section": "DISTRIBUTION",
+        "page": 1,
+        "headers": [
+          "NAME OF ACCOUNT",
+          "NO. OF STORES",
+          "NAME OF ACCOUNT",
+          "NO. OF STORES"
+        ],
+        "rows": [
+          [
+            "K&B",
+            "180",
+            "Saye Oil",
+            "20"
+          ],
+          [
+            "Delchamps",
+            "130",
+            "Dantzler",
+            "19"
+          ],
+          [
+            "Winn Dixie",
+            "85",
+            "Southeast Foods",
+            "18"
+          ],
+          [
+            "Schwegmann",
+            "39",
+            "Compac Foods",
+            "18"
+          ],
+          [
+            "Autry Greer",
+            "36",
+            "Bayou Foods",
+            "17"
+          ],
+          [
+            "Double Quick",
+            "36",
+            "Econ",
+            "16"
+          ],
+          [
+            "Lite",
+            "23",
+            null,
+            null
+          ],
+          [
+            "Huber Oil",
+            "23",
+            null,
+            null
+          ],
+          [
+            "Morris Corp",
+            "22",
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "text",
+          "number",
+          "text",
+          "number"
+        ]
+      }
+    ],
+    "text_blocks": [
+      {
+        "text": "12/12/96 08:33 504 7348616 LORILLARD TOB ---> NYO 1 001/004",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

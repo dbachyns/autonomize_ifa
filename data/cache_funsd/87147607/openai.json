@@ -1,0 +1,250 @@
+{
+  "doc_id": "87147607",
+  "source_file": "external/funsd/dataset/testing_data/images/87147607.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:39:46.688535Z",
+    "seconds": 298.64,
+    "cost_usd": 0.0119904
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "PURCHASE REQUISITION",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "April 19, 1988",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ORDER NO.",
+        "key": "order_no",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "VENDOR",
+        "key": "vendor",
+        "value": "Piedmont Research Laboratory 2748 Patterson Ave., Greensboro, NC 27407",
+        "value_type": "address",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TERMS",
+        "key": "terms",
+        "value": "NET 15",
+        "value_type": "text",
+        "source": "filled",
+        "section": "TERMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "F.O.B.",
+        "key": "f_o_b",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "TERMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "VIA",
+        "key": "via",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "TERMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Prev. or Recommended Supplier",
+        "key": "prev_or_recommended_supplier",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "TERMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SHIP TO (DEPT., BRANCH)",
+        "key": "ship_to",
+        "value": "Lorillard Research Center N. A. Thaggard 420 English St., Greensboro, NC 27405",
+        "value_type": "address",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE WANTED",
+        "key": "date_wanted",
+        "value": "As required",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FOLLOW UP DATE",
+        "key": "follow_up_date",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "REQUISITION NO.",
+        "key": "requisition_no",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ISSUED BY",
+        "key": "issued_by",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BUDGET NO.",
+        "key": "budget_no",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ACCT. NO.",
+        "key": "acct_no",
+        "value": "4111",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DEPT. NO.",
+        "key": "dept_no",
+        "value": "8700",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "APPROVED BY",
+        "key": "approved_by",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Material type",
+        "key": "material_type",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "PURCHASING",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "STATIONARY",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": null,
+        "section": null,
+        "page": 1,
+        "headers": [
+          "QUANTITY",
+          "CODE",
+          "DESCRIPTION",
+          "UNIT PRICE"
+        ],
+        "rows": [
+          [
+            null,
+            null,
+            "This is your authorization to prepare cigarette smoke condensate according to the protocol \"Standard Operating Procedure for the Preparation of Smoke Condensate for Mouse Skin Bioassay,\" for the period April 1, 1988 through December 31, 1988. Condensate will be prepared according to a time schedule provided by Lorillard. The fixed price for condensate collection will be at a rate of $1,750/10,000 cigarettes smoked. Piedmont will pay the cost of consumable supplies. This work is to be conducted in accordance with the December 10, 1984 formal agreement between Piedmont Research Laboratories and Lorillard. All work is to be coordinated with our Mr. Neil Thaggard (919) 373-6628.",
+            null
+          ]
+        ],
+        "column_types": [
+          "number",
+          "code",
+          "text",
+          "money"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

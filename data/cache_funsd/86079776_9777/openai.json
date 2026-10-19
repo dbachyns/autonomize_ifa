@@ -1,0 +1,308 @@
+{
+  "doc_id": "86079776_9777",
+  "source_file": "external/funsd/dataset/testing_data/images/86079776_9777.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:33:31.698720Z",
+    "seconds": 19.45,
+    "cost_usd": 0.0012138
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "CREATIVE INPUT DOCUMENT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Date/Time:",
+        "key": "date_time",
+        "value": "10/30/98 1:46 PM",
+        "value_type": "date",
+        "source": "filled",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Prepared By:",
+        "key": "prepared_by",
+        "value": null,
+        "value_type": "name",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Milestone Presentation Date:",
+        "key": "milestone_presentation_date",
+        "value": null,
+        "value_type": "date",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Estimated Creative Budget:",
+        "key": "estimated_creative_budget",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Concept:",
+        "key": "concept",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Execution:",
+        "key": "execution",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Client Name:",
+        "key": "client_name",
+        "value": null,
+        "value_type": "name",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Matter Number:",
+        "key": "matter",
+        "value": null,
+        "value_type": "id",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Project Title:",
+        "key": "project_title",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Est. Production Budget:",
+        "key": "est_production_budget",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Media:",
+        "key": "media",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "SPECIFICS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "To whom are we talking?",
+        "key": "to_whom_are_we_talking",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "TARGET",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "What is the single most important message/idea we are trying to communicate?",
+        "key": "what_is_the_single_most_important_message_idea_we_are_trying_to_communicate",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "COMMUNICATION PLATFORM",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "What is the key benefit to the target?",
+        "key": "what_is_the_key_benefit_to_the_target",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "COMMUNICATION PLATFORM",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Is there an offer/call to action?",
+        "key": "is_there_an_offer_call_to_action",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "COMMUNICATION PLATFORM",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "What would we like our target to think?",
+        "key": "what_would_we_like_our_target_to_think",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": "COMMUNICATION PLATFORM",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Why are we advertising?",
+        "key": "why_are_we_advertising",
+        "section": "OBJECTIVE",
+        "page": 1,
+        "options": [
+          {
+            "label": "Relationship-Building",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Competitive Blocking",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "New Product/Package Intro.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Change Image Perception",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Retention",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Cross-Sell",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Direct Sale",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Acquisition",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Up-Sell",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Awareness",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Loyalty",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Lead Generation",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Trial",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

@@ -1,0 +1,136 @@
+{
+  "doc_id": "86244113",
+  "source_file": "external/funsd/dataset/testing_data/images/86244113.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:26.584731Z",
+    "seconds": 24.6,
+    "cost_usd": 0.0011683
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "DIRECT ACCOUNT STATUS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "DIVISION:",
+        "key": "division",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ACCOUNT:",
+        "key": "account",
+        "value": null,
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "INVENTORY FOR: {STATE}",
+        "key": "inventory_for_state",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATES:",
+        "key": "dates",
+        "value": null,
+        "value_type": "date",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ACTION PLAN:",
+        "key": "action_plan",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [
+      {
+        "title": null,
+        "section": null,
+        "page": 1,
+        "headers": [
+          "BRAND",
+          "# OF CARTONS ON HAND",
+          "AVERAGE WEEKLY MOVEMENT",
+          "# OF WEEKS ON HAND"
+        ],
+        "rows": [
+          [
+            "STYLE LIGHT 100'S",
+            null,
+            null,
+            null
+          ],
+          [
+            "STYLE LIGHT MENTHOL 100'S",
+            null,
+            null,
+            null
+          ],
+          [
+            "STYLE LIGHT BOX 100'S",
+            null,
+            null,
+            null
+          ],
+          [
+            "STYLE MEN, LIGHT BOX 100'S",
+            null,
+            null,
+            null
+          ],
+          [
+            "STYLE SLIM LIGHT 100'S",
+            null,
+            null,
+            null
+          ],
+          [
+            "STYLE SLIM MEN. LT. 100'S",
+            null,
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "text",
+          "number",
+          "number",
+          "number"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

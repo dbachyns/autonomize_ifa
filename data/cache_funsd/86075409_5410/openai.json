@@ -1,0 +1,271 @@
+{
+  "doc_id": "86075409_5410",
+  "source_file": "external/funsd/dataset/testing_data/images/86075409_5410.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:33:26.812977Z",
+    "seconds": 41.34,
+    "cost_usd": 0.002114
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": null,
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "From:",
+        "key": "from",
+        "value": "Lynnette Stevens",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "To:",
+        "key": "to",
+        "value": "Kelli Scruggs",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "Vincent Losito George Baroody",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Brand(s) Applicable",
+        "key": "brand_applicable",
+        "value": "Newport Parent, Lights, & 120's",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Media Type",
+        "key": "media_type",
+        "value": "Direct Mail",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Media Name",
+        "key": "media_name",
+        "value": "Competitive 21 - 34 years",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "* Issue Frequency / Year",
+        "key": "issue_frequency_year",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "* Space / Color",
+        "key": "space_color",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Coupon Issue Date",
+        "key": "coupon_issue_date",
+        "value": "4/14/00",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Coupon Expiration Date",
+        "key": "coupon_expiration_date",
+        "value": "9/30/00",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Circulation (#)",
+        "key": "circulation",
+        "value": "APPROX. 600,000",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Geographical Area(s)",
+        "key": "geographical_area",
+        "value": "AR, AZ, AK, CA, CO, FL, ID, LA, CT, ME, MASS, MN, MT, NE Tiers II & IV NV, NM, NY, ND, OK, OR, RI, SD, UT, WA, D.C., WY",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Coupon Value",
+        "key": "coupon_value",
+        "value": "$1.50 OFF",
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Pack and / or Carton?",
+        "key": "pack_and_or_carton",
+        "value": "PACK",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "* Advertising Creative Title",
+        "key": "advertising_creative_title",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Signature of Initiator",
+        "key": "signature_of_initiator",
+        "value": "Lynnette Kayser Stevens",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date Initiated",
+        "key": "date_initiated",
+        "value": "21-Jan-00",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Analytical Requirements:",
+        "key": "analytical_requirements",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Code Assigned",
+        "key": "code_assigned",
+        "value": "05787",
+        "value_type": "code",
+        "source": "filled",
+        "section": "FOR CONTROL USE ONLY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Job Number",
+        "key": "job",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": "FOR CONTROL USE ONLY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Est. Redemption",
+        "key": "est_redemption",
+        "value": "13½%",
+        "value_type": "number",
+        "source": "filled",
+        "section": "FOR CONTROL USE ONLY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "Don Kisling\nS. Tesh C. Hill",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "8675409",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

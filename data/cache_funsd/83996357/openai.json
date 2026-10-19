@@ -1,0 +1,275 @@
+{
+  "doc_id": "83996357",
+  "source_file": "external/funsd/dataset/testing_data/images/83996357.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:44.706891Z",
+    "seconds": 33.39,
+    "cost_usd": 0.0017763
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "COUPON CODE REGISTRATION FORM",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "KELLI SCRUGGS",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "LEONARD JONES",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "V. LOSITO G. BAROODY B. VON DER LIPPE M. TAHMASEB L. STEVENS D. [illegible]",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BRAND(S) APPLICABLE",
+        "key": "brand_applicable",
+        "value": "OLD GOLD",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MEDIA TYPE",
+        "key": "media_type",
+        "value": "DIRECT MAIL",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MEDIA NAME",
+        "key": "media_name",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ISSUE FREQUENCY/YEAR",
+        "key": "issue_frequency_year",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SPACE/COLOR",
+        "key": "space_color",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COUPON ISSUE DATE",
+        "key": "coupon_issue_date",
+        "value": "10/4/99",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COUPON EXPIRATION DATE",
+        "key": "coupon_expiration_date",
+        "value": "3/31/00",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CIRCULATION (#)",
+        "key": "circulation",
+        "value": "201,500",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CIRCULATION DATES",
+        "key": "circulation_dates",
+        "value": "OCTOBER 1999",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "GEOGRAPHICAL AREA(S)",
+        "key": "geographical_area",
+        "value": "DISCOUNT SMOKERS -OG GROUPS I AND II",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COUPON VALUE",
+        "key": "coupon_value",
+        "value": "$1.00 OFF PACK",
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PACK/CARTON",
+        "key": "pack_carton",
+        "value": "PACK",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ADVERTISING CREATIVE TITLE",
+        "key": "advertising_creative_title",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SIGNATURE OF INITIATOR",
+        "key": "signature_of_initiator",
+        "value": "Leonard H Jones",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE INITIATED",
+        "key": "date_initiated",
+        "value": "4/14/99",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "REQUIREMENTS",
+        "key": "requirements",
+        "value": "REDEMPTION RESULTS",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CODE ASSIGNED",
+        "key": "code_assigned",
+        "value": "07809",
+        "value_type": "code",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "JOB #",
+        "key": "job",
+        "value": "34",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "EST. REDEMPTION",
+        "key": "est_redemption",
+        "value": "14%",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "30/65",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

@@ -1,0 +1,258 @@
+{
+  "doc_id": "83772145",
+  "source_file": "external/funsd/dataset/testing_data/images/83772145.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:45.471608Z",
+    "seconds": 36.6,
+    "cost_usd": 0.0016698
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "FAX COVER",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Law Offices",
+        "key": "law_offices",
+        "value": "SHOOK, HARDY & BACON L.L.P.",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "One Kansas City Place 1200 Main Street Kansas City, Missouri 64105-2118",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telephone",
+        "key": "phone",
+        "value": "(816) 474-6550",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Facsimile",
+        "key": "facsimile",
+        "value": "(816) 421-5547",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "JACK REILLY",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TELECOPY NO:",
+        "key": "telecopy_no",
+        "value": "212/545-3297",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "JIM DALEY",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "#:",
+        "key": "number",
+        "value": "392",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "JANUARY 31, 1997",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TIME:",
+        "key": "time",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SHB Client Matter No.:",
+        "key": "shb_client_matter_no",
+        "value": "LORI.45048",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Pages transmitted including cover sheet:",
+        "key": "pages_transmitted_including_cover_sheet",
+        "value": "3",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Special Instructions:",
+        "key": "special_instructions",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "extension",
+        "key": "extension",
+        "value": "24200",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OPERATOR:",
+        "key": "operator",
+        "value": "Hart",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax header date/time",
+        "key": "fax_header_date_time",
+        "value": "JAN. 31. 1997 11:48AM",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NO.",
+        "key": "no",
+        "value": "1798",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "P.",
+        "key": "p",
+        "value": "1/3",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax identifier",
+        "key": "fax_identifier",
+        "value": "83772145",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "Jack:\n\nPer your request, attached is a memo regarding the process of labeling reviewed\ndiskettes for the purpose of later identification. Please call me if you have any questions.\n\nI regret I cannot join you and the electronic document collection team for lunch today.\nI hope you agree they have done an outstanding job! I look forward to seeing you on February 5 for\nthe Legal Edge presentation.\n\nBest Regards,\n\nJim Daley.",
+        "label": null,
+        "section": "COMMENTS/MESSAGE:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "ORIGINAL DOCUMENT WILL FOLLOW VIA FEDERAL EXPRESS.",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": [
+    {
+      "rule": "phone_length",
+      "severity": "warning",
+      "message": "Phone/fax '24200' has 5 digits; US numbers have 10.",
+      "fields": [
+        "extension"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "doc_id": "83823750",
+  "source_file": "external/funsd/dataset/testing_data/images/83823750.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:34:37.236454Z",
+    "seconds": 145.92,
+    "cost_usd": 0.0009778
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "Fax Transmittal",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "To",
+        "key": "to",
+        "value": "Robert H. Shaw, Esq.",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date",
+        "key": "date",
+        "value": "November 11, 1997",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Company",
+        "key": "company",
+        "value": "Lorillard Tobacco Company",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax Number",
+        "key": "fax",
+        "value": "910-335-7077",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Voice Number",
+        "key": "voice",
+        "value": "910-335-7720",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Sender",
+        "key": "sender",
+        "value": "Charles Duggan",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Number of Pages (this page included)",
+        "key": "number_of_pages",
+        "value": "2",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Sender Voice Number",
+        "key": "sender_voice",
+        "value": "212-450-4785",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Main Fax Operator Voice Number",
+        "key": "main_fax_operator_voice",
+        "value": null,
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Sender Fax Number",
+        "key": "sender_fax",
+        "value": "212-450-5578",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Reference",
+        "key": "reference",
+        "value": "17560-188",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Message",
+        "key": "message",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

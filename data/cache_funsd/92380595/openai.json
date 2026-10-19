@@ -1,0 +1,514 @@
+{
+  "doc_id": "92380595",
+  "source_file": "external/funsd/dataset/testing_data/images/92380595.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:37:04.183542Z",
+    "seconds": 53.49,
+    "cost_usd": 0.0089022
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "NOTICE OF SERVICE OF PROCESS",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Executive Offices",
+        "key": "executive_offices",
+        "value": "1 GULF + WESTE PLAZA • NEW YORK, NEW YORK 23-7773",
+        "value_type": "address",
+        "source": "printed",
+        "section": "Executive Offices",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone",
+        "key": "phone",
+        "value": "(212) 373-7500",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "Executive Offices",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "12-13-89",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "LORILLARD, INC. ONE PARK AVENUE 18TH FL NEW YORK, N.Y. 10016",
+        "value_type": "address",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ATTN:",
+        "key": "attn",
+        "value": "MR. ARTHUR STEVENS, ESQ. A.J. STEVENS",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RECEIVED",
+        "key": "received",
+        "value": "DEC 14 89",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TX",
+        "key": "tx",
+        "value": "13951 U",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Account #",
+        "key": "account",
+        "value": "033052",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RE:",
+        "key": "re",
+        "value": "LORILLARD, INC.",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "served upon:",
+        "key": "served_upon",
+        "value": "UNITED STATES CORPORATION COMPANY IN TEXAS",
+        "value_type": "name",
+        "source": "filled",
+        "section": "NOTICE OF SERVICE OF PROCESS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "on",
+        "key": "on",
+        "value": "12-13-89",
+        "value_type": "date",
+        "source": "filled",
+        "section": "NOTICE OF SERVICE OF PROCESS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Certified #",
+        "key": "certified",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": "NOTICE OF SERVICE OF PROCESS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other",
+        "key": "other",
+        "value": "CITATION AND FIRST ORIGINAL PETITION",
+        "value_type": "text",
+        "source": "filled",
+        "section": "NOTICE OF SERVICE OF PROCESS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TITLE OF ACTION:",
+        "key": "title_of_action",
+        "value": "WEBSTER GREGG",
+        "value_type": "name",
+        "source": "filled",
+        "section": "TITLE OF ACTION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "vs.",
+        "key": "vs",
+        "value": "R. J. REYNOLDS TOBACCO COMPANY, ET AL",
+        "value_type": "name",
+        "source": "filled",
+        "section": "TITLE OF ACTION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Case No.",
+        "key": "case_no",
+        "value": "475,592",
+        "value_type": "id",
+        "source": "filled",
+        "section": "TITLE OF ACTION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COURT OR JURISDICTION",
+        "key": "court_or_jurisdiction",
+        "value": "345th Judicial District Court Travis County, Tx",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RETURN DATE",
+        "key": "return_date",
+        "value": "Monday next 20 days from date of service",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Direct",
+        "key": "direct",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Collect",
+        "key": "collect",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Spoke to",
+        "key": "spoke_to",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Agent called New York Office",
+        "key": "agent_called_new_york_office",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COMMENTS:",
+        "key": "comments",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ATTORNEYS FOR CLAIMANT",
+        "key": "attorneys_for_claimant",
+        "value": "Mary Ellen Felps 1000 West Ave. Austin, Tx. 78701",
+        "value_type": "address",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "phone",
+        "value": "512/478-4873",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Reg. Mail",
+        "key": "reg_mail",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "PAPERS TRANSMITTED TO CLIENT",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other",
+        "key": "other",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "PAPERS TRANSMITTED TO CLIENT",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FORM PREPARED BY",
+        "key": "form_prepared_by",
+        "value": "PAT WIGGINS",
+        "value_type": "name",
+        "source": "filled",
+        "section": "PAPERS TRANSMITTED TO CLIENT",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date Received:",
+        "key": "date_received",
+        "value": "12/14/89",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Signed:",
+        "key": "signed",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Motor Carrier OR Statutory",
+        "key": "motor_carrier_or_statutory",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "Motor Carrier",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Statutory",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "via:",
+        "key": "via",
+        "section": "NOTICE OF SERVICE OF PROCESS",
+        "page": 1,
+        "options": [
+          {
+            "label": "Personal Service",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Mail: Regular",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "or Certified",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Documents served",
+        "key": "documents_served",
+        "section": "NOTICE OF SERVICE OF PROCESS",
+        "page": 1,
+        "options": [
+          {
+            "label": "Summons",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Complaint",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Duplicate copies of the Notice and Acknowledgement enclosed",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "A self-addressed stamped envelope enclosed",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Garnishment",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Notice of Attorney's Lien",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Notice of Mechanic's Lien",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Notice of Default Judgment",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Subpoena",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "PAPERS TRANSMITTED TO CLIENT",
+        "key": "papers_transmitted_to_client",
+        "section": "PAPERS TRANSMITTED TO CLIENT",
+        "page": 1,
+        "options": [
+          {
+            "label": "Fed-X",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Reg. Mail",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

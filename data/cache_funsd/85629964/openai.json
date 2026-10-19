@@ -1,0 +1,395 @@
+{
+  "doc_id": "85629964",
+  "source_file": "external/funsd/dataset/testing_data/images/85629964.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:33:12.251145Z",
+    "seconds": 27.54,
+    "cost_usd": 0.0014972
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "CIGARETTE REPORT FORM",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "YEAR:",
+        "key": "year",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NO. PER PACK:",
+        "key": "no_per_pack",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BRAND NAME:",
+        "key": "brand_name",
+        "value": null,
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "VAR. DESC:",
+        "key": "var_desc",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "VARIETY UNIT SALES:",
+        "key": "variety_unit_sales",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "VARIETY DOLLAR SALES:",
+        "key": "variety_dollar_sales",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CIG. LENGTH:",
+        "key": "cig_length",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FILTER LENGTH:",
+        "key": "filter_length",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FILTER TYPE:",
+        "key": "filter_type",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FLAVORING:",
+        "key": "flavoring",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OVERWRAP:",
+        "key": "overwrap",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PACK TYPE:",
+        "key": "pack_type",
+        "value": null,
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "1ST MANUFACT. DATE:",
+        "key": "1st_manufact_date",
+        "value": null,
+        "value_type": "date",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "1ST SALES DATE:",
+        "key": "1st_sales_date",
+        "value": null,
+        "value_type": "date",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LAST SOLD DATE:",
+        "key": "last_sold_date",
+        "value": null,
+        "value_type": "date",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TAR:",
+        "key": "tar",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": "YEARLY SUMMARY:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NICOTINE:",
+        "key": "nicotine",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": "YEARLY SUMMARY:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CARBON MONO:",
+        "key": "carbon_mono",
+        "value": null,
+        "value_type": "number",
+        "source": "printed",
+        "section": "YEARLY SUMMARY:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-A-EXPENSES:",
+        "key": "cat_a_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-B-EXPENSES:",
+        "key": "cat_b_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-C-EXPENSES:",
+        "key": "cat_c_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-D-EXPENSES:",
+        "key": "cat_d_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-E-EXPENSES:",
+        "key": "cat_e_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-F-EXPENSES:",
+        "key": "cat_f_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-G-EXPENSES:",
+        "key": "cat_g_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-H-EXPENSES:",
+        "key": "cat_h_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-I-EXPENSES:",
+        "key": "cat_i_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-J-EXPENSES:",
+        "key": "cat_j_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-K-EXPENSES:",
+        "key": "cat_k_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-L-EXPENSES:",
+        "key": "cat_l_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-M-EXPENSES:",
+        "key": "cat_m_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CAT-N-EXPENSES:",
+        "key": "cat_n_expenses",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TOTAL ADVERTISING EXPENDITURES:",
+        "key": "total_advertising_expenditures",
+        "value": null,
+        "value_type": "money",
+        "source": "printed",
+        "section": "ADVERTISING EXPENDITURES (SEE EXPLANATION)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": [
+    {
+      "rule": "empty_extraction",
+      "severity": "error",
+      "message": "No values were extracted from this form.",
+      "fields": []
+    }
+  ]
+}

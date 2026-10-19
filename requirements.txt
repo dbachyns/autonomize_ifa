@@ -8,3 +8,5 @@ rapidocr_onnxruntime>=1.3
 rapidfuzz>=3.0
 pytest>=8.0
 -e .
+# notebooks
+jupyter>=1.0

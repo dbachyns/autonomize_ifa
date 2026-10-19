@@ -1,0 +1,211 @@
+{
+  "doc_id": "87428306",
+  "source_file": "external/funsd/dataset/testing_data/images/87428306.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:35:33.051670Z",
+    "seconds": 38.1,
+    "cost_usd": 0.0021352
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "COMPOUND PHYSICAL PARAMETERS",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "LOT FILE NUMBER",
+        "key": "lot_file",
+        "value": "A221",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LOT NUMBER",
+        "key": "lot",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PHYSICAL STATE",
+        "key": "physical_state",
+        "value": "A crystalline solid at room temperature which melts at >56°C.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "pH",
+        "key": "ph",
+        "value": "The pH of a 50% concentration of A221 in water was theoretically calculated to be 7.26 at 22°C from a 0.5% solution in 79.5% aqueous dioxane according to the extrapolation procedures of Dr. P. D. Schickendantz, Lorillard Accession Number 1662. Reference 45-10-1.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SPECIFIC GRAVITY",
+        "key": "specific_gravity",
+        "value": "Not Determined.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE)",
+        "key": "safety_comments",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SIGNATURE",
+        "key": "signature",
+        "value": "Elizabeth W. Crosse",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE",
+        "key": "date",
+        "value": "November 28, 1990",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FORM",
+        "key": "form",
+        "value": "FORM 9 (8/83)",
+        "value_type": "code",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "COMPOUND SENSITIVE TO",
+        "key": "compound_sensitive_to",
+        "section": "COMPOUND SENSITIVE TO",
+        "page": 1,
+        "options": [
+          {
+            "label": "AIR",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "HEAT",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "MOISTURE",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "OTHER",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "A221 is soluble in EtOH at 0.2 g/mL, with stirring, at room temperature. Reference BC30-88.",
+        "label": "MUTAGENICITY SOLVENTS",
+        "section": "SOLUBILITY",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring at room temperature. Reference BC30-88.",
+        "label": null,
+        "section": "SOLUBILITY",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring at room temperature. Reference BC30-88.",
+        "label": null,
+        "section": "ORAL",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "A221 is insoluble for this procedure. Reference BC30-88.",
+        "label": null,
+        "section": "ACUTE CARDIOVASCULAR",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Refrigerate in an amber glass bottle at no more than 8°C.",
+        "label": null,
+        "section": "STORAGE RECOMMENDATIONS",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "A - 13",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "87428306",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

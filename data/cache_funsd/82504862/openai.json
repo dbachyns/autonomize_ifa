@@ -1,0 +1,135 @@
+{
+  "doc_id": "82504862",
+  "source_file": "external/funsd/dataset/testing_data/images/82504862.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:31:28.363700Z",
+    "seconds": 10.43,
+    "cost_usd": 0.0006758
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "CASE FORM",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "CASE NAME:",
+        "key": "case_name",
+        "value": "Donald D. Sellers and Robin J. Sellers v. Raybestos-Manhattan, et al.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COURT:",
+        "key": "court",
+        "value": "San Francisco Superior Court - No. 996382",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LORILLARD ENTITIES:",
+        "key": "lorillard_entities",
+        "value": "Lorillard Tobacco Company",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE FILED:",
+        "key": "date_filed",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE SERVED:",
+        "key": "date_served",
+        "value": "August 3, 1998",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CASE TYPE:",
+        "key": "case_type",
+        "value": "Asbestos",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PLAINTIFF'S COUNSEL:",
+        "key": "plaintiff_s_counsel",
+        "value": "Wartnick, Chaber, Harowitz, Smith & Tigerman Stephen M. Tigerman 101 California Street, Suite 2200 San Francisco, California 94111 415/986-5566",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LORILLARD COUNSEL:",
+        "key": "lorillard_counsel",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "JUDGE:",
+        "key": "judge",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TRIAL DATE:",
+        "key": "trial_date",
+        "value": null,
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

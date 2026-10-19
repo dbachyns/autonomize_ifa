@@ -1,0 +1,211 @@
+{
+  "doc_id": "82250337_0338",
+  "source_file": "external/funsd/dataset/testing_data/images/82250337_0338.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:31:16.560004Z",
+    "seconds": 33.36,
+    "cost_usd": 0.0014213
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "COMPETITIVE PRODUCT INTRODUCTION PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "Sam Zolot",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "D. J. Landro",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "2-Dec-97",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MANUFACTURER:",
+        "key": "manufacturer",
+        "value": "B&W",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BRAND:",
+        "key": "brand",
+        "value": "Kool Waterfall",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TYPE OF PACKINGS:",
+        "key": "type_of_packings",
+        "value": "All Packings",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Oct.",
+        "key": "oct",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "REPORTING PERIODS:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Nov.",
+        "key": "nov",
+        "value": "X",
+        "value_type": "text",
+        "source": "filled",
+        "section": "REPORTING PERIODS:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Dec.",
+        "key": "dec",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "REPORTING PERIODS:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Jan.",
+        "key": "jan",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "REPORTING PERIODS:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TEST MARKET GEOGRAPHY:",
+        "key": "test_market_geography",
+        "value": "Divisions 621 and 627 (Wisconsin)",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FULL $",
+        "key": "full",
+        "value": null,
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "P/V $",
+        "key": "p_v",
+        "value": null,
+        "value_type": "money",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "They have crew-worked distribution, and it is reported that they may crew-work it again. Sales force has been busy promoting old style packs to clean up inventory. All POS is being converted to \"B\" Kool.",
+        "label": null,
+        "section": "SALES FORCE INVOLVEMENT:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "All accounts have the new packaging. It was not a problem obtaining new distribution. All accounts appear to have 100% distribution of new packings.",
+        "label": null,
+        "section": "DISTRIBUTORS - ACCEPTANCE/INTRO TERMS/INTRO DEALS/INVOLVEMENT:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "This has not been a problem. New packaging is just following up on the old \"packaging\".",
+        "label": null,
+        "section": "CHAINS - ACCEPTANCE/MERCHANDISING:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Very well received. The old packs are being consolidated and promoted in select retail locations at 40¢ off/$4.00 off cartons.",
+        "label": null,
+        "section": "INDEPENDENTS - ACCEPTANCE/MERCHANDISING:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "The theme \"B\" Kool has replaced all previous POS. They have effectively replaced all old POS. New door signage, hour signs, poster mats, and clocks have the new design. \"B\" Kool also appears on billboards in Illinois.",
+        "label": null,
+        "section": "ADVERTISING - EFFECTIVENESS OF P.O.S.:",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "8225037",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}

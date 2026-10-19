@@ -1,0 +1,191 @@
+{
+  "doc_id": "83624198",
+  "source_file": "external/funsd/dataset/testing_data/images/83624198.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:19.632311Z",
+    "seconds": 18.8,
+    "cost_usd": 0.0010718
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "FAX TRANSMISSION",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "February 25, 1998",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CLIENT NO.:",
+        "key": "client_no",
+        "value": "L8557.002",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MESSAGE TO:",
+        "key": "message_to",
+        "value": "Ronald S. Milstein",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "COMPANY:",
+        "key": "company",
+        "value": "Lorillard Tobacco Company",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX NUMBER:",
+        "key": "fax",
+        "value": "910/335-7707",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PHONE:",
+        "key": "phone",
+        "value": "910/335-7718",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "Andy Zausner",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PHONE:",
+        "key": "phone",
+        "value": "202/828-2259",
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PAGES (Including Cover Sheet):",
+        "key": "pages",
+        "value": "12",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "MESSAGE:",
+        "key": "message",
+        "value": "See attached fax from the Committee on Commerce just received in my office. Call me to discuss.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "2101 L Street NW Washington, DC 20037-1528",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Tel",
+        "key": "phone",
+        "value": "202-785-9700",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax",
+        "key": "fax",
+        "value": "202-887-0689",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "HARD COPY TO FOLLOW:",
+        "key": "hard_copy_to_follow",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "YES",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "NO",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

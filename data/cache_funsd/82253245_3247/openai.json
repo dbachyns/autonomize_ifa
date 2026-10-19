@@ -1,0 +1,287 @@
+{
+  "doc_id": "82253245_3247",
+  "source_file": "external/funsd/dataset/testing_data/images/82253245_3247.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:08.869801Z",
+    "seconds": 85.67,
+    "cost_usd": 0.0018153
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "STYLE LOW PRICE - PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "K. A. Sparrow",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "R. E. Lane",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SUBJECT:",
+        "key": "subject",
+        "value": "STYLE LOW PRICE - PROGRESS REPORT",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PRE-SELL:",
+        "key": "pre_sell",
+        "value": "Overall pre-sell efforts were successful. Retail accounts that previously stocked Style Full Price accepted the introduction of the low price.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "EFFECTIVENESS OF Transition Plan",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "BIGIF 2 FOR 1:",
+        "key": "bigif_2_for_1",
+        "value": "Proved to be an excellent tool for pulling the balance of Style Full Price packs through the system. This aided the field greatly during the transition.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "EFFECTIVENESS OF Transition Plan",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "$7.00 CARTON COUPON/BUYDOWN:",
+        "key": "7_00_carton_coupon_buydown",
+        "value": "Effective in those retail calls that we could not exchange product out of. Those situations were limited.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "EFFECTIVENESS OF Transition Plan",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "SUBMISSION DATE",
+        "key": "submission_date",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "JUNE 30",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "SEP 22",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "AUG 11",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "NOV 10",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": null,
+        "section": "DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15 + STORES) STOCKING NO LOW PRICE STYLE",
+        "page": 1,
+        "headers": [
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES",
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES"
+        ],
+        "rows": [
+          [
+            "M. Maskos & Sons",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Pollock Candy and Cigar",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "McKeesport Candy Co.",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Sico Serva",
+            "104/22",
+            "18",
+            null,
+            null,
+            null
+          ],
+          [
+            "Sheetz",
+            "521/42",
+            "150",
+            null,
+            null,
+            null
+          ],
+          [
+            "Thrift/Eckerd",
+            "137/20",
+            "183",
+            null,
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "name",
+          "number",
+          "number",
+          "name",
+          "number",
+          "number"
+        ]
+      },
+      {
+        "title": null,
+        "section": "DIRECT ACCOUNTS AND CHAINS HEADQUARTERED OUTSIDE THE REGION (15 + STORES) STOCKING NO LOW PRICE STYLE",
+        "page": 1,
+        "headers": [
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES",
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES"
+        ],
+        "rows": [
+          [
+            "Kroger",
+            null,
+            "21",
+            null,
+            null,
+            null
+          ],
+          [
+            "Rich Oil",
+            null,
+            "82",
+            null,
+            null,
+            null
+          ],
+          [
+            "Super America",
+            null,
+            "106",
+            null,
+            null,
+            null
+          ],
+          [
+            "CVS",
+            null,
+            "87",
+            null,
+            null,
+            null
+          ],
+          [
+            "W H Smith",
+            null,
+            "5",
+            null,
+            null,
+            null
+          ],
+          [
+            "7-11 318 Zon",
+            null,
+            "23",
+            null,
+            null,
+            null
+          ],
+          [
+            "Dairy Marts",
+            null,
+            "35",
+            null,
+            null,
+            null
+          ],
+          [
+            "Widman Drugs",
+            null,
+            "43",
+            null,
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "name",
+          "number",
+          "number",
+          "name",
+          "number",
+          "number"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

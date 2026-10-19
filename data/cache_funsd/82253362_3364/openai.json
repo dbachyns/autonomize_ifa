@@ -1,0 +1,413 @@
+{
+  "doc_id": "82253362_3364",
+  "source_file": "external/funsd/dataset/testing_data/images/82253362_3364.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:31:37.342072Z",
+    "seconds": 54.14,
+    "cost_usd": 0.0021678
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "MAVERICK SPECIALS MENTHOL - PROGRESS REPORT",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "K. A. Sparrow",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "J. L. McGinnis",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SUBJECT:",
+        "key": "subject",
+        "value": "MAVERICK SPECIALS MENTHOL - PROGRESS REPORT",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIVISION NAME:",
+        "key": "division_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "# REPS",
+        "key": "number_reps",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "SUBMISSION DATE",
+        "key": "submission_date",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "MAY 19",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "AUG 11",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "JUN 30",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "SEP 22",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "REGION:",
+        "key": "region",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "options": [
+          {
+            "label": "FULL",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "PARTIAL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "DIVISION:",
+        "key": "division",
+        "section": "GEOGRAPHY",
+        "page": 1,
+        "options": [
+          {
+            "label": "FULL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "PARTIAL",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": "DIRECT ACCOUNTS AND CHAINS HEADQUARTERED WITHIN THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS MENTHOL",
+        "section": "DISTRIBUTION",
+        "page": 1,
+        "headers": [
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES",
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES"
+        ],
+        "rows": [
+          [
+            "Don & Bens",
+            "26/2",
+            "20",
+            "San Nac Pac",
+            "75/2",
+            "27"
+          ],
+          [
+            "Western Beverage",
+            "42/2",
+            "15",
+            "ACO/Texaco",
+            "95/3",
+            "15"
+          ],
+          [
+            "Speedy Stop",
+            "106/4",
+            "29",
+            "Lone Star",
+            "76/3",
+            "37"
+          ],
+          [
+            "Get-N-Go",
+            "62/2",
+            "44",
+            null,
+            null,
+            null
+          ],
+          [
+            "Valley Shamrock",
+            "78/4",
+            "17",
+            null,
+            null,
+            null
+          ],
+          [
+            "Albertson's - Houston",
+            "319/16",
+            "34",
+            null,
+            null,
+            null
+          ],
+          [
+            "Mini Mart",
+            "65/3",
+            "15",
+            null,
+            null,
+            null
+          ],
+          [
+            "Neal's One Stop",
+            "69/3",
+            "20",
+            null,
+            null,
+            null
+          ],
+          [
+            "Shopper Mart",
+            "80/4",
+            "22",
+            null,
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "name",
+          "text",
+          "number",
+          "name",
+          "text",
+          "number"
+        ]
+      },
+      {
+        "title": "DIRECT ACCOUNTS AND CHAINS HEADQUARTERED OUTSIDE THE REGION (15+ STORES) STOCKING NO MAVERICK SPECIALS MENTHOL",
+        "section": "DISTRIBUTION",
+        "page": 1,
+        "headers": [
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES",
+          "NAME OF ACCOUNT",
+          "IND/LOR VOLUME",
+          "NO. OF STORES"
+        ],
+        "rows": [
+          [
+            "Chevron",
+            "?",
+            "115",
+            null,
+            null,
+            null
+          ],
+          [
+            "Brookshire Bro.'s",
+            "?",
+            "38",
+            null,
+            null,
+            null
+          ],
+          [
+            "Eckerd Drugs - S. Texas",
+            "?",
+            "217",
+            null,
+            null,
+            null
+          ],
+          [
+            "Exxon",
+            "?",
+            "38",
+            null,
+            null,
+            null
+          ],
+          [
+            "Phillip's 66",
+            "?",
+            "27",
+            null,
+            null,
+            null
+          ],
+          [
+            "Star Enterprise",
+            "?",
+            "70",
+            null,
+            null,
+            null
+          ],
+          [
+            "Walgreen's",
+            "?",
+            "177",
+            null,
+            null,
+            null
+          ]
+        ],
+        "column_types": [
+          "name",
+          "text",
+          "number",
+          "name",
+          "text",
+          "number"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": null,
+  "flags": []
+}

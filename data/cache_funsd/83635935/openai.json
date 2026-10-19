@@ -1,0 +1,121 @@
+{
+  "doc_id": "83635935",
+  "source_file": "external/funsd/dataset/testing_data/images/83635935.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:28.851236Z",
+    "seconds": 26.48,
+    "cost_usd": 0.0012967999999999999
+  },
+  "form_type": "unknown",
+  "form_type_confidence": 0.0,
+  "universal": {
+    "title": "FAX CONFIDENTIAL",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "DATE:",
+        "key": "date",
+        "value": "June 4, 1997",
+        "value_type": "date",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TO:",
+        "key": "to",
+        "value": "Dr. Spears/A.J. Stevens/R. Milstein",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FROM:",
+        "key": "from",
+        "value": "Barry Hirsch",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "TOTAL NUMBER OF PAGES INCLUDING THIS COVER SHEET",
+        "key": "total_number_of_pages_including_this_cover_sheet",
+        "value": "6",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OUR FAX NUMBER IS",
+        "key": "our_fax_number_is",
+        "value": "(212) 935-6801",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "687 Madison Avenue, New York, N.Y. 10021-8087",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone",
+        "key": "phone",
+        "value": "(212) 545-2920",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax",
+        "key": "fax",
+        "value": "(212) 935-6801",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [],
+    "tables": [],
+    "text_blocks": [
+      {
+        "text": "JUN 25 '97 02:00PM LOEWS CORP LEGAL; P.1/6; 83635935",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": null,
+  "flags": []
+}
