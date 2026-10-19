@@ -1,0 +1,960 @@
+{
+  "doc_id": "0a01f77b-85f9-48c9-89bf-4b095bebb438_TX_page_1",
+  "source_file": "forms/0a01f77b-85f9-48c9-89bf-4b095bebb438_TX_page_1.png",
+  "run": {
+    "reader": "openai",
+    "model": "gpt-6-luna",
+    "prompt_version": "v2",
+    "created_at": "2026-10-19T21:32:22.872597Z",
+    "seconds": 99.67,
+    "cost_usd": 0.0011147000000000002
+  },
+  "form_type": "tx_prior_auth",
+  "form_type_confidence": 1.0,
+  "universal": {
+    "title": "TEXAS STANDARD PRIOR AUTHORIZATION REQUEST FORM FOR HEALTH CARE SERVICES",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Issuer Name:",
+        "key": "issuer_name",
+        "value": "Molina Healthcare of Texas",
+        "value_type": "text",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone: Utilization Management:",
+        "key": "phone_utilization_management",
+        "value": "855-322-4080",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone: Imaging/Transplant:",
+        "key": "phone_imaging_transplant",
+        "value": "855-714-2415",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax: Medicaid/CHIP: UM Inpatient:",
+        "key": "fax_medicaid_chip_um_inpatient",
+        "value": "833-994-1960",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax: Medicaid/CHIP: Outpatient:",
+        "key": "fax_medicaid_chip_outpatient",
+        "value": "866-420-3639",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax: Imaging/Transplant:",
+        "key": "fax_imaging_transplant",
+        "value": "877-731-7218",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax: BH Requests:",
+        "key": "fax_bh_requests",
+        "value": "866-617-4967",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax: LTSS Requests:",
+        "key": "fax_ltss_requests",
+        "value": "844-304-7127",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax: Medicaid/CHIP Pharmacy J Code Requests:",
+        "key": "fax_medicaid_chip_pharmacy_j_code_requests",
+        "value": "888-487-9251",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date:",
+        "key": "date",
+        "value": "11/20/2022",
+        "value_type": "date",
+        "source": "filled",
+        "section": "SECTION I — SUBMISSION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Clinical Reason for Urgency:",
+        "key": "clinical_reason_for_urgency",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION II — GENERAL INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Prev. Auth. #:",
+        "key": "prev_auth",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": "SECTION II — GENERAL INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "name",
+        "value": "Daniel Jarvis",
+        "value_type": "name",
+        "source": "filled",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "phone",
+        "value": "(378)-041-2101",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DOB:",
+        "key": "date_of_birth",
+        "value": "03/20/1992",
+        "value_type": "date",
+        "source": "filled",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Subscriber Name (if different):",
+        "key": "subscriber_name",
+        "value": null,
+        "value_type": "name",
+        "source": "filled",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Member or Medicaid ID #:",
+        "key": "member_id",
+        "value": "62106",
+        "value_type": "id",
+        "source": "filled",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Group #:",
+        "key": "group",
+        "value": null,
+        "value_type": "id",
+        "source": "filled",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider or Facility — Name:",
+        "key": "requesting_provider_or_facility_name",
+        "value": "Elizabeth Foley",
+        "value_type": "name",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider or Facility — NPI #:",
+        "key": "requesting_provider_or_facility_npi",
+        "value": "2990955730",
+        "value_type": "npi",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider or Facility — Specialty:",
+        "key": "requesting_provider_or_facility_specialty",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider or Facility — Phone:",
+        "key": "requesting_provider_or_facility_phone",
+        "value": "(439)-319-5767",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider or Facility — Fax:",
+        "key": "requesting_provider_or_facility_fax",
+        "value": "(906)-180-2619",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Contact Name:",
+        "key": "contact_name",
+        "value": "Austin Collins",
+        "value_type": "name",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "phone",
+        "value": "(966)-836-1691",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider’s Signature and Date (if required):",
+        "key": "requesting_provider_s_signature_and_date",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Service Provider or Facility — Name:",
+        "key": "service_provider_or_facility_name",
+        "value": "Leslie Johnson",
+        "value_type": "name",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Service Provider or Facility — NPI #:",
+        "key": "service_provider_or_facility_npi",
+        "value": "3659236757",
+        "value_type": "npi",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Service Provider or Facility — Specialty:",
+        "key": "service_provider_or_facility_specialty",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Service Provider or Facility — Phone:",
+        "key": "service_provider_or_facility_phone",
+        "value": "(290)-785-3379",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Primary Care Provider Name (see instructions):",
+        "key": "primary_care_provider_name",
+        "value": "Erica Bennett",
+        "value_type": "name",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "phone",
+        "value": "(970)-355-0727",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax:",
+        "key": "fax",
+        "value": "(904)-906-0511",
+        "value_type": "phone",
+        "source": "filled",
+        "section": "SECTION IV — PROVIDER INFORMATION",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other:",
+        "key": "other",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Number of Sessions:",
+        "key": "number_of_sessions",
+        "value": "4",
+        "value_type": "number",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Duration:",
+        "key": "duration",
+        "value": "2 weeks",
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Frequency:",
+        "key": "frequency",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other:",
+        "key": "other",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Number of Visits:",
+        "key": "number_of_visits",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Duration:",
+        "key": "duration",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Frequency:",
+        "key": "frequency",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other:",
+        "key": "other",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Equipment/Supplies (include any HCPCS Codes):",
+        "key": "equipment_supplies",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Duration:",
+        "key": "duration",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Review Type:",
+        "key": "review_type",
+        "section": "SECTION II — GENERAL INFORMATION",
+        "page": 1,
+        "options": [
+          {
+            "label": "Non-Urgent",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Urgent",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Request Type:",
+        "key": "request_type",
+        "section": "SECTION II — GENERAL INFORMATION",
+        "page": 1,
+        "options": [
+          {
+            "label": "Initial Request",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Extension/Renewal/Amendment",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Gender",
+        "key": "gender",
+        "section": "SECTION III — PATIENT INFORMATION",
+        "page": 1,
+        "options": [
+          {
+            "label": "Male",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Female",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Unknown",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Service Setting",
+        "key": "service_setting",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "options": [
+          {
+            "label": "Inpatient",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Outpatient",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Provider Office",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Observation",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Home",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Day Surgery",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Therapy Type",
+        "key": "therapy_type",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "options": [
+          {
+            "label": "Physical Therapy",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Occupational Therapy",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Speech Therapy",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Cardiac Rehab",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Mental Health/Substance Abuse",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Home Health (MD Signed Order Attached?)",
+        "key": "home_health",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Nursing Assessment Attached?",
+        "key": "nursing_assessment_attached",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "DME (MD Signed Order Attached?)",
+        "key": "dme",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Medicaid Only: Title 19 Certification Attached?",
+        "key": "medicaid_only_title_19_certification_attached",
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": null,
+        "section": "SECTION V — SERVICES REQUESTED (WITH CPT, CDT, OR HCPCS CODE) AND SUPPORTING DIAGNOSES (WITH ICD CODE)",
+        "page": 1,
+        "headers": [
+          "Planned Service or Procedure",
+          "Code",
+          "Start Date",
+          "End Date",
+          "Diagnosis Description (ICD version 10)",
+          "Code"
+        ],
+        "rows": [
+          [
+            "Open placement",
+            "44300",
+            "11/20/2022",
+            "11/26/2022",
+            "Aftercare following",
+            "Z47.1"
+          ],
+          [
+            "Needle catheter",
+            "44015",
+            "11/29/2023",
+            "11/29/2023",
+            "Type 1",
+            "E10.69"
+          ]
+        ],
+        "column_types": [
+          "text",
+          "code",
+          "date",
+          "date",
+          "text",
+          "code"
+        ]
+      }
+    ],
+    "text_blocks": [
+      {
+        "text": "411 Turner Viaduct Apt. Texas 77641",
+        "label": null,
+        "section": "SECTION VI — CLINICAL DOCUMENTATION (SEE INSTRUCTIONS PAGE, SECTION VI)",
+        "page": 1,
+        "bbox": null
+      }
+    ]
+  },
+  "typed": {
+    "form_type": "tx_prior_auth",
+    "submission": {
+      "issuer_name": "Molina Healthcare of Texas",
+      "date": "11/20/2022"
+    },
+    "general": {
+      "review_type": [
+        "Non-Urgent"
+      ],
+      "clinical_reason_for_urgency": null,
+      "request_type": [
+        "Initial Request"
+      ],
+      "prev_auth_number": null
+    },
+    "patient": {
+      "name": "Daniel Jarvis",
+      "phone": "(378)-041-2101",
+      "dob": "03/20/1992",
+      "sex": [
+        "Female",
+        "Unknown"
+      ],
+      "subscriber_name": null,
+      "member_id": "62106",
+      "group_number": null
+    },
+    "requesting_provider": {
+      "name": "Elizabeth Foley",
+      "npi": "2990955730",
+      "specialty": null,
+      "phone": "(439)-319-5767",
+      "fax": "(906)-180-2619",
+      "contact_name": "Austin Collins",
+      "contact_phone": "(966)-836-1691",
+      "signature_and_date": null
+    },
+    "service_provider": {
+      "name": "Leslie Johnson",
+      "npi": "3659236757",
+      "specialty": null,
+      "phone": "(290)-785-3379"
+    },
+    "pcp": {
+      "name": "Erica Bennett",
+      "phone": "(970)-355-0727",
+      "fax": "(904)-906-0511"
+    },
+    "services": {
+      "icd_version": "10",
+      "lines": [
+        {
+          "service": "Open placement",
+          "code": "44300",
+          "start_date": "11/20/2022",
+          "end_date": "11/26/2022",
+          "diagnosis": "Aftercare following",
+          "icd_code": "Z47.1"
+        },
+        {
+          "service": "Needle catheter",
+          "code": "44015",
+          "start_date": "11/29/2023",
+          "end_date": "11/29/2023",
+          "diagnosis": "Type 1",
+          "icd_code": "E10.69"
+        }
+      ],
+      "setting": [
+        "Outpatient"
+      ],
+      "setting_other": null,
+      "therapy": {
+        "types": [
+          "Physical Therapy"
+        ],
+        "sessions": "4",
+        "duration": "2 weeks",
+        "frequency": null,
+        "other": null
+      },
+      "home_health": {
+        "requested": false,
+        "md_order_attached": [],
+        "nursing_assessment_attached": [],
+        "visits": null,
+        "duration": null,
+        "frequency": null,
+        "other": null
+      },
+      "dme": {
+        "requested": false,
+        "md_order_attached": [],
+        "title19_attached": [],
+        "equipment": null,
+        "duration": null
+      }
+    },
+    "facility_address": "411 Turner Viaduct Apt. Texas 77641"
+  },
+  "flags": [
+    {
+      "rule": "npi_checksum",
+      "severity": "error",
+      "message": "NPI '2990955730' fails the NPI check-digit test.",
+      "fields": [
+        "requesting_provider.npi"
+      ]
+    },
+    {
+      "rule": "npi_checksum",
+      "severity": "error",
+      "message": "NPI '3659236757' fails the NPI check-digit test.",
+      "fields": [
+        "service_provider.npi"
+      ]
+    },
+    {
+      "rule": "multiple_ticks",
+      "severity": "error",
+      "message": "patient.sex: 2 options ticked (Female, Unknown) in a pick-one group.",
+      "fields": [
+        "patient.sex"
+      ]
+    },
+    {
+      "rule": "service_far_after_request",
+      "severity": "warning",
+      "message": "Service line 2 starts 374 days after the request date (2022-11-20).",
+      "fields": [
+        "services.lines[1].start_date",
+        "submission.date"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,859 @@
+{
+  "doc_id": "00e0cf8a-1932-4ab7-b5ce-ad1c80e7c01d_TX_page_1",
+  "source_file": "forms/00e0cf8a-1932-4ab7-b5ce-ad1c80e7c01d_TX_page_1.png",
+  "run": {
+    "reader": "ground_truth",
+    "model": "human",
+    "prompt_version": null,
+    "created_at": "2026-10-19T00:00:00Z",
+    "seconds": null,
+    "cost_usd": null
+  },
+  "form_type": "tx_prior_auth",
+  "form_type_confidence": 1.0,
+  "universal": {
+    "title": "Texas Standard Prior Authorization Request Form for Health Care Services",
+    "page_count": 1,
+    "fields": [
+      {
+        "label": "Issuer Name:",
+        "key": "issuer_name",
+        "value": null,
+        "value_type": "text",
+        "section": "Section I — Submission",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Date:",
+        "key": "submission_date",
+        "value": "10/14/2023",
+        "value_type": "date",
+        "section": "Section I — Submission",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Clinical Reason for Urgency:",
+        "key": "clinical_reason_for_urgency",
+        "value": null,
+        "value_type": "text",
+        "section": "Section II — General Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Prev. Auth. #:",
+        "key": "prev_auth_number",
+        "value": null,
+        "value_type": "id",
+        "section": "Section II — General Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "patient_name",
+        "value": "Samantha Ballard",
+        "value_type": "name",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "patient_phone",
+        "value": "(268)-368-9916",
+        "value_type": "phone",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DOB:",
+        "key": "date_of_birth",
+        "value": "03/07/1959",
+        "value_type": "date",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Subscriber Name (if different):",
+        "key": "subscriber_name",
+        "value": null,
+        "value_type": "name",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Member or Medicaid ID #:",
+        "key": "member_id",
+        "value": "14893",
+        "value_type": "id",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Group #:",
+        "key": "group_number",
+        "value": null,
+        "value_type": "id",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "requesting_provider_name",
+        "value": "Barbara Little",
+        "value_type": "name",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NPI #:",
+        "key": "requesting_provider_npi",
+        "value": "4581821538",
+        "value_type": "npi",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Specialty:",
+        "key": "requesting_provider_specialty",
+        "value": null,
+        "value_type": "text",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "requesting_provider_phone",
+        "value": "(597)-662-5140",
+        "value_type": "phone",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax:",
+        "key": "requesting_provider_fax",
+        "value": "(939)-434-2723",
+        "value_type": "phone",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Contact Name:",
+        "key": "contact_name",
+        "value": "Michelle Allen",
+        "value_type": "name",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "contact_phone",
+        "value": "(980)-022-9827",
+        "value_type": "phone",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Requesting Provider's Signature and Date (if required):",
+        "key": "signature_and_date",
+        "value": null,
+        "value_type": "text",
+        "section": "Section IV — Provider Information / Requesting Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Name:",
+        "key": "service_provider_name",
+        "value": "Heather Lucero",
+        "value_type": "name",
+        "section": "Section IV — Provider Information / Service Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NPI #:",
+        "key": "service_provider_npi",
+        "value": "1459622036",
+        "value_type": "npi",
+        "section": "Section IV — Provider Information / Service Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Specialty:",
+        "key": "service_provider_specialty",
+        "value": null,
+        "value_type": "text",
+        "section": "Section IV — Provider Information / Service Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "service_provider_phone",
+        "value": "(269)-923-5779",
+        "value_type": "phone",
+        "section": "Section IV — Provider Information / Service Provider or Facility",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Primary Care Provider Name (see instructions):",
+        "key": "pcp_name",
+        "value": "Mark Oconnor",
+        "value_type": "name",
+        "section": "Section IV — Provider Information / Primary Care Provider",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Phone:",
+        "key": "pcp_phone",
+        "value": "(649)-958-1798",
+        "value_type": "phone",
+        "section": "Section IV — Provider Information / Primary Care Provider",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax:",
+        "key": "pcp_fax",
+        "value": "(091)-843-3243",
+        "value_type": "phone",
+        "section": "Section IV — Provider Information / Primary Care Provider",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ICD version",
+        "key": "icd_version",
+        "value": "10",
+        "value_type": "id",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other:",
+        "key": "setting_other",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Number of Sessions:",
+        "key": "therapy_sessions",
+        "value": "7",
+        "value_type": "number",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Duration:",
+        "key": "therapy_duration",
+        "value": "2 weeks",
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Frequency:",
+        "key": "therapy_frequency",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other:",
+        "key": "therapy_other",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Number of Visits:",
+        "key": "home_health_visits",
+        "value": null,
+        "value_type": "number",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Duration:",
+        "key": "home_health_duration",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Frequency:",
+        "key": "home_health_frequency",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Other:",
+        "key": "home_health_other",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Equipment/Supplies (include any HCPCS Codes):",
+        "key": "dme_equipment",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Duration:",
+        "key": "dme_duration",
+        "value": null,
+        "value_type": "text",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Physical address of service provider or facility",
+        "key": "facility_address",
+        "value": "68443 Bauer Turnpike Apt. Texas 45289",
+        "value_type": "address",
+        "section": "Section VI — Clinical Documentation",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      }
+    ],
+    "checkboxes": [
+      {
+        "label": "Review Type",
+        "key": "review_type",
+        "section": "Section II — General Information",
+        "page": 1,
+        "options": [
+          {
+            "label": "Non-Urgent",
+            "checked": true,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Urgent",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Request Type",
+        "key": "request_type",
+        "section": "Section II — General Information",
+        "page": 1,
+        "options": [
+          {
+            "label": "Initial Request",
+            "checked": true,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Extension/Renewal/Amendment",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Sex",
+        "key": "sex",
+        "section": "Section III — Patient Information",
+        "page": 1,
+        "options": [
+          {
+            "label": "Male",
+            "checked": true,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Female",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Unknown",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Setting",
+        "key": "setting",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Inpatient",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Outpatient",
+            "checked": true,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Provider Office",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Observation",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Home",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Day Surgery",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Other",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Therapy",
+        "key": "therapy_type",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Physical Therapy",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Occupational Therapy",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Speech Therapy",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Cardiac Rehab",
+            "checked": true,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "Mental Health/Substance Abuse",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Home Health",
+        "key": "home_health",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Home Health",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Home Health: MD Signed Order Attached?",
+        "key": "home_health_md_order",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "Home Health: Nursing Assessment Attached?",
+        "key": "home_health_nursing_assessment",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "DME",
+        "key": "dme",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "DME",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "DME: MD Signed Order Attached?",
+        "key": "dme_md_order",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      },
+      {
+        "label": "DME: Title 19 Certification Attached?",
+        "key": "dme_title19",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "options": [
+          {
+            "label": "Yes",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          },
+          {
+            "label": "No",
+            "checked": false,
+            "confidence": null,
+            "method": null,
+            "bbox": null
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "title": "Services Requested",
+        "section": "Section V — Services Requested and Supporting Diagnoses",
+        "page": 1,
+        "headers": [
+          "Planned Service or Procedure",
+          "Code",
+          "Start Date",
+          "End Date",
+          "Diagnosis Description",
+          "ICD Code"
+        ],
+        "rows": [
+          [
+            "Ablation, percutaneous,",
+            "0441T",
+            "10/14/2023",
+            "10/17/2023",
+            "Chronic prostatitis",
+            "N41.1"
+          ],
+          [
+            "Assessment of",
+            "83664",
+            "04/30/2023",
+            "04/30/2023",
+            "Unspecified fracture",
+            "S52.309"
+          ],
+          [
+            "Resection of",
+            "48105",
+            "03/24/2022",
+            "03/26/2022",
+            "Jumping or",
+            "W16.822A"
+          ]
+        ],
+        "column_types": [
+          "text",
+          "code",
+          "date",
+          "date",
+          "text",
+          "code"
+        ]
+      }
+    ],
+    "text_blocks": []
+  },
+  "typed": {
+    "form_type": "tx_prior_auth",
+    "submission": {
+      "issuer_name": null,
+      "date": "10/14/2023"
+    },
+    "general": {
+      "review_type": [
+        "Non-Urgent"
+      ],
+      "clinical_reason_for_urgency": null,
+      "request_type": [
+        "Initial Request"
+      ],
+      "prev_auth_number": null
+    },
+    "patient": {
+      "name": "Samantha Ballard",
+      "phone": "(268)-368-9916",
+      "dob": "03/07/1959",
+      "sex": [
+        "Male"
+      ],
+      "subscriber_name": null,
+      "member_id": "14893",
+      "group_number": null
+    },
+    "requesting_provider": {
+      "name": "Barbara Little",
+      "npi": "4581821538",
+      "specialty": null,
+      "phone": "(597)-662-5140",
+      "fax": "(939)-434-2723",
+      "contact_name": "Michelle Allen",
+      "contact_phone": "(980)-022-9827",
+      "signature_and_date": null
+    },
+    "service_provider": {
+      "name": "Heather Lucero",
+      "npi": "1459622036",
+      "specialty": null,
+      "phone": "(269)-923-5779"
+    },
+    "pcp": {
+      "name": "Mark Oconnor",
+      "phone": "(649)-958-1798",
+      "fax": "(091)-843-3243"
+    },
+    "services": {
+      "icd_version": "10",
+      "lines": [
+        {
+          "service": "Ablation, percutaneous,",
+          "code": "0441T",
+          "start_date": "10/14/2023",
+          "end_date": "10/17/2023",
+          "diagnosis": "Chronic prostatitis",
+          "icd_code": "N41.1"
+        },
+        {
+          "service": "Assessment of",
+          "code": "83664",
+          "start_date": "04/30/2023",
+          "end_date": "04/30/2023",
+          "diagnosis": "Unspecified fracture",
+          "icd_code": "S52.309"
+        },
+        {
+          "service": "Resection of",
+          "code": "48105",
+          "start_date": "03/24/2022",
+          "end_date": "03/26/2022",
+          "diagnosis": "Jumping or",
+          "icd_code": "W16.822A"
+        }
+      ],
+      "setting": [
+        "Outpatient"
+      ],
+      "setting_other": null,
+      "therapy": {
+        "types": [
+          "Cardiac Rehab"
+        ],
+        "sessions": "7",
+        "duration": "2 weeks",
+        "frequency": null,
+        "other": null
+      },
+      "home_health": {
+        "requested": false,
+        "md_order_attached": [],
+        "nursing_assessment_attached": [],
+        "visits": null,
+        "duration": null,
+        "frequency": null,
+        "other": null
+      },
+      "dme": {
+        "requested": false,
+        "md_order_attached": [],
+        "title19_attached": [],
+        "equipment": null,
+        "duration": null
+      }
+    },
+    "facility_address": "68443 Bauer Turnpike Apt. Texas 45289"
+  },
+  "flags": []
+}

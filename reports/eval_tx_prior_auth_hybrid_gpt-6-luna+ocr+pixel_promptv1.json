@@ -1,0 +1,127 @@
+{
+  "dataset": "tx_prior_auth",
+  "reader": "hybrid",
+  "model": "gpt-6-luna+ocr+pixel",
+  "documents": 11,
+  "missing": [],
+  "summary": {
+    "all_fields": {
+      "correct": 694,
+      "total": 695,
+      "accuracy": 0.9986
+    },
+    "filled_fields": {
+      "correct": 442,
+      "total": 443,
+      "accuracy": 0.9977
+    },
+    "empty_fields_left_empty": {
+      "correct": 252,
+      "total": 252,
+      "accuracy": 1.0
+    },
+    "documents_perfect": {
+      "correct": 10,
+      "total": 11,
+      "accuracy": 0.9091
+    },
+    "errors_flagged_for_review": {
+      "correct": 1,
+      "total": 1,
+      "accuracy": 1.0
+    },
+    "form_type_detected": {
+      "correct": 11,
+      "total": 11,
+      "accuracy": 1.0
+    },
+    "universal": {
+      "pairs_found": {
+        "correct": 432,
+        "total": 443,
+        "accuracy": 0.9752
+      },
+      "pairs_exact": {
+        "correct": 431,
+        "total": 443,
+        "accuracy": 0.9729
+      }
+    }
+  },
+  "by_kind": {
+    "address": {
+      "correct": 11,
+      "total": 11,
+      "accuracy": 1.0
+    },
+    "checkbox": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0
+    },
+    "date": {
+      "correct": 22,
+      "total": 22,
+      "accuracy": 1.0
+    },
+    "id": {
+      "correct": 22,
+      "total": 22,
+      "accuracy": 1.0
+    },
+    "name": {
+      "correct": 55,
+      "total": 55,
+      "accuracy": 1.0
+    },
+    "npi": {
+      "correct": 22,
+      "total": 22,
+      "accuracy": 1.0
+    },
+    "number": {
+      "correct": 11,
+      "total": 11,
+      "accuracy": 1.0
+    },
+    "phone": {
+      "correct": 77,
+      "total": 77,
+      "accuracy": 1.0
+    },
+    "table:code": {
+      "correct": 52,
+      "total": 52,
+      "accuracy": 1.0
+    },
+    "table:date": {
+      "correct": 52,
+      "total": 52,
+      "accuracy": 1.0
+    },
+    "table:text": {
+      "correct": 51,
+      "total": 52,
+      "accuracy": 0.9808
+    },
+    "text": {
+      "correct": 12,
+      "total": 12,
+      "accuracy": 1.0
+    }
+  },
+  "errors": [
+    {
+      "doc_id": "0a18d138-5f03-46dd-9cb8-d10b486a10fe_TX_page_1",
+      "path": "services.lines[1].service",
+      "kind": "table:text",
+      "expected": "Surgical laparascopy",
+      "predicted": "Surgical laparoscopy",
+      "correct": false,
+      "expected_empty": false,
+      "flagged": true
+    }
+  ],
+  "cost_usd": 0.0944,
+  "seconds": 942.9
+}

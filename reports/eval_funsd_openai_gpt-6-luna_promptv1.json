@@ -1,0 +1,1167 @@
+{
+  "dataset": "funsd",
+  "reader": "openai",
+  "model": "gpt-6-luna",
+  "documents": 50,
+  "missing": [],
+  "summary": {
+    "pairs_found": {
+      "correct": 709,
+      "total": 836,
+      "accuracy": 0.8481
+    },
+    "pairs_exact": {
+      "correct": 672,
+      "total": 836,
+      "accuracy": 0.8038
+    }
+  },
+  "by_kind": {},
+  "errors": [
+    {
+      "doc_id": "82092117",
+      "label": "NOTE:",
+      "expected": "THIS MESSAGE IS INTENDED ONLY FOR THE USE OF THE INDIVIDUAL OR ENTITY TO WHOM IT IS ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED. CONFIDENTIAL, AND EXEMPT FROM DISCLOSURE UNDER APPLICABLE LAW. If the reader of this message is not the intended recipient of the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution, copying, or conveying of this communication in any manner is strictly prohibited. If you have received this comunication in error, please notify us immediately by telephone and return the original message to us at the address below via the U. S. Postal Service. Thank you for your cooperation.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "DIVISION:",
+      "expected": "Portland # REPS: 6",
+      "matched_label": "DIVISION:",
+      "matched_value": "Portland",
+      "value_similarity": 0.762,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "DIVISION:",
+      "expected": "Boise # REPS: 2. 5",
+      "matched_label": "DIVISION:",
+      "matched_value": "Boise",
+      "value_similarity": 0.625,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "DIVISION:",
+      "expected": "Eugene # REPS: 5",
+      "matched_label": "DIVISION:",
+      "matched_value": "Eugene",
+      "value_similarity": 0.706,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "REGION:",
+      "expected": "(ONLY IF PARTIAL REGION CONTINUE WITH DIVISION (S) SCOPE)",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "DIVISION:",
+      "expected": "Seattle South # REPS: 7",
+      "matched_label": "DIVISION:",
+      "matched_value": "Seattle South",
+      "value_similarity": 0.828,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "DIVISION:",
+      "expected": "Seattle North # REPS: 4",
+      "matched_label": "DIVISION:",
+      "matched_value": "Seattle North",
+      "value_similarity": 0.828,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "DIVISION:",
+      "expected": "Helena # REPS: 4",
+      "matched_label": "DIVISION:",
+      "matched_value": "Helena",
+      "value_similarity": 0.706,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "105 / 5",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "61 / 3",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "20 / 2",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "125 / 5",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "77 / 1",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "106 / 4",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82200067_0069",
+      "label": "VOLUME",
+      "expected": "600 / 7",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82250337_0338",
+      "label": "PRICE POINT:",
+      "expected": "FULLS $ P/ V $",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82251504",
+      "label": "cc:",
+      "expected": "D. O. S.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82251504",
+      "label": "Chains:",
+      "expected": "Payment\". was not place. The chains where were using the \"Flex Payment\" system we have not been las successful. The P. O. S. requirements of the P- 1 Plan with Oil Companies is difficult to obtain.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82251504",
+      "label": "Distribution by/ to:",
+      "expected": "DM to RSM 1st of Month RSM to R W. C. 10th",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82251504",
+      "label": "Comment on the assembly of displays and",
+      "expected": "The displays are easily assembled and durable. Some questions have been raised conceming the inability to be flush with the counter and/ or against the register. As well as the ability to place this or the Back Bar if the settlement goes through",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82251504",
+      "label": "application of shields:",
+      "expected": "The displays are easily assembled and durable. Some questions have been raised conceming the inability to be flush with the counter and/ or against the register. As well as the ability to place this or the Back Bar if the settlement goes through",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253058_3059",
+      "label": "PRICE POINT:",
+      "expected": "FULL $ 11.89 P/ V $ (Indicate Distributor's Cost Per Carton)",
+      "matched_label": "PRICE POINT: FULL $",
+      "matched_value": "11.89",
+      "value_similarity": 0.17,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82253362_3364",
+      "label": "IND/ LOR VOLUME",
+      "expected": "?",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82254765",
+      "label": "DATE FORWARDED TO PROMOTION SERVICES:",
+      "expected": "zbulan",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82562350",
+      "label": "Telephone:",
+      "expected": "(952) 694-2238",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82573104",
+      "label": "Room:",
+      "expected": "803E // Pages (including cover)",
+      "matched_label": "Room:",
+      "matched_value": "803E",
+      "value_similarity": 0.296,
+      "found": false
+    },
+    {
+      "doc_id": "82837252",
+      "label": "cc:",
+      "expected": "A. H. Tisch R. H. Orcutt M. A. Peterson T. H. Mau L. Gordon J. P. Mastandrea",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82837252",
+      "label": "cc:",
+      "expected": "G. Telford F. J. Schultz A. W. Spears N. P. Ruffalo T. Achey P. J. McCann A. J. Giacolo",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "82837252",
+      "label": "cc:",
+      "expected": "J. J. Tatulli L. H. Kersh J. R. Slater S. T. Jones R S. Goldbrenner E. R. Harrow",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "83553333_3334",
+      "label": "Date",
+      "expected": "1999",
+      "matched_label": "Date",
+      "matched_value": "November 12, 1999",
+      "value_similarity": 0.444,
+      "found": false
+    },
+    {
+      "doc_id": "83553333_3334",
+      "label": "Fax Transmittal",
+      "expected": "450 Lexington Avenue New York, NY 10017 212- 450- 4000",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "83553333_3334",
+      "label": "Recipient Phone Number",
+      "expected": "843- 720 9000",
+      "matched_label": "Recipient Phone Number",
+      "matched_value": "843-543-9000",
+      "value_similarity": 0.7,
+      "found": false
+    },
+    {
+      "doc_id": "83553333_3334",
+      "label": "Confidentiality Note",
+      "expected": "This only for the person or entity may besi pavilegedal ",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "83553333_3334",
+      "label": "Confidentiality Note",
+      "expected": "of otherwis protected from disclosos. Disscnlation, distribution popying of the facile the information herein by anyone other than the poupil, waployee responsible for delivering the message the prohibited. You thisfacsimile in error please notify as immediately by telephone and return the facsimile by mail.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "83573282",
+      "label": "No. of Pages",
+      "expected": "37 (including this page)",
+      "matched_label": "No. of Pages",
+      "matched_value": "37",
+      "value_similarity": 0.19,
+      "found": false
+    },
+    {
+      "doc_id": "83624198",
+      "label": "Tel",
+      "expected": "202 785 9700",
+      "matched_label": "DATE:",
+      "matched_value": "February 25, 1998",
+      "value_similarity": 0.167,
+      "found": false
+    },
+    {
+      "doc_id": "83624198",
+      "label": "Fax",
+      "expected": "202 -887 -0589",
+      "matched_label": "FAX NUMBER:",
+      "matched_value": "910/335-7707",
+      "value_similarity": 0.3,
+      "found": false
+    },
+    {
+      "doc_id": "83641919_1921",
+      "label": "Number of Stores",
+      "expected": "1818",
+      "matched_label": "Number of Stores",
+      "matched_value": "18",
+      "value_similarity": 0.667,
+      "found": false
+    },
+    {
+      "doc_id": "83641919_1921",
+      "label": "Name of Account",
+      "expected": "Emra",
+      "matched_label": "Name of Account",
+      "matched_value": "Emro",
+      "value_similarity": 0.75,
+      "found": false
+    },
+    {
+      "doc_id": "83772145",
+      "label": "Special Instructions:",
+      "expected": "If you experience any problems, please call extension 21000",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "83996357",
+      "label": "CC:",
+      "expected": "V. LOSITO M. TAHMASEB G. BAROODY L. STEVENS B. VON DER LIPPE D. Risling",
+      "matched_label": "CC:",
+      "matched_value": "V. LOSITO G. BAROODY B. VON DER LIPPE M. TAHMASEB L. STEVENS D. Brisling",
+      "value_similarity": 0.667,
+      "found": false
+    },
+    {
+      "doc_id": "83996357",
+      "label": "REQUIREMENTS",
+      "expected": "REDEMPTION RESULTS",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "83996357",
+      "label": "JOB#",
+      "expected": "594",
+      "matched_label": "JOB #",
+      "matched_value": "834",
+      "value_similarity": 0.333,
+      "found": false
+    },
+    {
+      "doc_id": "85240939",
+      "label": "CHECK ONE:",
+      "expected": "Please reserve a room for me at the Sheraton- Carlton",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "85240939",
+      "label": "CHECK ONE:",
+      "expected": "X I will my own housing arrangements.",
+      "matched_label": "CHECK ONE: I will make my own housing arrangements.",
+      "matched_value": "x",
+      "value_similarity": 0.065,
+      "found": false
+    },
+    {
+      "doc_id": "85240939",
+      "label": "Any questions?",
+      "expected": "Call Connie Drath or Carol Musgrave at 800/424- 9876.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86075409_5410",
+      "label": "Circulation(#)",
+      "expected": "APPROX 600. 000 AR. AZ.A K CA CO FL ID IA. CT, ME, MASS, MN, MT, NE,",
+      "matched_label": "Circulation (#)",
+      "matched_value": "APPROX. 600,000",
+      "value_similarity": 0.444,
+      "found": false
+    },
+    {
+      "doc_id": "86075409_5410",
+      "label": "Don Kisling",
+      "expected": "S. Tesh C. Hill",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86075409_5410",
+      "label": "Coupon Value",
+      "expected": "NV, NM, NY ND, DK, OR, RL, SD, WA, DC, WY $1. 50 OFF PACK",
+      "matched_label": "Coupon Value",
+      "matched_value": "$1.50 OFF",
+      "value_similarity": 0.316,
+      "found": false
+    },
+    {
+      "doc_id": "86075409_5410",
+      "label": "Pack and/ or Carton?",
+      "expected": "NV, NM, NY ND, DK, OR, RL, SD, WA, DC, WY $1. 50 OFF PACK",
+      "matched_label": "Pack and / or Carton?",
+      "matched_value": "PACK",
+      "value_similarity": 0.222,
+      "found": false
+    },
+    {
+      "doc_id": "86230203_0206",
+      "label": "NAME OF ACCOUNT",
+      "expected": "Litco",
+      "matched_label": "NAME OF ACCOUNT",
+      "matched_value": "Lite",
+      "value_similarity": 0.667,
+      "found": false
+    },
+    {
+      "doc_id": "86230203_0206",
+      "label": "NAME OF ACCOUNT",
+      "expected": "Seyle",
+      "matched_label": "NAME OF ACCOUNT",
+      "matched_value": "Sayo Oil",
+      "value_similarity": 0.5,
+      "found": false
+    },
+    {
+      "doc_id": "86230203_0206",
+      "label": "NAME OF ACCOUNT",
+      "expected": "Dantzlen",
+      "matched_label": "NAME OF ACCOUNT",
+      "matched_value": "Dantler",
+      "value_similarity": 0.8,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "BRAND",
+      "expected": "STYLE LIGHT 100'S",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "BRAND",
+      "expected": "STYLE LIGHT MENTHOL 100'S",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "BRAND",
+      "expected": "STYLE LIGHT BOX 100'S",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "BRAND",
+      "expected": "STYLE MEN. LIGHT BOX 100'S",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "BRAND",
+      "expected": "STYLE SLIM LIGHT 100's",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "BRAND",
+      "expected": "STYLE SLIM MEN. LT. 100's",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "NOTE:",
+      "expected": "REPORT STYLE INVENTORY ONLY. SUBMIT REPORT ONLY IF STYLE IS STILL ON HAND IN THIS ACCOUNT.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86244113",
+      "label": "CC:",
+      "expected": "REGIONAL SALES MANAGER, ALL DIVISIONS SERVICED BY THIS ACCOUNT.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86263525",
+      "label": "INDEX BINDERS CONSOLIDATED BY:",
+      "expected": "N /A",
+      "matched_label": "INDEX BINDER RE-LABELED BY:",
+      "matched_value": "Mario Mallery",
+      "value_similarity": 0.143,
+      "found": false
+    },
+    {
+      "doc_id": "86263525",
+      "label": "RETENTION & RECOMMENDATION FILE REORGANIZED AND RE- LABELED BY:",
+      "expected": "/A",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86263525",
+      "label": "BOXES CREATED FOR HARD COPY PERMANENT RETENTION RECORDS BY:",
+      "expected": "N",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86263525",
+      "label": "BOXES CREATED FOR HARD COPY PERMANENT RETENTION RECORDS BY:",
+      "expected": "/A",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86328049_8050",
+      "label": "Telecopier Nos.",
+      "expected": "(804) 788- 8218 (804) 788- 8219 (804) 788- 8669",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87086073",
+      "label": "STRUCTURE",
+      "expected": "CH3CH2O OH",
+      "matched_label": "STRUCTURE",
+      "matched_value": "Chemical structure drawing: aromatic ring with CH\u2083CH\u2082O, OH, and a three-carbon side chain.",
+      "value_similarity": 0.175,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "on",
+      "expected": "2/15/90",
+      "matched_label": "Air Dilution",
+      "matched_value": "13.0 %",
+      "value_similarity": 0.5,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "CASTING",
+      "expected": "None",
+      "matched_label": "Markings",
+      "matched_value": "Sample No. on each Carton",
+      "value_similarity": 0.333,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "MENIHOL",
+      "expected": "None",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Kind",
+      "expected": "OG Lt.",
+      "matched_label": "Kind",
+      "matched_value": "3.3/35,000 OG Lt.",
+      "value_similarity": 0.533,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "FINAL FLAVOR",
+      "expected": "None",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "3.3/ 35,000",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "OG Lt.",
+      "matched_label": "Filter Production",
+      "matched_value": "MG.",
+      "value_similarity": 0.333,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "108 mm",
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.444,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "400 mm",
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.444,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "24.45 mm",
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.6,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "75.3 30g / 100",
+      "matched_label": "Filter Production",
+      "matched_value": "MG.",
+      "value_similarity": 0.182,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "7 % Kent",
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.222,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "84- 52- 28",
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.2,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section A",
+      "expected": "655 ",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Section B",
+      "expected": "mm",
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.667,
+      "found": false
+    },
+    {
+      "doc_id": "87093315_87093318",
+      "label": "Filter Production",
+      "expected": "MFG.",
+      "matched_label": "Filter Production",
+      "matched_value": "MG.",
+      "value_similarity": 0.8,
+      "found": false
+    },
+    {
+      "doc_id": "87125460",
+      "label": "APPROVALS",
+      "expected": "8/ 7/ 87",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87125460",
+      "label": "APPROVALS",
+      "expected": "8/ 7/ 87",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87137840",
+      "label": "DATE:",
+      "expected": "03 /02 /90",
+      "matched_label": "DATE:",
+      "matched_value": "03/01/90",
+      "value_similarity": 0.833,
+      "found": false
+    },
+    {
+      "doc_id": "87137840",
+      "label": "CONDITION OF SHIPMENT:",
+      "expected": "GOOD",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87147607",
+      "label": "TERMS",
+      "expected": "27407 NET 15 F. O. B. N/A VIA N/A",
+      "matched_label": "TERMS",
+      "matched_value": "NET 15",
+      "value_similarity": 0.4,
+      "found": false
+    },
+    {
+      "doc_id": "87147607",
+      "label": "Prev.",
+      "expected": "or Recommended Supplier",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87332450",
+      "label": "Telephone:",
+      "expected": "(615) ) 638- 5532",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87332450",
+      "label": "FAX:",
+      "expected": "(615) ) 638- 6458",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87332450",
+      "label": "Advance Registration Fee:",
+      "expected": "$135 00",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87332450",
+      "label": "Late Registration Fee",
+      "expected": "$150 00",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87332450",
+      "label": "Ground Transportation (round trip)",
+      "expected": "$ 30. 00",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87332450",
+      "label": "Mail to:",
+      "expected": "Dr. Phil P. Hunter U. T. Tobacco Experiment Station Route 5 Box 113 Greeneville, TN 37743",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87428306",
+      "label": "SOLUBILITY",
+      "expected": "MUTAGENICITY SOLVENTS A221 is soluble EtOH at 0.2 g/ ml, with stirring, at room temperature. Reference BC30- 88.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87528321",
+      "label": "Date",
+      "expected": "B-17-88",
+      "matched_label": "Date Prepared",
+      "matched_value": "8-17-88",
+      "value_similarity": 0.8,
+      "found": false
+    },
+    {
+      "doc_id": "87528321",
+      "label": "Change",
+      "expected": "8410059",
+      "matched_label": "Change Order Number",
+      "matched_value": "866C059",
+      "value_similarity": 0.571,
+      "found": false
+    },
+    {
+      "doc_id": "87528321",
+      "label": "Glass Mat:",
+      "expected": "Delete C- glass from Iten description. Change glass softening point to 756 + / - 10 degrees from 750. Change rolls per pallet to 2 from 1.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87528321",
+      "label": "slit Glass Mat:",
+      "expected": "Delete C- glass from item description Change bobbins per stack to 47 from 45. Add outside diameter specs of 30.0, 26.0 - 31.0 inches.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87528321",
+      "label": "Proposed Effective Date",
+      "expected": "9/8/88",
+      "matched_label": "Proposed Effective Date:",
+      "matched_value": "9/1/88",
+      "value_similarity": 0.75,
+      "found": false
+    },
+    {
+      "doc_id": "87528380",
+      "label": "SIZE:",
+      "expected": "171/4 x 231/2 \"",
+      "matched_label": "SIZE:",
+      "matched_value": "17\u00bd x 23\u00bd\"",
+      "value_similarity": 0.714,
+      "found": false
+    },
+    {
+      "doc_id": "87594142_87594144",
+      "label": "1. PRINCIPAL INVESTIGATOR NAME, TITLE, TELEPHONE # AND MAILING ADDRESS.",
+      "expected": "Steven R. Kleeberger, Ph. D.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "89856243",
+      "label": "Incidence",
+      "expected": "-",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "89856243",
+      "label": "Topline",
+      "expected": "2 wks from start of fid.",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "89856243",
+      "label": "Research Limitations",
+      "expected": "If 75% of Triumph smokers mention harshness we could consider it a 50- 75% problem If of Triumph smokers mention \"harshness\" we could it a look consider possible problem at other areas).",
+      "matched_label": "Research Firm",
+      "matched_value": "The Data Group, Inc.",
+      "value_similarity": 0.049,
+      "found": false
+    },
+    {
+      "doc_id": "89856243",
+      "label": "Research Limitations",
+      "expected": "If below 50% of Triumph smokers mention \"harshness\" we could consider it at a problem",
+      "matched_label": "Research Firm",
+      "matched_value": "The Data Group, Inc.",
+      "value_similarity": 0.169,
+      "found": false
+    },
+    {
+      "doc_id": "89856243",
+      "label": "Cost Estimate + - 10% Contingency Final Report Inc.",
+      "expected": "$ 2.250",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "*Note:",
+      "expected": "If this expenditure is made to influence a local ballot question, a copy of this form should be filed with the city or town clerk or election commission.",
+      "matched_label": "Date",
+      "matched_value": "March 30, 1993",
+      "value_similarity": 0.059,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "19",
+      "expected": "92",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "Address",
+      "expected": "P. O. B03 5979 Boston, MA 0212",
+      "matched_label": "Address",
+      "matched_value": "P.O. Box 5979, Boston, MA 02114",
+      "value_similarity": 0.837,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "File with:",
+      "expected": "Director, Office of Campaign & Political Finance One Ashburton Place, Boston, MA 02108",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "4. Question No.",
+      "expected": "1 relating to Tobacco Excise Tax Increase",
+      "matched_label": "4. Question No.",
+      "matched_value": "1",
+      "value_similarity": 0.056,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "submitted to the voters on",
+      "expected": "November",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "submitted to the voters on",
+      "expected": "3,",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "submitted to the voters on",
+      "expected": "1992",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "91814768_91814769",
+      "label": "on the",
+      "expected": "Massachusetts",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "92380595",
+      "label": "We enclose the following documents which were served upon:",
+      "expected": "UNITED STATES CORPORATION COMPANY IN TEXAS",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "92380595",
+      "label": "TITLE OF ACTION:",
+      "expected": "WEBSTER CRECC",
+      "matched_label": "TITLE OF ACTION:",
+      "matched_value": "WEBSTER GREGG",
+      "value_similarity": 0.75,
+      "found": false
+    },
+    {
+      "doc_id": "93106788",
+      "label": "ATTN:",
+      "expected": "JOYCE WINSTON",
+      "matched_label": "CAPTION:",
+      "matched_value": "FOUNTAIN COUPLE",
+      "value_similarity": 0.308,
+      "found": false
+    },
+    {
+      "doc_id": "93106788",
+      "label": "SPACE:",
+      "expected": "P5CE",
+      "matched_label": "SPACE:",
+      "matched_value": "P5CB",
+      "value_similarity": 0.75,
+      "found": false
+    }
+  ],
+  "cost_usd": 0.1182,
+  "seconds": 1226.2
+}
