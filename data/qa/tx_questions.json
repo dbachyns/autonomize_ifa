@@ -24,7 +24,7 @@
     {"id": "s11", "kind": "single", "doc": "0a01f77b", "question": "Which health plan (issuer) is this form addressed to?",
      "expect": [["molina"]]},
     {"id": "s12", "kind": "single", "doc": "0a01f77b", "question": "What is the patient's email address?",
-     "expect": [["no email", "not", "doesn't", "does not", "no field"]], "forbid": ["@"]},
+     "expect": [["no email", "no patient email", "not", "doesn't", "does not", "no field", "none"]], "forbid": ["@"]},
     {"id": "s13", "kind": "single", "doc": "0a18d138", "question": "Does anything on this form look wrong or need to be double-checked?",
      "expect": [["npi"], ["urgen"], ["400 days", "after the request", "laparascopy"]]},
 

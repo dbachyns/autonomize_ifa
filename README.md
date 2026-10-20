@@ -36,7 +36,7 @@ pip install -r requirements.txt
 **No key needed:**
 
 ```bash
-pytest                                        # 126 tests, ~30 s, no API calls
+pytest                                        # 127 tests, ~30 s, no API calls
 python -m form_agent eval tx --reader hybrid  # extraction vs. hand-labeled truth: 99.9% of 695 fields
 streamlit run app/streamlit_app.py            # web UI → 📋 Forms: scans, confidence colours, review
 ```
@@ -136,7 +136,7 @@ python -m form_agent chat                                                       
 # 4. Evaluate.
 python -m form_agent eval tx --reader hybrid      # extraction vs. hand-labeled ground truth
 python -m form_agent eval qa                      # the agent on 30 questions with known answers
-pytest                                            # 126 unit tests, no API calls
+pytest                                            # 127 unit tests, no API calls
 ```
 
 Document ids can be shortened to their first 8 characters. `--trace` prints the tool calls the agent made.
