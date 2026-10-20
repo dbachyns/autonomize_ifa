@@ -3,9 +3,9 @@
   "source_file": "forms/0a18d138-5f03-46dd-9cb8-d10b486a10fe_TX_page_1.png",
   "run": {
     "reader": "reviewed",
-    "model": "gpt-6-luna+ocr+pixel + human review",
+    "model": "gpt-6-luna+ocr+pixel + human review + human review",
     "prompt_version": "v2",
-    "created_at": "2026-10-20T05:30:40.861960Z",
+    "created_at": "2026-10-20T17:45:38.996649Z",
     "seconds": null,
     "cost_usd": null
   },
@@ -1078,6 +1078,6 @@
       "typed:services.lines.1.service"
     ],
     "acknowledged": [],
-    "updated_at": "2026-10-20T05:30:40.861602Z"
+    "updated_at": "2026-10-20T17:45:38.996327Z"
   }
 }
