@@ -254,3 +254,17 @@ def test_contact_block_confirmed_by_its_numbers():
     v = build_view(load_record(CACHE / doc / "hybrid.json"), load_layout(CACHE, doc))
     fax = next(i for i in v.items if i.label == "Fax:" and i.value and "833-994-1960" in i.value)
     assert fax.level == "high" and "numbers" in fax.reading
+
+
+def test_reader_not_found_flag_does_not_make_a_value_red():
+    # The hybrid reader flags values its OCR pass couldn't find; that means "unconfirmed" (medium), not "wrong".
+    from form_agent.layout import PageLayout
+    from form_agent.ocr import OCRLine
+    from form_agent.schema import Flag
+
+    rec = FormRecord(doc_id="x", source_file="x.png", run=RunInfo(reader="hybrid"), universal=UniversalForm(
+        fields=[FormField(label="Date Received:", key="date_received", value="12/14/89", value_type="date")]),
+        flags=[Flag(rule="ocr_not_found", severity="info", message="not found", fields=["date_received"])])
+    layout = [PageLayout(1, (800, 1000), [OCRLine("Date Received:", 50, 900, 200, 920, 0.9)], [], [])]
+    item, = build_view(rec, layout).items
+    assert item.level == "medium"

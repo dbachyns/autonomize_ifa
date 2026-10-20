@@ -524,9 +524,9 @@ def page_upload() -> None:
         t = tools()
         short = t.short.get(doc, doc)
         view = t.view(short)
-        levels = [i.level for i in view.items]
+        attention = sum(needs_attention(view, i) for i in view.items)
         st.success(f"**{short}** is ready: {view.record.form_type} · {sum(1 for i in view.items if i.value)} values · "
-                   f"{len(view.flags)} flags · {levels.count('low')} uncertain")
+                   f"{len(view.flags)} flags · {attention} need attention")
         st.button("Open it", type="primary", on_click=open_form, args=(short,))
 
 

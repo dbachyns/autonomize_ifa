@@ -207,8 +207,8 @@ def _locate_and_score(view: DocView) -> None:
         for f in reader_flags:
             if f.rule == "checkbox_corrected":
                 item.reasons.insert(0, "Corrected from the checkbox ink: the vision model misread a stray mark")
-            elif f.rule == "ocr_not_found" and item.boxes:
-                continue  # found now (e.g. text wrapped over several lines), so the old flag doesn't apply
+            elif f.rule == "ocr_not_found":
+                continue  # the OCR comparison above already decided: found now, or "not confirmed" (medium)
             else:
                 item.confidence = min(item.confidence or 0.5, 0.5)
                 if f.rule == "checkbox_uncertain":

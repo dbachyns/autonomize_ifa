@@ -106,7 +106,10 @@ streamlit run app/streamlit_app.py
 | **⬆️ Upload** | Drop in a PDF or image of any form. It is read, verified, validated, located on the page and indexed, then it opens in *Forms*. |
 
 The sidebar switches between the Texas collection and the FUNSD collection. Reviews are saved as
-`data/cache/<doc_id>/reviewed.json`, next to the machine readings, which are never modified.
+`data/cache/<doc_id>/reviewed.json`, next to the machine readings, which are never modified. The repo
+includes one sample review, on form 0a18d138, so the agent answers from the reviewed values there. Delete that
+`reviewed.json` and run `python -m form_agent index` to see the pure machine reading, including the 🔴
+*laparascopy* catch described below.
 
 ## Run it step by step
 
