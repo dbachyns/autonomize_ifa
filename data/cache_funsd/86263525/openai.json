@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:34:29.593951Z",
-    "seconds": 24.31,
-    "cost_usd": 0.0013742000000000001
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:50.828461Z",
+    "seconds": 19.21,
+    "cost_usd": 0.0010977
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -30,7 +30,7 @@
         "label": "COST CENTER NUMBER",
         "key": "cost_center",
         "value": "141",
-        "value_type": "number",
+        "value_type": "id",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -62,7 +62,7 @@
       {
         "label": "INDEX BINDER RE-LABELED BY:",
         "key": "index_binder_re_labeled_by",
-        "value": "Connie Mallory",
+        "value": "[signed] Kevin Mallery",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -106,7 +106,7 @@
       {
         "label": "RECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:",
         "key": "records_retention_schedule_placed_in_index_binder_and_in_file_by",
-        "value": "Wayne Baughan",
+        "value": "[signed] Wayne Baughan",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -150,7 +150,7 @@
       {
         "label": "RECORDS TRANSFER INVENTORY FORMS UPDATED BY:",
         "key": "records_transfer_inventory_forms_updated_by",
-        "value": "Wayne Baughan",
+        "value": "[signed] Wayne Baughan",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -172,8 +172,17 @@
     ],
     "checkboxes": [],
     "tables": [],
-    "text_blocks": []
+    "text_blocks": [
+      {
+        "text": "205119008",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

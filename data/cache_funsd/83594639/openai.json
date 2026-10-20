@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:11.317103Z",
-    "seconds": 19.27,
-    "cost_usd": 0.0
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:42.618608Z",
+    "seconds": 20.53,
+    "cost_usd": 0.0010322999999999999
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -80,6 +80,39 @@
         "page": 1,
         "confidence": null,
         "bbox": null
+      },
+      {
+        "label": "Roper Starch Worldwide Inc.",
+        "key": "roper_starch_worldwide_inc",
+        "value": "205 East 42nd Street, New York NY 10017",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Tel",
+        "key": "phone",
+        "value": "212 959 0700",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax",
+        "key": "fax",
+        "value": "212 867 7008",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
       }
     ],
     "checkboxes": [],
@@ -87,5 +120,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

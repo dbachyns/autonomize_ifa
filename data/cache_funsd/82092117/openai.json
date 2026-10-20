@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:31:22.531889Z",
-    "seconds": 39.33,
-    "cost_usd": 0.0008698
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:22:45.624889Z",
+    "seconds": 33.96,
+    "cost_usd": 0.0014812999999999998
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -15,6 +15,17 @@
     "title": "CONFIDENTIAL FACSIMILE TRANSMISSION COVER SHEET",
     "page_count": 1,
     "fields": [
+      {
+        "label": "Attorney General",
+        "key": "attorney_general",
+        "value": "Betty D. Montgomery",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
       {
         "label": "FAX NO.",
         "key": "fax",
@@ -106,8 +117,17 @@
     ],
     "checkboxes": [],
     "tables": [],
-    "text_blocks": []
+    "text_blocks": [
+      {
+        "text": "ATT. GEN. ADMIN. OFFICE Fax:614-466-5087    Dec 10 '98    17:46    P.01",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      }
+    ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

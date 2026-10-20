@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:31:37.342072Z",
-    "seconds": 54.14,
-    "cost_usd": 0.0021678
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:11.706173Z",
+    "seconds": 32.31,
+    "cost_usd": 0.0017513
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -52,7 +52,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -63,7 +63,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -85,7 +85,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -96,7 +96,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -118,7 +118,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -129,7 +129,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -186,7 +186,7 @@
         ]
       },
       {
-        "label": "REGION:",
+        "label": "REGION",
         "key": "region",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -208,7 +208,7 @@
         ]
       },
       {
-        "label": "DIVISION:",
+        "label": "DIVISION",
         "key": "division",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -238,89 +238,71 @@
         "headers": [
           "NAME OF ACCOUNT",
           "IND/LOR VOLUME",
-          "NO. OF STORES",
-          "NAME OF ACCOUNT",
-          "IND/LOR VOLUME",
           "NO. OF STORES"
         ],
         "rows": [
           [
             "Don & Bens",
             "26/2",
-            "20",
-            "San Nac Pac",
-            "75/2",
-            "27"
+            "20"
           ],
           [
             "Western Beverage",
             "42/2",
-            "15",
-            "ACO/Texaco",
-            "95/3",
             "15"
           ],
           [
             "Speedy Stop",
             "106/4",
-            "29",
-            "Lone Star",
-            "76/3",
-            "37"
+            "29"
           ],
           [
             "Get-N-Go",
             "62/2",
-            "44",
-            null,
-            null,
-            null
+            "44"
           ],
           [
             "Valley Shamrock",
             "78/4",
-            "17",
-            null,
-            null,
-            null
+            "17"
           ],
           [
             "Albertson's - Houston",
             "319/16",
-            "34",
-            null,
-            null,
-            null
+            "34"
           ],
           [
             "Mini Mart",
             "65/3",
-            "15",
-            null,
-            null,
-            null
+            "15"
           ],
           [
             "Neal's One Stop",
             "69/3",
-            "20",
-            null,
-            null,
-            null
+            "20"
           ],
           [
             "Shopper Mart",
             "80/4",
-            "22",
-            null,
-            null,
-            null
+            "22"
+          ],
+          [
+            "Sac N Pac",
+            "75/2",
+            "27"
+          ],
+          [
+            "ACO/Texaco",
+            "95/3",
+            "15"
+          ],
+          [
+            "Lone Star",
+            "76/3",
+            "37"
           ]
         ],
         "column_types": [
-          "name",
-          "text",
-          "number",
           "name",
           "text",
           "number"
@@ -333,73 +315,46 @@
         "headers": [
           "NAME OF ACCOUNT",
           "IND/LOR VOLUME",
-          "NO. OF STORES",
-          "NAME OF ACCOUNT",
-          "IND/LOR VOLUME",
           "NO. OF STORES"
         ],
         "rows": [
           [
             "Chevron",
             "?",
-            "115",
-            null,
-            null,
-            null
+            "115"
           ],
           [
             "Brookshire Bro.'s",
             "?",
-            "38",
-            null,
-            null,
-            null
+            "38"
           ],
           [
             "Eckerd Drugs - S. Texas",
             "?",
-            "217",
-            null,
-            null,
-            null
+            "217"
           ],
           [
             "Exxon",
             "?",
-            "38",
-            null,
-            null,
-            null
+            "38"
           ],
           [
             "Phillip's 66",
             "?",
-            "27",
-            null,
-            null,
-            null
+            "27"
           ],
           [
             "Star Enterprise",
             "?",
-            "70",
-            null,
-            null,
-            null
+            "70"
           ],
           [
             "Walgreen's",
             "?",
-            "177",
-            null,
-            null,
-            null
+            "177"
           ]
         ],
         "column_types": [
-          "name",
-          "text",
-          "number",
           "name",
           "text",
           "number"
@@ -409,5 +364,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

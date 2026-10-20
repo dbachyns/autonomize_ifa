@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:36:47.383566Z",
-    "seconds": 38.45,
-    "cost_usd": 0.0061422
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:26:10.602346Z",
+    "seconds": 30.72,
+    "cost_usd": 0.0045043999999999996
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -15,6 +15,17 @@
     "title": "REPORT OF CORPORATE TREASURER",
     "page_count": 1,
     "fields": [
+      {
+        "label": "Office Use Only",
+        "key": "office_use_only",
+        "value": null,
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
       {
         "label": "File with:",
         "key": "file_with",
@@ -38,8 +49,8 @@
         "bbox": null
       },
       {
-        "label": "Name of Treasurer",
-        "key": "name_of_treasurer",
+        "label": "1. Name of Treasurer",
+        "key": "1_name_of_treasurer",
         "value": "M. Alfred Peterson; Assistant Treasurer: Peter J. Marzullo",
         "value_type": "name",
         "source": "filled",
@@ -49,8 +60,8 @@
         "bbox": null
       },
       {
-        "label": "Name of Corporation",
-        "key": "name_of_corporation",
+        "label": "2. Name of Corporation",
+        "key": "2_name_of_corporation",
         "value": "Lorillard Tobacco Company",
         "value_type": "name",
         "source": "filled",
@@ -60,9 +71,9 @@
         "bbox": null
       },
       {
-        "label": "Address of Corporation",
-        "key": "address_of_corporation",
-        "value": "One Park Avenue New York, NY 10016-5895",
+        "label": "3. Address of Corporation",
+        "key": "3_address_of_corporation",
+        "value": "One Park Avenue, New York, NY 10016-5895",
         "value_type": "address",
         "source": "filled",
         "section": "REPORT OF CORPORATE TREASURER",
@@ -71,8 +82,8 @@
         "bbox": null
       },
       {
-        "label": "Question No.",
-        "key": "question_no",
+        "label": "4. Question No.",
+        "key": "4_question_no",
         "value": "1",
         "value_type": "number",
         "source": "filled",
@@ -82,7 +93,7 @@
         "bbox": null
       },
       {
-        "label": "relating to (Describe question briefly)",
+        "label": "relating to",
         "key": "relating_to",
         "value": "Tobacco Excise Tax Increase",
         "value_type": "text",
@@ -93,8 +104,8 @@
         "bbox": null
       },
       {
-        "label": "(Election Date)",
-        "key": null,
+        "label": "Election Date",
+        "key": "election_date",
         "value": "November 3, 1992",
         "value_type": "date",
         "source": "filled",
@@ -104,8 +115,8 @@
         "bbox": null
       },
       {
-        "label": "(Name of City/Town or State)*",
-        "key": null,
+        "label": "Name of City/Town or State*",
+        "key": "name_of_city_town_or_state",
         "value": "Massachusetts",
         "value_type": "text",
         "source": "filled",
@@ -117,21 +128,21 @@
       {
         "label": "Reporting Period Beginning",
         "key": "reporting_period_beginning",
-        "value": "October 16, 19 92",
+        "value": "October 16, 1992",
         "value_type": "date",
         "source": "filled",
-        "section": "FILL IN DATES",
+        "section": "REPORT OF CORPORATE TREASURER",
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "and Ending",
-        "key": "and_ending",
+        "label": "Ending",
+        "key": "ending",
         "value": "November 5, 1992",
         "value_type": "date",
         "source": "filled",
-        "section": "FILL IN DATES",
+        "section": "REPORT OF CORPORATE TREASURER",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -139,10 +150,10 @@
       {
         "label": "Treasurer Signature",
         "key": "treasurer_signature",
-        "value": null,
+        "value": "[signed] Peter J. Marzullo",
         "value_type": "name",
         "source": "filled",
-        "section": "FILL IN DATES",
+        "section": "REPORT OF CORPORATE TREASURER",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -153,7 +164,7 @@
         "value": "March 30, 1993",
         "value_type": "date",
         "source": "filled",
-        "section": "FILL IN DATES",
+        "section": "REPORT OF CORPORATE TREASURER",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -196,7 +207,7 @@
       {
         "label": "CHECK ONE",
         "key": "check_one",
-        "section": "Office Use Only",
+        "section": null,
         "page": 1,
         "options": [
           {
@@ -260,23 +271,16 @@
         ],
         "column_types": [
           "date",
-          "name",
+          "text",
           "address",
           "text",
           "money"
         ]
       }
     ],
-    "text_blocks": [
-      {
-        "text": "Assistant Treasurer",
-        "label": null,
-        "section": "FILL IN DATES",
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:08.869801Z",
-    "seconds": 85.67,
-    "cost_usd": 0.0018153
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:16.081501Z",
+    "seconds": 39.58,
+    "cost_usd": 0.0020373
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -127,68 +127,44 @@
         "page": 1,
         "headers": [
           "NAME OF ACCOUNT",
-          "IND/LOR VOLUME",
-          "NO. OF STORES",
-          "NAME OF ACCOUNT",
-          "IND/LOR VOLUME",
+          "IND/OR VOLUME",
           "NO. OF STORES"
         ],
         "rows": [
           [
             "M. Maskos & Sons",
             null,
-            null,
-            null,
-            null,
             null
           ],
           [
             "Pollock Candy and Cigar",
-            null,
-            null,
-            null,
             null,
             null
           ],
           [
             "McKeesport Candy Co.",
             null,
-            null,
-            null,
-            null,
             null
           ],
           [
             "Sico Serva",
             "104/22",
-            "18",
-            null,
-            null,
-            null
+            "18"
           ],
           [
             "Sheetz",
             "521/42",
-            "150",
-            null,
-            null,
-            null
+            "150"
           ],
           [
             "Thrift/Eckerd",
             "137/20",
-            "183",
-            null,
-            null,
-            null
+            "183"
           ]
         ],
         "column_types": [
-          "name",
-          "number",
-          "number",
-          "name",
-          "number",
+          "text",
+          "text",
           "number"
         ]
       },
@@ -198,84 +174,54 @@
         "page": 1,
         "headers": [
           "NAME OF ACCOUNT",
-          "IND/LOR VOLUME",
-          "NO. OF STORES",
-          "NAME OF ACCOUNT",
-          "IND/LOR VOLUME",
+          "IND/OR VOLUME",
           "NO. OF STORES"
         ],
         "rows": [
           [
             "Kroger",
             null,
-            "21",
-            null,
-            null,
-            null
+            "21"
           ],
           [
             "Rich Oil",
             null,
-            "82",
-            null,
-            null,
-            null
+            "82"
           ],
           [
             "Super America",
             null,
-            "106",
-            null,
-            null,
-            null
+            "106"
           ],
           [
             "CVS",
             null,
-            "87",
-            null,
-            null,
-            null
+            "87"
           ],
           [
             "W H Smith",
             null,
-            "5",
-            null,
-            null,
-            null
+            "5"
           ],
           [
             "7-11 318 Zon",
             null,
-            "23",
-            null,
-            null,
-            null
+            "23"
           ],
           [
             "Dairy Marts",
             null,
-            "35",
-            null,
-            null,
-            null
+            "35"
           ],
           [
             "Widman Drugs",
             null,
-            "43",
-            null,
-            null,
-            null
+            "43"
           ]
         ],
         "column_types": [
-          "name",
-          "number",
-          "number",
-          "name",
-          "number",
+          "text",
+          "text",
           "number"
         ]
       }
@@ -283,5 +229,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

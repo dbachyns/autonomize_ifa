@@ -17,7 +17,7 @@ from pydantic import BaseModel, ConfigDict
 from form_agent.normalize import VALUE_TYPES, clean, label_to_key
 from form_agent.schema import CheckboxGroup, CheckboxOption, FormField, Table, TextBlock, UniversalForm
 
-PROMPT_VERSION = "v3"
+PROMPT_VERSION = "v4"
 
 ValueType = Literal[tuple(VALUE_TYPES)]  # type: ignore[valid-type]
 
@@ -80,6 +80,10 @@ Rules:
 - Distinguish look-alike characters carefully (O vs 0, I vs 1, S vs 5, B vs 8), especially in codes and IDs.
 - Every labeled blank on the form becomes a field, even if empty: use value null for empty, blank, dashes
   ("-----"), redacted, or unreadable values. Do not invent values for empty fields.
+- Signatures: if a signature (or initials) is written on a signature line, the value is "[signed]"; if a
+  name is also printed or written legibly there, use "[signed] <name>". Use null only when the line is empty.
+- Handwriting: read handwritten characters one by one, especially digits in dates and numbers; do not copy a
+  value from a nearby field that looks similar.
 - `label` is the printed label as it appears (e.g. "Member or Medicaid ID #:"); `section` is the printed
   section heading the field sits under, or null.
 - `source`: "filled" for anything entered on the form (typed into blanks, handwritten, stamped);
@@ -115,7 +119,7 @@ def to_universal(out: LLMUniversal, page_count: int) -> UniversalForm:
         ],
         tables=[
             Table(title=t.title, section=t.section, page=t.page, headers=t.headers,
-                  column_types=t.column_types, rows=[[clean(c) for c in row] for row in t.rows])
+                  column_types=t.column_types, rows=[[clean(c) for c in row] for row in t.rows]).tidy()
             for t in out.tables
         ],
         text_blocks=[TextBlock(text=b.text, label=b.label, section=b.section, page=b.page) for b in out.text_blocks],

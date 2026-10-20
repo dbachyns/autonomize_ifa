@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:11.316774Z",
-    "seconds": 59.78,
-    "cost_usd": 0.0026811
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:08.246425Z",
+    "seconds": 28.02,
+    "cost_usd": 0.0014893
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -18,7 +18,7 @@
       {
         "label": "TO:",
         "key": "to",
-        "value": "K.A. SPARROW",
+        "value": "K A SPARROW",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -38,10 +38,10 @@
         "bbox": null
       },
       {
-        "label": "DATE TO NYO:",
-        "key": "date_to_nyo",
-        "value": "1/24/97",
-        "value_type": "date",
+        "label": "DIV. NAME/NO:",
+        "key": "div_name_no",
+        "value": "Nassau / 107",
+        "value_type": "text",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -49,10 +49,10 @@
         "bbox": null
       },
       {
-        "label": "DIV. NAME/NO:",
-        "key": "div_name_no",
-        "value": "Nassau / 107",
-        "value_type": "text",
+        "label": "DATE TO NYO:",
+        "key": "date_to_nyo",
+        "value": "1/24/97",
+        "value_type": "date",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -65,7 +65,7 @@
         "value": "H. Levinson Tradeshow",
         "value_type": "text",
         "source": "filled",
-        "section": "1997 SPECIAL EVENT REQUEST FORM",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -76,7 +76,7 @@
         "value": "3/18/97",
         "value_type": "date",
         "source": "filled",
-        "section": "1997 SPECIAL EVENT REQUEST FORM",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -87,7 +87,7 @@
         "value": "SAMPLE 10'S (400 PACKS PER CASE)",
         "value_type": "text",
         "source": "printed",
-        "section": "1997 SPECIAL EVENT REQUEST FORM",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -137,8 +137,8 @@
         "bbox": null
       },
       {
-        "label": "KENT II K.S.",
-        "key": "kent_ii_k_s",
+        "label": "KENT III K.S.",
+        "key": "kent_iii_k_s",
         "value": null,
         "value_type": "number",
         "source": "filled",
@@ -148,8 +148,8 @@
         "bbox": null
       },
       {
-        "label": "KENT II 100",
-        "key": "kent_ii_100",
+        "label": "KENT III 100",
+        "key": "kent_iii_100",
         "value": null,
         "value_type": "number",
         "source": "filled",
@@ -234,28 +234,6 @@
         "page": 1,
         "confidence": null,
         "bbox": null
-      },
-      {
-        "label": "Form identifier",
-        "key": "form_identifier",
-        "value": "REQFORM",
-        "value_type": "code",
-        "source": "printed",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Form date",
-        "key": "form_date",
-        "value": "01/17/97",
-        "value_type": "date",
-        "source": "printed",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
       }
     ],
     "checkboxes": [],
@@ -284,16 +262,9 @@
         ]
       }
     ],
-    "text_blocks": [
-      {
-        "text": "82254765",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

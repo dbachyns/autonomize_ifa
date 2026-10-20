@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:31:50.680972Z",
-    "seconds": 18.98,
-    "cost_usd": 0.0011068
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:39.773854Z",
+    "seconds": 31.83,
+    "cost_usd": 0.0016488
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -135,27 +135,222 @@
         "page": 1,
         "confidence": null,
         "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "A. H. Tisch",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "R. H. Orcutt",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "M. A. Peterson",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "T. H. Maud",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "L. Gordon",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "J. P. Mastandrea",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "G. Telford",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "F. J. Schultz",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "A. W. Spears",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "N. P. Ruffalo",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "T. L. Achey",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "P. J. McCann",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "A. J. Giacolo",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "J. J. Tatulli",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "L. H. Kersh",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "J. R. Slater",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "S. T. Jones",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "R. S. Goldbrunner",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "CC:",
+        "key": "cc",
+        "value": "E. R. Harrow",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
       }
     ],
     "checkboxes": [],
     "tables": [],
     "text_blocks": [
       {
-        "text": "A. H. Tisch\nR. H. Orcutt\nM. A. Peterson\nT. H. Maud\nL. Gordon\nJ. P. Mastandrea\nG. Telford\nF. J. Schultz\nA. W. Spears\nN. P. Ruffalo\nT. L. Achey\nP. J. McCann\nA. J. Giacolo\nJ. J. Tatulli\nL. H. Kersh\nJ. R. Slater\nS. T. Jones\nR. S. Goldbrunner\nE. R. Harrow",
-        "label": "CC:",
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
         "text": "MKR",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "82837252",
         "label": null,
         "section": null,
         "page": 1,
@@ -164,5 +359,6 @@
     ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

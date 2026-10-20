@@ -806,7 +806,7 @@
           "Start Date",
           "End Date",
           "Diagnosis Description (ICD version 10)",
-          "Code"
+          "Code (2)"
         ],
         "rows": [
           [
@@ -963,5 +963,6 @@
         "service_provider.npi"
       ]
     }
-  ]
+  ],
+  "review": null
 }

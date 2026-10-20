@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:31:17.933877Z",
-    "seconds": 34.73,
-    "cost_usd": 0.0017813
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:22:36.497342Z",
+    "seconds": 24.83,
+    "cost_usd": 0.0012143
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -15,17 +15,6 @@
     "title": "OLD GOLD MENTHOL LIGHTS & ULTRA LIGHTS 100'S - PROGRESS REPORT",
     "page_count": 1,
     "fields": [
-      {
-        "label": "DATE:",
-        "key": "date",
-        "value": null,
-        "value_type": "date",
-        "source": "filled",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
       {
         "label": "TO:",
         "key": "to",
@@ -64,7 +53,7 @@
         "key": "region",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
         "confidence": null,
@@ -86,7 +75,7 @@
         "key": "division_name",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
         "confidence": null,
@@ -119,7 +108,7 @@
         "key": "division_name",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
         "confidence": null,
@@ -141,7 +130,7 @@
         "key": "division_name",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
         "confidence": null,
@@ -152,7 +141,7 @@
         "key": "division_name",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
         "confidence": null,
@@ -163,19 +152,8 @@
         "key": "number_reps",
         "value": null,
         "value_type": "number",
-        "source": "printed",
+        "source": "filled",
         "section": "GEOGRAPHY",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Form number",
-        "key": "form",
-        "value": "82252956",
-        "value_type": "id",
-        "source": "printed",
-        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -196,15 +174,15 @@
             "bbox": null
           },
           {
-            "label": "JUN 23",
-            "checked": true,
+            "label": "AUG 4",
+            "checked": false,
             "confidence": null,
             "method": "llm",
             "bbox": null
           },
           {
-            "label": "AUG 4",
-            "checked": false,
+            "label": "JUN 23",
+            "checked": true,
             "confidence": null,
             "method": "llm",
             "bbox": null
@@ -226,26 +204,17 @@
         "page": 1,
         "headers": [
           "NAME OF ACCOUNT",
-          "IND/OR VOLUME",
-          "NO. OF STORES",
-          "NAME OF ACCOUNT",
-          "IND/OR VOLUME",
+          "IND/LOR VOLUME",
           "NO. OF STORES"
         ],
         "rows": [
           [
             "Walgreen Drug",
             "144/14",
-            "93",
-            null,
-            null,
-            null
+            "93"
           ]
         ],
         "column_types": [
-          "text",
-          "text",
-          "number",
           "text",
           "text",
           "number"
@@ -255,5 +224,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

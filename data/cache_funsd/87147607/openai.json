@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:39:46.688535Z",
-    "seconds": 298.64,
-    "cost_usd": 0.0119904
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:25:31.131144Z",
+    "seconds": 38.97,
+    "cost_usd": 0.0021357
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -15,6 +15,39 @@
     "title": "PURCHASE REQUISITION",
     "page_count": 1,
     "fields": [
+      {
+        "label": "P.O.",
+        "key": "p_o",
+        "value": "1534",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "REV.",
+        "key": "rev",
+        "value": "10/79",
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LT",
+        "key": "lt",
+        "value": "10-79",
+        "value_type": "id",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
       {
         "label": "DATE",
         "key": "date",
@@ -27,10 +60,10 @@
         "bbox": null
       },
       {
-        "label": "ORDER NO.",
-        "key": "order_no",
-        "value": null,
-        "value_type": "id",
+        "label": "VENDOR",
+        "key": "vendor",
+        "value": "Piedmont Research Laboratory 2748 Patterson Ave., Greensboro, NC 27407",
+        "value_type": "text",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -38,12 +71,12 @@
         "bbox": null
       },
       {
-        "label": "VENDOR",
-        "key": "vendor",
-        "value": "Piedmont Research Laboratory 2748 Patterson Ave., Greensboro, NC 27407",
-        "value_type": "address",
+        "label": "ORDER NO.",
+        "key": "order_no",
+        "value": null,
+        "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "For Purchasing Department Use Only",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -54,7 +87,7 @@
         "value": "NET 15",
         "value_type": "text",
         "source": "filled",
-        "section": "TERMS",
+        "section": "For Purchasing Department Use Only",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -65,7 +98,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": "TERMS",
+        "section": "For Purchasing Department Use Only",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -76,7 +109,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": "TERMS",
+        "section": "For Purchasing Department Use Only",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -85,9 +118,9 @@
         "label": "Prev. or Recommended Supplier",
         "key": "prev_or_recommended_supplier",
         "value": null,
-        "value_type": "name",
+        "value_type": "text",
         "source": "filled",
-        "section": "TERMS",
+        "section": "For Purchasing Department Use Only",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -95,8 +128,8 @@
       {
         "label": "SHIP TO (DEPT., BRANCH)",
         "key": "ship_to",
-        "value": "Lorillard Research Center N. A. Thaggard 420 English St., Greensboro, NC 27405",
-        "value_type": "address",
+        "value": "Lorillard Research Center",
+        "value_type": "text",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -120,7 +153,7 @@
         "value": null,
         "value_type": "date",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -131,7 +164,7 @@
         "value": null,
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -142,7 +175,7 @@
         "value": null,
         "value_type": "name",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -153,7 +186,7 @@
         "value": null,
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -164,7 +197,7 @@
         "value": "4111",
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -175,7 +208,7 @@
         "value": "8700",
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -183,10 +216,10 @@
       {
         "label": "APPROVED BY",
         "key": "approved_by",
-        "value": null,
+        "value": "[signed]",
         "value_type": "name",
         "source": "filled",
-        "section": null,
+        "section": "Follow Up",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -194,8 +227,8 @@
     ],
     "checkboxes": [
       {
-        "label": "Material type",
-        "key": "material_type",
+        "label": "PURCHASING / STATIONARY",
+        "key": "purchasing_stationary",
         "section": null,
         "page": 1,
         "options": [
@@ -243,8 +276,17 @@
         ]
       }
     ],
-    "text_blocks": []
+    "text_blocks": [
+      {
+        "text": "N. A. Thaggard\n420 English St., Greensboro, NC 27405",
+        "label": null,
+        "section": "Ship To",
+        "page": 1,
+        "bbox": null
+      }
+    ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

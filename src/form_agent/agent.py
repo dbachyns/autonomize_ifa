@@ -69,7 +69,8 @@ How to answer:
 - If a field exists but was left blank, say it was left blank. If the form has no such field, say so.
   Never invent a value.
 - Values tagged {{printed}} are pre-printed on the form (part of the template), not entered by the person;
-  say so when it matters.
+  say so when it matters. Values tagged {{uncertain: ...}} could not be confirmed on the scan: say the reading
+  is uncertain. Values tagged {{reviewed}} were checked or corrected by a person.
 - Mention review flags that affect the answer (e.g. an NPI that fails its check digit, OCR disagreement,
   dates that look wrong), so a human knows what to double-check.
 - For counts, state the number and list the forms it covers (unless there are more than 15).
@@ -86,8 +87,10 @@ reported, and when.
 **Key details** — bullet points with the important filled-in values (people and their roles, IDs,
 dates, selected options, table rows such as services/codes/diagnoses). Skip blank fields and pre-printed
 template text unless it matters.
-**Needs review** — bullet points for each error or warning flag, explained in plain words, plus anything
-missing that the form clearly requires. Write "Nothing flagged." if there is nothing.
+**Needs review** — bullet points for each error or warning flag and each value marked {{uncertain}}, explained
+in plain words, plus anything missing that the form clearly requires. Flags acknowledged by a reviewer and
+values marked {{reviewed}} need no action; mention corrections a reviewer made. Write "Nothing flagged." if there
+is nothing.
 
 Cite the form as [{short_id}] once at the end of the Summary paragraph."""
 
@@ -135,14 +138,22 @@ class FormAgent:
 
     # --- public API ------------------------------------------------------------------------
 
-    def ask(self, question: str, doc_id: str | None = None) -> AgentAnswer:
-        """Answer a question about one form (doc_id given) or about all forms."""
+    def ask(self, question: str, doc_id: str | None = None,
+            history: list[tuple[str, str]] | None = None) -> AgentAnswer:
+        """Answer a question about one form (doc_id given) or about all forms.
+
+        `history` holds earlier (question, answer) turns of the conversation, so follow-ups like
+        "and what are their diagnoses?" resolve against the previous answer.
+        """
         user = question
         if doc_id:
             short = self.tools.short[self.tools.resolve(doc_id)]
             user = (f"This question is about form [{short}]. Its content:\n\n{self.tools.get_document(short)}"
                     f"\n\nQuestion: {question}")
-        return self._run(question, self._system, user)
+        turns: list[Any] = []
+        for q, a in history or []:
+            turns += [{"role": "user", "content": q}, {"role": "assistant", "content": a}]
+        return self._run(question, self._system, user, history=turns)
 
     def summarize(self, doc_id: str) -> AgentAnswer:
         """Readable summary of one form, with what needs human review."""
@@ -153,10 +164,11 @@ class FormAgent:
 
     # --- loop ------------------------------------------------------------------------------
 
-    def _run(self, question: str, instructions: str, user: str, use_tools: bool = True) -> AgentAnswer:
+    def _run(self, question: str, instructions: str, user: str, use_tools: bool = True,
+             history: list[Any] | None = None) -> AgentAnswer:
         start = time.monotonic()
         result = AgentAnswer(question=question, answer="", model=self.model)
-        items: list[Any] = [{"role": "user", "content": user}]
+        items: list[Any] = [*(history or []), {"role": "user", "content": user}]
         for step in range(self.max_steps + 1):
             kwargs: dict[str, Any] = {}
             if use_tools:

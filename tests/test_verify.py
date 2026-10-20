@@ -36,7 +36,7 @@ def test_label_score_handles_ocr_noise():
 
 def test_detects_every_checkbox_and_reads_ticks(page, gt):
     boxes = PageCheckboxes(page, ocr_page(page))
-    assert len(boxes.boxes) == 30
+    assert len([b for b in boxes.boxes if b.kind == "box"]) == 30  # plus blank lines, which aren't boxes
     for group in sorted(gt.universal.checkboxes, key=lambda g: -len(g.options)):
         found = boxes.locate([o.label for o in group.options], group.label)
         assert found, group.label
@@ -63,3 +63,14 @@ def test_verify_corrects_llm_checkbox_and_flags_text_mismatch(page, gt):
     assert ("ocr_disagrees", "patient.name") in rules
     sex = next(g for g in fixed.universal.checkboxes if g.key == "sex")
     assert sex.selected == ["Unknown"] and all(o.method for o in sex.options)
+
+
+def test_group_prefers_labels_right_of_boxes():
+    from form_agent.checkboxes import Box, locate_group
+
+    # "Q? [ ] Yes [ ] No": the No box also has "Yes" on its left; the right-hand labels must win.
+    yes, no = Box(100, 10, 12, 12, 0.0, label="yes", left="q"), Box(150, 10, 12, 12, 0.3, label="no", left="yes")
+    assert locate_group(["Yes", "No"], [yes, no]) == {"Yes": yes, "No": no}
+    # "JUNE 30 [X]  SEP 22 [ ]": labels only on the left
+    june, sep = Box(100, 10, 60, 14, 0.2, label="sep22", left="june30"), Box(250, 10, 20, 10, 0.0, left="sep22")
+    assert locate_group(["JUNE 30", "SEP 22"], [june, sep]) == {"JUNE 30": june, "SEP 22": sep}

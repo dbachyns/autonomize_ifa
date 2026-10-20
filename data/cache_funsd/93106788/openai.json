@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:36:38.562102Z",
-    "seconds": 23.12,
-    "cost_usd": 0.004221
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:26:29.239300Z",
+    "seconds": 34.74,
+    "cost_usd": 0.0108349
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -18,8 +18,19 @@
       {
         "label": "TO:",
         "key": "to",
-        "value": "ESSENCE 1500 BROADWAY NEW YORK, NY 10036 ATTN: JOYCE WINSTON",
+        "value": "ESSENCE 1500 BROADWAY NEW YORK, NY 10036",
         "value_type": "address",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ATTN:",
+        "key": "attn",
+        "value": "JOYCE WINSTON",
+        "value_type": "name",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -76,7 +87,7 @@
         "value": "FAR FORWARD, OPPOSITE FULL EDITORIAL",
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "POSITION URGENTLY REQUESTED:",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -87,7 +98,18 @@
         "value": "5 COLOR PROOF ATTACHED, FILM FROM COLLIER WITH 'D' WARNING",
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "COPY INSTRUCTIONS:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "SURGEON GENERAL'S WARNING:",
+        "key": "surgeon_general_s_warning",
+        "value": "Cigarette Smoking Contains Carbon Monoxide.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "COPY INSTRUCTIONS:",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -98,7 +120,7 @@
         "value": "LORILLARD MEDIA SERVICES",
         "value_type": "name",
         "source": "printed",
-        "section": "SPACE BILLING INSTRUCTIONS",
+        "section": "SPACE BILLING INSTRUCTIONS:",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -106,10 +128,21 @@
       {
         "label": "Direct all invoices and full checking copies of all regional and national editions to:",
         "key": "direct_all_invoices_and_full_checking_copies_of_all_regional_and_national_editions_to",
-        "value": "LORILLARD MEDIA SERVICES ONE PARK AVENUE 17TH FLOOR NEW YORK, NEW YORK 10016-5896 ATTN: STEVE MOLLOY",
+        "value": "LORILLARD MEDIA SERVICES ONE PARK AVENUE 17TH FLOOR NEW YORK, NEW YORK 10016-5896",
         "value_type": "address",
         "source": "printed",
-        "section": "SPACE BILLING INSTRUCTIONS",
+        "section": "SPACE BILLING INSTRUCTIONS:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ATTN:",
+        "key": "attn",
+        "value": "STEVE MOLLOY",
+        "value_type": "name",
+        "source": "printed",
+        "section": "SPACE BILLING INSTRUCTIONS:",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -143,16 +176,9 @@
         ]
       }
     ],
-    "text_blocks": [
-      {
-        "text": "SURGEON GENERAL'S WARNING: Cigarette Smoke Contains Carbon Monoxide.",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

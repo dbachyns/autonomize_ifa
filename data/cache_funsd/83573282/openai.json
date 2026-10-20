@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:30.362034Z",
-    "seconds": 39.68,
-    "cost_usd": 0.0018537999999999998
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:56.094390Z",
+    "seconds": 40.01,
+    "cost_usd": 0.0019038
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -16,12 +16,12 @@
     "page_count": 1,
     "fields": [
       {
-        "label": "Date:",
+        "label": "Date",
         "key": "date",
         "value": "January 14, 1999",
         "value_type": "date",
         "source": "filled",
-        "section": "Facsimile Cover Sheet",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -32,51 +32,62 @@
         "value": "37",
         "value_type": "number",
         "source": "filled",
-        "section": "Facsimile Cover Sheet",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "From:",
+        "label": "From",
         "key": "from",
         "value": "Steve W. Berman",
         "value_type": "name",
         "source": "filled",
-        "section": "Facsimile Cover Sheet",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "File No.:",
+        "label": "File No.",
         "key": "file_no",
         "value": "1129.01",
         "value_type": "id",
         "source": "filled",
-        "section": "Facsimile Cover Sheet",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Re:",
+        "label": "Re",
         "key": "re",
         "value": "Tobacco - Fee Payment Agreement and Release",
         "value_type": "text",
         "source": "filled",
-        "section": "Facsimile Cover Sheet",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "COMMENTS:",
+        "label": "COMMENTS",
         "key": "comments",
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": "Facsimile Cover Sheet",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "1301 FIFTH AVENUE, SUITE 2900 • SEATTLE, WA 98101",
+        "value_type": "address",
+        "source": "printed",
+        "section": "HAGENS BERMAN Attorneys at Law",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -87,7 +98,7 @@
         "value": "(206) 623-7292",
         "value_type": "phone",
         "source": "printed",
-        "section": null,
+        "section": "HAGENS BERMAN Attorneys at Law",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -98,7 +109,7 @@
         "value": "(206) 623-0594",
         "value_type": "phone",
         "source": "printed",
-        "section": null,
+        "section": "HAGENS BERMAN Attorneys at Law",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -108,6 +119,72 @@
         "key": "support_center",
         "value": "(206) 268-9312",
         "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "or",
+        "key": "or",
+        "value": null,
+        "value_type": "phone",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "at ext.",
+        "key": "at_ext",
+        "value": null,
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax header date",
+        "key": "fax_header_date",
+        "value": "01/14/99",
+        "value_type": "date",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax header time",
+        "key": "fax_header_time",
+        "value": "18:36",
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "FAX",
+        "key": "fax",
+        "value": "206 623 0594",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax identifier",
+        "key": "fax_identifier",
+        "value": "83573282",
+        "value_type": "id",
         "source": "printed",
         "section": null,
         "page": 1,
@@ -181,42 +258,14 @@
     ],
     "text_blocks": [
       {
-        "text": "1301 FIFTH AVENUE, SUITE 2900 • SEATTLE, WA 98101",
+        "text": "WA Fee Pay. Agree.\n0001/037",
         "label": null,
         "section": null,
         "page": 1,
         "bbox": null
       },
       {
-        "text": "01/14/99 18:36 FAX 206 623 0594",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "WA Fee Payt. Agree.",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "0001/037",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "XC: [illegible]",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "83573282",
+        "text": "XC: Jpw",
         "label": null,
         "section": null,
         "page": 1,
@@ -225,5 +274,6 @@
     ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

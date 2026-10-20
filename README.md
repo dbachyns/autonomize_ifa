@@ -18,9 +18,42 @@ There are 5 urgent requests, and all five are missing a clinical reason for urge
 | | |
 |---|---|
 | Extraction, 11 Texas prior-auth forms vs. hand-labeled truth | **99.9%** of 695 fields correct · 100% of checkboxes · the one remaining error is flagged for review |
-| Extraction, 50 FUNSD forms of types it was never tuned on | **86.5%** of labeled label→value pairs found |
+| Extraction, 50 FUNSD forms of types it was never tuned on | **86.0%** of labeled label→value pairs found |
 | Q&A agent, 30 questions with known answers | **30/30** (13 single-form, 14 cross-form, 3 summaries) |
+| Reading confidence on the Texas forms | 565 values confirmed, 5 unconfirmed, **1 red**: exactly the one real extraction error |
 | Cost with `gpt-6-luna` | ~$0.01 to read a form · ~$0.001 per question |
+
+## Quick start (about 5 minutes)
+
+The repo ships with the extraction results for every form, so most of it runs **without an API key**.
+
+```bash
+git clone <this repo> && cd autonomize_ifa
+python3.12 -m venv .venv && source .venv/bin/activate    # or: conda env create -f environment.yml && conda activate ifa
+pip install -r requirements.txt
+```
+
+**No key needed:**
+
+```bash
+pytest                                        # 126 tests, ~30 s, no API calls
+python -m form_agent eval tx --reader hybrid  # extraction vs. hand-labeled truth: 99.9% of 695 fields
+streamlit run app/streamlit_app.py            # web UI → 📋 Forms: scans, confidence colours, review
+```
+
+**With an OpenAI key** (`cp .env.example .env`, then set `OPENAI_API_KEY`; about $0.001 per question):
+
+```bash
+python -m form_agent ask "Which urgent requests are missing a clinical reason?" --trace   # across all forms
+python -m form_agent ask "Is the service provider's NPI valid?" --doc 0ab19462            # one form
+python -m form_agent summarize 0a18d138                                                   # summary
+python -m form_agent chat                                                                 # follow-up questions
+python -m form_agent eval qa                                                              # 30 graded questions, ~$0.02
+python -m form_agent extract path/to/your/forms   # read your own PDFs/images (~$0.01 each), then ask about them
+```
+
+The search index (`data/forms.db`) is built automatically on first use. In the web UI, the sidebar also has
+the FUNSD collection; run `scripts/download_funsd.sh` once to see its scans.
 
 ## What it does
 
@@ -35,7 +68,11 @@ There are 5 urgent requests, and all five are missing a clinical reason for urge
    Validation rules flag bad NPIs, code formats, impossible dates, double-ticked pick-one boxes, and more.
 4. **Answers questions.** An LLM agent with read-only tools (`get_document`, `search`, `sql`,
    `list_documents`) answers questions about one form or across all of them. It writes summaries that end
-   with a *Needs review* list. Counts come from SQL, so they are exact.
+   with a *Needs review* list. Counts come from SQL, so they are exact. Follow-up questions keep the context.
+5. **Shows its evidence and takes corrections** (web UI). Every value is located on the scan and colored by
+   how well local evidence confirms it. Answers highlight the values they quote on the scan. A reviewer can
+   correct or confirm values and acknowledge flags. The reviewed version is saved separately, with a log,
+   and the agent answers from it.
 
 ## Setup
 
@@ -56,28 +93,47 @@ cp .env.example .env          # then put your OPENAI_API_KEY in .env
 `.env` settings (all optional except the key): `OPENAI_MODEL` (reader, default `gpt-6-luna`),
 `FORM_AGENT_MODEL` (Q&A agent, defaults to `OPENAI_MODEL`), `FORM_AGENT_READER` (default `openai`).
 
+## Web UI
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+| Screen | What you can do |
+|---|---|
+| **💬 Ask** | Chat about all forms or one form, with follow-ups. Under each answer, *Where this comes from* shows the scans with the quoted values highlighted. *How the agent found this* lists its tool calls. |
+| **📋 Forms** | Every form with error, warning and uncertain counts. Open one to get the scan next to its list of values. **Hover** a value to zoom the scan to it, or hover a box on the scan to find its value. The outline color shows how well the reading is confirmed: 🟢 confirmed by local OCR or checkbox ink, 🟡 unconfirmed, 🔴 evidence disagrees, 🔵 reviewed. A badge marks a problem with the content (🛑 ⚠️ ℹ️, e.g. an invalid NPI). **Needs attention** filters both the scan and the list. **Click** a value, or press **Next**, to review it on the right: *Save correction*, or *✓ Looks right*. Also on this screen: all flags, a one-click summary, and the review history. |
+| **⬆️ Upload** | Drop in a PDF or image of any form. It is read, verified, validated, located on the page and indexed, then it opens in *Forms*. |
+
+The sidebar switches between the Texas collection and the FUNSD collection. Reviews are saved as
+`data/cache/<doc_id>/reviewed.json`, next to the machine readings, which are never modified.
+
 ## Run it step by step
 
 The repo ships with the extraction results for every form in `data/cache/`, so steps 1–2 are optional:
 you can go straight to step 3.
 
 ```bash
-# 1. Read forms (writes one JSON record per form to data/cache/<doc_id>/<reader>.json).
-#    hybrid = vision LLM + pixel checkbox check + local OCR cross-check; already-cached forms are skipped.
+# 1. Read forms (writes one JSON record per form to data/cache/<doc_id>/<reader>.json), then locate the
+#    values on the scans and rebuild the index. hybrid = vision LLM + pixel checkbox check + local OCR
+#    cross-check; already-cached forms are skipped.
 python -m form_agent extract data/forms --reader hybrid            # add --force to re-read
 
-# 2. Build the SQLite index the agent queries (seconds; rebuilt from the JSON records any time).
+# 2. Only needed after changing code: recompute where values are on the scans (local OCR, no API) and
+#    rebuild the SQLite index the agent queries from the JSON records (seconds).
+python -m form_agent layout --force
 python -m form_agent index
 
 # 3. Ask questions.
 python -m form_agent ask "What is the patient's member ID?" --doc 0a01f77b      # one form
 python -m form_agent summarize 0a18d138                                          # summary of one form
 python -m form_agent ask "Which forms have an NPI with the wrong number of digits?" --trace   # all forms
+python -m form_agent chat                                                        # conversation with follow-ups
 
 # 4. Evaluate.
 python -m form_agent eval tx --reader hybrid      # extraction vs. hand-labeled ground truth
 python -m form_agent eval qa                      # the agent on 30 questions with known answers
-pytest                                            # 104 unit tests, no API calls
+pytest                                            # 126 unit tests, no API calls
 ```
 
 Document ids can be shortened to their first 8 characters. `--trace` prints the tool calls the agent made.
@@ -85,8 +141,8 @@ Document ids can be shortened to their first 8 characters. `--trace` prints the 
 **The demo notebook**, [notebooks/demo.ipynb](notebooks/demo.ipynb), runs all of this with the outputs saved:
 the extraction and checkbox check on one scan, then the required demos below, then the evaluation tables.
 
-**Your own forms:** put PDFs or images in a folder, then run `extract <folder>`, `index`, and `ask`. Forms of an
-unknown type go through the universal record; nothing else is needed.
+**Your own forms:** upload them in the web UI, or put PDFs/images in a folder and run `extract <folder>`, then
+`ask`. Forms of an unknown type go through the universal record; nothing else is needed.
 
 ## Demo runs
 
@@ -164,9 +220,8 @@ form. [00c33de5]
 The same code on FUNSD, 50 noisy 1980s–90s business forms with no typed schema:
 
 ```text
-$ FORM_AGENT_DB=data/funsd.db FORM_AGENT_CACHE_DIR=data/cache_funsd python -m form_agent index
-$ FORM_AGENT_DB=data/funsd.db FORM_AGENT_CACHE_DIR=data/cache_funsd \
-    python -m form_agent ask "What brand is this report about and where was it tested?" --doc 82250337
+$ python -m form_agent ask "What brand is this report about and where was it tested?" --doc 82250337 \
+    --db data/funsd.db --cache data/cache_funsd
 
 The report is about Kool Waterfall, tested in Divisions 621 and 627 (Wisconsin). [82250337]
 ```
@@ -178,12 +233,17 @@ src/form_agent/
   schema.py          the data contract: universal record + typed view + flags + run info
   readers/           swappable readers: openai (vision LLM), hybrid (LLM + pixels + OCR); register more with @register
   forms/             form-type plugins: tx_prior_auth.py (typed schema, detection, rules)
-  checkboxes.py      OpenCV checkbox detection and ink measurement
+  checkboxes.py      OpenCV checkbox detection (boxes, and marks on blank lines) and ink measurement
   ocr.py, verify.py  local OCR (RapidOCR) and cross-checking of LLM output
   validate.py        rule-based review flags (generic by value type + per form type)
   store.py           JSON cache (source of truth) → SQLite index (FTS5 search, typed tables, template constants)
-  tools.py, agent.py the agent's read-only tools and the LLM tool loop
+  tools.py, agent.py the agent's read-only tools and the LLM tool loop (with conversation history)
+  layout.py          where text and checkboxes are on each scan (cached OCR + boxes)
+  view.py            a form as reviewable items: value, position, confidence, flags; evidence for answers
+  review.py          human corrections / confirmations → a separate "reviewed" record with a log
+  pipeline.py        upload → read → verify → validate → locate → index, in one call
   evaluate.py, qa_eval.py   extraction and Q&A scoring
+app/streamlit_app.py the web UI
 data/forms/          the 11 Texas prior-auth scans
 data/ground_truth/   hand-labeled records for them
 data/cache/, data/cache_funsd/   extraction results (JSON), so nothing has to be re-read
@@ -211,6 +271,9 @@ analysis, and known limitations.
 - **Measured, not claimed.** Hand-labeled ground truth, a public benchmark (FUNSD), and a Q&A test set, each
   with a one-line command to reproduce.
 - **Swappable readers and form plugins.** A new model or a new form type is one registered class.
+- **Web UI with evidence and review** (`app/`). Values are outlined on the scan by reading confidence, answers
+  highlight their sources, and corrections are saved separately from the machine reading with a log. The agent
+  prefers the reviewed values.
 
 ## Data and licenses
 

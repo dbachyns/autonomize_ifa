@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:34:14.807203Z",
-    "seconds": 22.52,
-    "cost_usd": 0.0011048
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:48.427138Z",
+    "seconds": 22.58,
+    "cost_usd": 0.0012423
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -33,6 +33,61 @@
         "value_type": "name",
         "source": "filled",
         "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIRECT ACCOUNT WHOLESALERS:",
+        "key": "direct_account_wholesalers",
+        "value": "Distribution allowance was very effective in accomplishing our objectives. All accounts have purchased introductory products.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "DIRECT ACCOUNT CHAINS:",
+        "key": "direct_account_chains",
+        "value": "Eagle Foods is the only Void.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "NON-DIRECT ACCOUNT CHAINS:",
+        "key": "non_direct_account_chains",
+        "value": "Reception from these accounts is most positive with a solid incentive to purchase.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "EFFECTIVENESS OF THE RETAIL (1.00 OFF CARTON) DISTRIBUTION ALLOWANCE:",
+        "key": "effectiveness_of_the_retail_distribution_allowance",
+        "value": "Has been most helpful in acquiring desireable distribution when needed by Sales Reps.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "40c OFF PACK – GENERAL MARKET:",
+        "key": "40c_off_pack_general_market",
+        "value": "The 40c off promotions continue to be well received at the retail stores and by consumers, as well.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "PROMOTIONAL ACTIVITY",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -70,44 +125,9 @@
       }
     ],
     "tables": [],
-    "text_blocks": [
-      {
-        "text": "Distribution allowance was very effective in accomplishing our objectives. All accounts have purchased introductory products.",
-        "label": "DIRECT ACCOUNT/WHOLESALERS:",
-        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "Eagle Foods is the only Void.",
-        "label": "DIRECT ACCOUNT CHAINS:",
-        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "Reception from these accounts is most positive with a solid incentive to purchase.",
-        "label": "NON—DIRECT ACCOUNT CHAINS:",
-        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "Has been most helpful in acquiring desireable distribution when needed by Sales Reps.",
-        "label": "EFFECTIVENESS OF THE RETAIL (1.00 OFF CARTON) DISTRIBUTION ALLOWANCE:",
-        "section": "EFFECTIVENESS OF DISTRIBUTION ALLOWANCE:",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "The 40c off promotions continue to be well received at the retail stores and by consumers, as well.",
-        "label": "40c OFF PACK – GENERAL MARKET:",
-        "section": "PROMOTIONAL ACTIVITY",
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

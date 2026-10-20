@@ -15,9 +15,10 @@ from pathlib import Path
 from typing import Any
 
 from form_agent.config import settings
-from form_agent.forms import get_plugin
-from form_agent.schema import FormRecord, UniversalForm
+from form_agent.layout import load_layout
+from form_agent.schema import FormRecord
 from form_agent.store import connect_readonly, load_record, record_path
+from form_agent.view import DocView, build_view, render_text
 
 MAX_SQL_STEPS = 5_000_000  # SQLite VM steps before a query is aborted (runaway joins)
 
@@ -29,7 +30,9 @@ CORE_TABLES = {
                      "source='filled' was entered on the form, 'printed' is pre-printed on it; template=1 marks "
                      "printed values that are identical on every form of the type",
     "active_checkboxes": "one row per checkbox option; checked is 0/1",
-    "active_table_cells": "cells of tables on the forms (row_index, column = header)",
+    "active_table_cells": "one row per table cell. (doc_id, table_index) is one table, table_name its printed "
+                          "title or heading, row_index the row, column its header. To read whole rows, self-join on "
+                          "(doc_id, table_index, row_index); value_norm holds numbers/dates normalized",
     "text_blocks": "free text written on forms (join extractions on run_id with active=1)",
     "active_flags": "automatic review flags: rule, severity (info|warning|error), message",
     "form_type_constants": "printed values shared by all forms of a type (e.g. the insurer's fax numbers)",
@@ -44,8 +47,13 @@ class FormTools:
     def __init__(self, db_path: Path | None = None, cache_dir: Path | None = None, max_rows: int = 100):
         self.db_path = Path(db_path or settings.db_path)
         self.cache_dir = Path(cache_dir or settings.cache_dir)
-        if not self.db_path.exists():
-            raise FileNotFoundError(f"{self.db_path} not found; build it with: python -m form_agent index")
+        if not self.db_path.exists():  # a fresh clone: the index is rebuilt from the JSON records in seconds
+            if not self.cache_dir.exists():
+                raise FileNotFoundError(f"{self.db_path} not found and no records in {self.cache_dir}; "
+                                        "read some forms first: python -m form_agent extract <folder>")
+            from form_agent.store import build_index
+
+            build_index(self.cache_dir, self.db_path)
         self._local = threading.local()
         self.max_rows = max_rows
         self.doc_ids = [r[0] for r in self.con.execute("SELECT doc_id FROM documents ORDER BY doc_id")]
@@ -87,8 +95,13 @@ class FormTools:
 
     def get_document(self, doc_id: str) -> str:
         """The whole form as readable text: fields, checkboxes, tables, free text, review flags."""
+        return render_text(self.view(doc_id))
+
+    def view(self, doc_id: str) -> DocView:
+        """The active record of a form with positions and confidence (layout from the cache, if computed)."""
         record = self.load_active(self.resolve(doc_id))
-        return render_document(record, self.short.get(record.doc_id, record.doc_id))
+        layout = load_layout(self.cache_dir, record.doc_id)
+        return build_view(record, layout, self.short.get(record.doc_id, record.doc_id))
 
     def search(self, query: str, doc_id: str | None = None, limit: int = 20) -> list[dict[str, Any]]:
         """Full-text search over values, labels and free text of all forms (or one)."""
@@ -186,57 +199,10 @@ class FormTools:
 
 
 def _short_ids(doc_ids: list[str]) -> dict[str, str]:
-    """First 8 characters when unique, else the full id."""
+    """Random-looking ids (uuids, hashes) are shortened to their first 8 characters when unique;
+    readable names ("expense_report") are kept whole."""
     prefixes: dict[str, int] = {}
     for d in doc_ids:
         prefixes[d[:8]] = prefixes.get(d[:8], 0) + 1
-    return {d: d[:8] if prefixes[d[:8]] == 1 and len(d) > 8 else d for d in doc_ids}
-
-
-# --- rendering -----------------------------------------------------------------------------
-
-
-def render_document(record: FormRecord, short_id: str) -> str:
-    """Plain-text view of a record for the model. Known form types use their verified typed values."""
-    u = record.universal
-    plugin = get_plugin(record.form_type)
-    if plugin and record.typed:
-        typed_view = plugin.to_universal(plugin.parse(record.typed))
-        typed_values = {f.value for f in typed_view.fields if f.value}
-        printed = [f for f in u.fields if f.source == "printed" and f.value and f.value not in typed_values]
-        u = UniversalForm(title=u.title, page_count=u.page_count, fields=[*printed, *typed_view.fields],
-                          checkboxes=typed_view.checkboxes, tables=typed_view.tables, text_blocks=u.text_blocks)
-
-    out = [f"Document [{short_id}] (full id {record.doc_id})",
-           f"Form type: {record.form_type}" + (f" — {plugin.title}" if plugin else ""),
-           f"Title: {u.title or '-'} · pages: {u.page_count} · extracted by {record.run.reader}"
-           f" ({record.run.model or '-'})", ""]
-
-    out.append("FIELDS (verbatim; '(blank)' = left empty on the form; {printed} = pre-printed on the form)")
-    section = object()
-    for f in u.fields:
-        if f.section != section:
-            section = f.section
-            out.append(f"  [{section or 'no section'}]")
-        tag = " {printed}" if f.source == "printed" else ""
-        low = " {low OCR confidence}" if f.confidence is not None and f.confidence < 0.5 else ""
-        out.append(f"    {f.label.rstrip(':')}: {f.value if f.value else '(blank)'}{tag}{low}")
-
-    if u.checkboxes:
-        out += ["", "CHECKBOXES ([x] ticked, [ ] not ticked)"]
-        for g in u.checkboxes:
-            opts = "  ".join(f"[{'x' if o.checked else ' '}] {o.label}" for o in g.options)
-            out.append(f"  {(g.section + ' / ') if g.section else ''}{g.label}: {opts}")
-
-    for t in u.tables:
-        out += ["", f"TABLE: {t.title or 'untitled'}" + (f" ({t.section})" if t.section else ""),
-                "  " + " | ".join(t.headers)]
-        out += ["  " + " | ".join(c or "" for c in row) for row in t.rows] or ["  (no rows)"]
-
-    if u.text_blocks:
-        out += ["", "FREE TEXT"]
-        out += [f"  {(b.label + ': ') if b.label else ''}{b.text}" for b in u.text_blocks]
-
-    out += ["", "REVIEW FLAGS (automatic checks)"]
-    out += [f"  [{fl.severity}] {fl.rule}: {fl.message}" for fl in record.flags] or ["  none"]
-    return "\n".join(out)
+    return {d: d[:8] if len(d) > 12 and re.fullmatch(r"[0-9a-f]{8}", d[:8]) and prefixes[d[:8]] == 1 else d
+            for d in doc_ids}

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:02.367452Z",
-    "seconds": 25.97,
-    "cost_usd": 0.0012488
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:33.722799Z",
+    "seconds": 25.48,
+    "cost_usd": 0.0012948
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -188,6 +188,13 @@
       {
         "text": "JAN 12 1999",
         "label": null,
+        "section": "MESSAGE",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "JAN 11 '99 16:29 FR 8220; TO 3212#128557#6024 P.01",
+        "label": null,
         "section": null,
         "page": 1,
         "bbox": null
@@ -195,5 +202,6 @@
     ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

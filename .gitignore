@@ -9,3 +9,4 @@ __pycache__/
 data/external/
 data/forms.db
 data/funsd.db
+data/uploads/

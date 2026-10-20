@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:36:20.354353Z",
-    "seconds": 57.85,
-    "cost_usd": 0.0029582
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:26:09.668847Z",
+    "seconds": 49.66,
+    "cost_usd": 0.0027787
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -16,12 +16,23 @@
     "page_count": 1,
     "fields": [
       {
+        "label": "Proposal No.",
+        "key": "proposal_no",
+        "value": "10675",
+        "value_type": "id",
+        "source": "filled",
+        "section": "PROPOSAL",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
         "label": "Company",
         "key": "company",
         "value": "STOUT INDUSTRIES, INC.",
         "value_type": "name",
         "source": "printed",
-        "section": null,
+        "section": "PROPOSAL",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -32,7 +43,7 @@
         "value": "6425 W. FLORISSANT AVE., ST. LOUIS, MO. 63136",
         "value_type": "address",
         "source": "printed",
-        "section": null,
+        "section": "PROPOSAL",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -43,17 +54,6 @@
         "value": "(314) 385-2280",
         "value_type": "phone",
         "source": "printed",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Proposal number",
-        "key": "proposal",
-        "value": "10675",
-        "value_type": "id",
-        "source": "filled",
         "section": "PROPOSAL",
         "page": 1,
         "confidence": null,
@@ -161,7 +161,18 @@
       {
         "label": "SIZE:",
         "key": "size",
-        "value": "17¾ x 23½\"",
+        "value": "17½ x 23½\"",
+        "value_type": "text",
+        "source": "filled",
+        "section": "It is our pleasure to propose the following:",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OTHER (MATERIAL)",
+        "key": "other",
+        "value": null,
         "value_type": "text",
         "source": "filled",
         "section": "It is our pleasure to propose the following:",
@@ -173,7 +184,7 @@
         "label": "GAUGE",
         "key": "gauge",
         "value": ".025\"",
-        "value_type": "text",
+        "value_type": "number",
         "source": "filled",
         "section": "It is our pleasure to propose the following:",
         "page": 1,
@@ -214,8 +225,8 @@
         "bbox": null
       },
       {
-        "label": "PACKING: PER CARTON",
-        "key": "packing_per_carton",
+        "label": "PER CARTON",
+        "key": "per_carton",
         "value": "10",
         "value_type": "number",
         "source": "filled",
@@ -229,7 +240,7 @@
         "key": "per_crate",
         "value": null,
         "value_type": "number",
-        "source": "printed",
+        "source": "filled",
         "section": "It is our pleasure to propose the following:",
         "page": 1,
         "confidence": null,
@@ -240,7 +251,7 @@
         "key": "per_bundle",
         "value": null,
         "value_type": "number",
-        "source": "printed",
+        "source": "filled",
         "section": "It is our pleasure to propose the following:",
         "page": 1,
         "confidence": null,
@@ -272,7 +283,7 @@
         "label": "QUANTITIES:",
         "key": "quantities",
         "value": "500 Plaques",
-        "value_type": "text",
+        "value_type": "number",
         "source": "filled",
         "section": "QUANTITIES / PRICE",
         "page": 1,
@@ -280,7 +291,7 @@
         "bbox": null
       },
       {
-        "label": "One time tooling @",
+        "label": "One time tooling",
         "key": "one_time_tooling",
         "value": "$3,015.00",
         "value_type": "money",
@@ -313,45 +324,45 @@
         "bbox": null
       },
       {
-        "label": "DROP SHIPPING:",
-        "key": "drop_shipping",
-        "value": null,
-        "value_type": "text",
-        "source": "printed",
-        "section": "BILLING",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "PER SHIPMENT.",
+        "label": "PER SHIPMENT",
         "key": "per_shipment",
         "value": null,
-        "value_type": "text",
-        "source": "printed",
+        "value_type": "number",
+        "source": "filled",
         "section": "BILLING",
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Reference number",
-        "key": "reference",
-        "value": "87528380",
-        "value_type": "id",
-        "source": "filled",
-        "section": "CONDITIONS",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "TERMS —",
+        "label": "TERMS",
         "key": "terms",
         "value": "NET 10 DAYS",
         "value_type": "text",
         "source": "printed",
         "section": "TERMS",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Signature",
+        "key": "signature",
+        "value": "[signed]",
+        "value_type": "name",
+        "source": "filled",
+        "section": "SIGNATURE",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Form number",
+        "key": "form",
+        "value": "87528380",
+        "value_type": "id",
+        "source": "printed",
+        "section": "CONDITIONS",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -546,14 +557,7 @@
             "bbox": null
           },
           {
-            "label": "BILL AS SHIP FOR,",
-            "checked": false,
-            "confidence": null,
-            "method": "llm",
-            "bbox": null
-          },
-          {
-            "label": "6 MOS.",
+            "label": "BILL AS SHIP FOR, 6 MOS.",
             "checked": false,
             "confidence": null,
             "method": "llm",
@@ -571,7 +575,7 @@
       {
         "label": "WAREHOUSING:",
         "key": "warehousing",
-        "section": "BILLING",
+        "section": "WAREHOUSING",
         "page": 1,
         "options": [
           {
@@ -602,5 +606,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

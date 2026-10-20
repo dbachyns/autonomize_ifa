@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:31:52.048290Z",
-    "seconds": 23.68,
-    "cost_usd": 0.0013333
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:34.208230Z",
+    "seconds": 35.53,
+    "cost_usd": 0.0016987999999999999
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -16,10 +16,10 @@
     "page_count": 1,
     "fields": [
       {
-        "label": "COVINGTON & BURLING",
-        "key": "covington_and_burling",
+        "label": "Firm",
+        "key": "firm",
         "value": "COVINGTON & BURLING",
-        "value_type": "name",
+        "value_type": "text",
         "source": "printed",
         "section": null,
         "page": 1,
@@ -29,7 +29,18 @@
       {
         "label": "Address",
         "key": "address",
-        "value": "1201 Pennsylvania Avenue, N.W.; P.O. Box 7566; Washington, D.C. 20044-7566",
+        "value": "1201 Pennsylvania Avenue, N.W.",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Mailing address",
+        "key": "mailing_address",
+        "value": "P.O. Box 7566 Washington, D.C. 20044-7566",
         "value_type": "address",
         "source": "printed",
         "section": null,
@@ -51,7 +62,7 @@
       {
         "label": "Fax Numbers",
         "key": "fax_numbers",
-        "value": "(202) 662-6291 or (202) 737-0528",
+        "value": "(202) 662-6291",
         "value_type": "phone",
         "source": "printed",
         "section": null,
@@ -60,7 +71,18 @@
         "bbox": null
       },
       {
-        "label": "Fax Operator:",
+        "label": "Fax Numbers",
+        "key": "fax_numbers",
+        "value": "(202) 737-0528",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax Operator",
         "key": "fax_operator",
         "value": "(202) 662-6280",
         "value_type": "phone",
@@ -84,7 +106,7 @@
       {
         "label": "To:",
         "key": "to",
-        "value": "Honey H. Bell, Esq.",
+        "value": "Harvey H. Bell, Esq.",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -104,8 +126,8 @@
         "bbox": null
       },
       {
-        "label": "From: (direct fax)",
-        "key": "from",
+        "label": "Direct fax",
+        "key": "direct_fax",
         "value": "(202) 778-5212",
         "value_type": "phone",
         "source": "filled",
@@ -128,7 +150,7 @@
       {
         "label": "Pages (including cover)",
         "key": "pages",
-        "value": null,
+        "value": "11",
         "value_type": "number",
         "source": "filled",
         "section": null,
@@ -152,21 +174,7 @@
     "tables": [],
     "text_blocks": [
       {
-        "text": "Handwritten notation: “XC: RB5”; “12-9-99”; “From: DSM”. Received stamp: “RECEIVED DEC - 9 1999”; “R. B. SPELL”.",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "Fax footer: “12/09/99 11:08 FAX”; “COVINGTON & BURLING”; “001”.",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "82573104",
+        "text": "xc: R.BS\n12-9-99\nFrom: DSM\nRECEIVED\nDEC - 9 1999\nR. B. SPELL",
         "label": null,
         "section": null,
         "page": 1,
@@ -175,5 +183,6 @@
     ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

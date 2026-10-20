@@ -7,10 +7,12 @@ groups, tables, and free text, each tied to a page and section. Form types we kn
 
 from __future__ import annotations
 
+import re
 from datetime import datetime, timezone
 from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
+from rapidfuzz import fuzz
 
 from form_agent.normalize import VALUE_TYPES
 
@@ -70,6 +72,33 @@ class Table(_Model):
     rows: list[list[str | None]] = Field(default_factory=list)
     column_types: list[ValueType] = Field(default_factory=list)
 
+    @property
+    def name(self) -> str:
+        return self.title or self.section or "Table"
+
+    def tidy(self) -> "Table":
+        """One header per column, so cells can be queried by header.
+
+        A table printed twice side by side ("NAME OF ACCOUNT | STORES | NAME OF ACCOUNT | STORES") becomes
+        one table: the right half's rows follow the left half's. Other repeated headers are numbered
+        ("Code", "Code (2)").
+        """
+        headers, rows, types = list(self.headers), [list(r) for r in self.rows], list(self.column_types)
+        n = len(headers) // 2
+        loose = [re.sub(r"[^a-z0-9]", "", h.lower()) for h in headers]
+        if n >= 2 and len(headers) == 2 * n and all(fuzz.ratio(a, b) >= 90 for a, b in zip(loose[:n], loose[n:])):
+            pad = lambda r: (r + [None] * 2 * n)[: 2 * n]
+            halves = [pad(r)[:n] for r in rows] + [pad(r)[n:] for r in rows]
+            rows = [r for r in halves if any(c not in (None, "") for c in r)]
+            headers, types = headers[:n], types[:n]
+        seen: dict[str, int] = {}
+        for i, h in enumerate(headers):
+            key = re.sub(r"[^a-z0-9]", "", h.lower())
+            seen[key] = seen.get(key, 0) + 1
+            if seen[key] > 1:
+                headers[i] = f"{h} ({seen[key]})"
+        return self.model_copy(update={"headers": headers, "rows": rows, "column_types": types})
+
 
 class TextBlock(_Model):
     text: str
@@ -107,6 +136,25 @@ class RunInfo(_Model):
     cost_usd: float | None = None
 
 
+class Correction(_Model):
+    item: str  # view item id, e.g. "typed:patient.name" or "universal:fields.3"
+    label: str
+    old: Any
+    new: Any
+    reviewer: str | None = None
+    at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
+class Review(_Model):
+    """What a human did to this record. The reviewed record is saved as reader 'reviewed'."""
+
+    based_on: str  # reader of the record the review started from, e.g. "hybrid"
+    corrections: list[Correction] = Field(default_factory=list)
+    confirmed: list[str] = Field(default_factory=list)  # item ids a human checked and left as is
+    acknowledged: list[str] = Field(default_factory=list)  # flag ids (see flag_id) a human has seen
+    updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+
 class FormRecord(_Model):
     doc_id: str
     source_file: str  # relative to the data directory it was ingested from
@@ -116,6 +164,12 @@ class FormRecord(_Model):
     universal: UniversalForm
     typed: dict[str, Any] | None = None  # validated by the matching plugin in form_agent.forms
     flags: list[Flag] = Field(default_factory=list)
+    review: Review | None = None
+
+
+def flag_id(flag: Flag) -> str:
+    """Stable id of a flag, so a reviewer's acknowledgement survives re-validation."""
+    return f"{flag.rule}:{','.join(flag.fields)}"
 
 
 # --- Helpers ---------------------------------------------------------------------------

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:34:05.286162Z",
-    "seconds": 33.59,
-    "cost_usd": 0.0018633
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:50.474337Z",
+    "seconds": 28.4,
+    "cost_usd": 0.0015198
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -52,7 +52,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -63,7 +63,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -85,7 +85,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -96,7 +96,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -118,7 +118,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -129,7 +129,7 @@
         "label": "DIVISION NAME:",
         "key": "division_name",
         "value": null,
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": "GEOGRAPHY",
         "page": 1,
@@ -237,84 +237,79 @@
         "page": 1,
         "headers": [
           "NAME OF ACCOUNT",
-          "NO. OF STORES",
-          "NAME OF ACCOUNT",
           "NO. OF STORES"
         ],
         "rows": [
           [
             "K&B",
-            "180",
+            "180"
+          ],
+          [
+            "Delchamps",
+            "130"
+          ],
+          [
+            "Winn Dixie",
+            "85"
+          ],
+          [
+            "Schwegmann",
+            "39"
+          ],
+          [
+            "Autry Greer",
+            "36"
+          ],
+          [
+            "Double Quick",
+            "36"
+          ],
+          [
+            "Liteo",
+            "23"
+          ],
+          [
+            "Huber Oil",
+            "23"
+          ],
+          [
+            "Morris Corp",
+            "22"
+          ],
+          [
             "Saye Oil",
             "20"
           ],
           [
-            "Delchamps",
-            "130",
             "Dantzler",
             "19"
           ],
           [
-            "Winn Dixie",
-            "85",
             "Southeast Foods",
             "18"
           ],
           [
-            "Schwegmann",
-            "39",
             "Compac Foods",
             "18"
           ],
           [
-            "Autry Greer",
-            "36",
             "Bayou Foods",
             "17"
           ],
           [
-            "Double Quick",
-            "36",
             "Econ",
             "16"
-          ],
-          [
-            "Lite",
-            "23",
-            null,
-            null
-          ],
-          [
-            "Huber Oil",
-            "23",
-            null,
-            null
-          ],
-          [
-            "Morris Corp",
-            "22",
-            null,
-            null
           ]
         ],
         "column_types": [
-          "text",
-          "number",
-          "text",
+          "name",
           "number"
         ]
       }
     ],
-    "text_blocks": [
-      {
-        "text": "12/12/96 08:33 504 7348616 LORILLARD TOB ---> NYO 1 001/004",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

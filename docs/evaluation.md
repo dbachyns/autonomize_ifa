@@ -68,12 +68,20 @@ a compatible label. This is lenient on wording but strict on content.
 
 | | |
 |---|---|
-| label→value pairs found | **86.5%** (723/836) |
-| … and exactly matching | 81.3% (680/836) |
-| … counting only values written into blanks (not pre-printed) | 80.5% found |
-| cost | $0.136 for 50 forms (~$0.003 each) |
+| label→value pairs found | **86.0%** (719/836) |
+| … and exactly matching | 81.2% (679/836) |
+| … counting only values written into blanks (not pre-printed) | 84.5% found |
+| cost | $0.112 for 50 forms (~$0.002 each) |
 
-Capturing pre-printed values (tagged `printed`) raised pairs found from 84.8% to 86.5%. FUNSD counts many
+Numbers are from prompt v4. Capturing pre-printed values (prompt v2) raised pairs found from 84.8% to 86.5%.
+Prompt v4 adds `[signed]` for signatures and a handwriting rule: 25 signature lines on 15 forms are now
+marked as signed instead of empty, and values written into blanks are found more often (80.5% → 84.5%).
+Overall recall moved from 86.5% to 86.0%, which is within run-to-run noise.
+
+**Model choice matters on handwriting.** On form 87137840, `gpt-6-luna` reads the handwritten "03/02/90" as
+"03/01/90" (a copy of the date above it). `gpt-6-sol` reads every value on that form correctly, at about
+10× the cost ($0.015 vs $0.0013 per form). The confidence view flags luna's wrong date as unconfirmed,
+because the only "03/01/90" OCR sees on the page already confirms the other date. FUNSD counts many
 printed values as answers, such as a pre-printed company address next to "FROM:".
 
 **Where the misses come from.** I classified the 127 misses from the first run, before printed values
@@ -132,12 +140,34 @@ answer itself was correct.
   returned 10, 11 or 13 forms across runs, depending on whether the model counted borderline titles like
   "TELECOPY INFORMATION". Questions with a crisp definition were stable.
 
+## 4 · Reading confidence
+
+Run `python -m form_agent layout`, then open the forms in the UI, or build `view.build_view` yourself.
+
+| | 🟢 high | 🟡 medium | 🔴 low | blank |
+|---|---|---|---|---|
+| 11 Texas forms (hybrid) | 565 | 5 | 1 | 186 |
+| 50 FUNSD forms (openai) | 762 | 187 | 11 | 286 |
+
+- **Texas.** The single 🔴 value is the only extraction error (*laparascopy*), and no correct value is 🔴.
+  The 5 🟡 values are all correct readings that OCR couldn't fully confirm:
+  - four bits of text clipped at the top edge of a scan, which the hand labels don't cover;
+  - one code that OCR read as `.N4.1...`.
+  When the model lumps several printed phone or fax numbers into one value, it is confirmed if OCR finds
+  every number on the scan.
+- **FUNSD.** Far more 🟡, as expected for handwriting and 1990s fax quality: local OCR often can't confirm what
+  the vision model read. I have not yet measured how well the levels predict errors on FUNSD (see "What I'd
+  do next" in the design notes).
+
 ## Known limitations
 
 - **The vision model can silently normalize text** (spelling fixes, date reformatting). The OCR cross-check
   catches cases where OCR reads the text clearly. It can't help where OCR also fails, e.g. on handwriting.
-- **Checkbox verification needs printed square boxes.** Circles, underlines or handwritten ✓ next to text
-  fall back to the LLM's reading, with no pixel confirmation.
+- **Checkbox verification needs a box or a blank line.** Square, wide, shaded and small boxes and marks on
+  blank lines are measured: on FUNSD, 25 of 45 checkbox groups confirm from pixels, and none falsely
+  disagree with the model. The other 20 use circled options or marks with no box, or have one box too faded
+  to recognize, or OCR can't read an option's printed name. These fall back to the LLM's reading, marked
+  "not double-checked".
 - **The ground truth is mine.** On 11 forms it is easy to check, but it has a single labeler.
 - **Latency.** Reading is slow (minutes per form) because of two high-detail vision passes on a
   budget model. Answers are fast because they come from the index.

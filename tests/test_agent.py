@@ -51,7 +51,7 @@ def test_get_document_renders_typed_values_blanks_and_flags(tools):
     assert "Name: Daniel Jarvis" in text
     assert "Clinical Reason for Urgency: (blank)" in text
     assert "[x] Unknown" in text and "[ ] Female" in text
-    assert "Open placement | 44300" in text
+    assert "Planned Service or Procedure: Open placement | Code: 44300" in text
     assert "REVIEW FLAGS" in text
 
 
@@ -177,3 +177,12 @@ def test_grade_expect_and_forbid():
     ok = SimpleNamespace(answer="Male", steps=[], seconds=1.0, cost_usd=0.0)
     bad = SimpleNamespace(answer="Male or female", steps=[], seconds=1.0, cost_usd=0.0)
     assert grade(item, ok).passed and not grade(item, bad).passed
+
+
+def test_history_is_sent_before_the_question(paths):
+    responses = FakeResponses([_response([], "S43.1 and I75.011")])
+    agent = FormAgent(*paths, model="gpt-6-luna", client=SimpleNamespace(responses=responses))
+    agent.ask("And their diagnoses?", history=[("Which forms are urgent?", "[00c33de5] ...")])
+    roles = [m["role"] for m in responses.calls[0]["input"]]
+    assert roles == ["user", "assistant", "user"]
+    assert responses.calls[0]["input"][1]["content"] == "[00c33de5] ..."

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:28.851236Z",
-    "seconds": 26.48,
-    "cost_usd": 0.0012967999999999999
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:57.419667Z",
+    "seconds": 23.21,
+    "cost_usd": 0.0012347999999999999
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -30,7 +30,7 @@
         "label": "TO:",
         "key": "to",
         "value": "Dr. Spears/A.J. Stevens/R. Milstein",
-        "value_type": "text",
+        "value_type": "name",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -49,7 +49,7 @@
         "bbox": null
       },
       {
-        "label": "TOTAL NUMBER OF PAGES INCLUDING THIS COVER SHEET",
+        "label": "TOTAL NUMBER OF PAGES INCLUDING THIS COVER SHEET -",
         "key": "total_number_of_pages_including_this_cover_sheet",
         "value": "6",
         "value_type": "number",
@@ -60,20 +60,53 @@
         "bbox": null
       },
       {
-        "label": "OUR FAX NUMBER IS",
-        "key": "our_fax_number_is",
-        "value": "(212) 935-6801",
-        "value_type": "phone",
-        "source": "printed",
+        "label": "Fax timestamp",
+        "key": "fax_timestamp",
+        "value": "JUN 25 '97 02:00PM",
+        "value_type": "date",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Address",
-        "key": "address",
-        "value": "687 Madison Avenue, New York, N.Y. 10021-8087",
+        "label": "Fax sender",
+        "key": "fax_sender",
+        "value": "LOEWS CORP LEGAL",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Page",
+        "key": "page",
+        "value": "P.1/6",
+        "value_type": "number",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax transmission ID",
+        "key": "fax_transmission_id",
+        "value": "83635935",
+        "value_type": "id",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "LOEWS CORPORATION",
+        "key": "loews_corporation",
+        "value": "867 Madison Avenue, New York, N.Y. 10021-8087",
         "value_type": "address",
         "source": "printed",
         "section": null,
@@ -102,20 +135,44 @@
         "page": 1,
         "confidence": null,
         "bbox": null
+      },
+      {
+        "label": "BARRY HIRSCH",
+        "key": "barry_hirsch",
+        "value": "Barry Hirsch",
+        "value_type": "name",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "OUR FAX NUMBER IS",
+        "key": "our_fax_number_is",
+        "value": "(212) 935-6801",
+        "value_type": "phone",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
       }
     ],
     "checkboxes": [],
     "tables": [],
-    "text_blocks": [
-      {
-        "text": "JUN 25 '97 02:00PM LOEWS CORP LEGAL; P.1/6; 83635935",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [
+    {
+      "rule": "date_unreadable",
+      "severity": "warning",
+      "message": "'JUN 25 '97 02:00PM' is not a valid date.",
+      "fields": [
+        "fax_timestamp"
+      ]
+    }
+  ],
+  "review": null
 }

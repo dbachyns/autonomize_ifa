@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:31:16.560004Z",
-    "seconds": 33.36,
-    "cost_usd": 0.0014213
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:22:39.397443Z",
+    "seconds": 27.73,
+    "cost_usd": 0.0013093
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -82,50 +82,6 @@
         "bbox": null
       },
       {
-        "label": "Oct.",
-        "key": "oct",
-        "value": null,
-        "value_type": "text",
-        "source": "filled",
-        "section": "REPORTING PERIODS:",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Nov.",
-        "key": "nov",
-        "value": "X",
-        "value_type": "text",
-        "source": "filled",
-        "section": "REPORTING PERIODS:",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Dec.",
-        "key": "dec",
-        "value": null,
-        "value_type": "text",
-        "source": "filled",
-        "section": "REPORTING PERIODS:",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Jan.",
-        "key": "jan",
-        "value": null,
-        "value_type": "text",
-        "source": "filled",
-        "section": "REPORTING PERIODS:",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
         "label": "TEST MARKET GEOGRAPHY:",
         "key": "test_market_geography",
         "value": "Divisions 621 and 627 (Wisconsin)",
@@ -159,7 +115,44 @@
         "bbox": null
       }
     ],
-    "checkboxes": [],
+    "checkboxes": [
+      {
+        "label": "REPORTING PERIODS:",
+        "key": "reporting_periods",
+        "section": null,
+        "page": 1,
+        "options": [
+          {
+            "label": "Oct.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Nov.",
+            "checked": true,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Dec.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          },
+          {
+            "label": "Jan.",
+            "checked": false,
+            "confidence": null,
+            "method": "llm",
+            "bbox": null
+          }
+        ]
+      }
+    ],
     "tables": [],
     "text_blocks": [
       {
@@ -196,16 +189,10 @@
         "section": "ADVERTISING - EFFECTIVENESS OF P.O.S.:",
         "page": 1,
         "bbox": null
-      },
-      {
-        "text": "8225037",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
       }
     ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

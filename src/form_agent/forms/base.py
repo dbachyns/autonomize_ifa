@@ -51,6 +51,17 @@ class FormPlugin(ABC):
         """Form-specific guidance appended to the typed-extraction prompt (allowed options, formats)."""
         return ""
 
+    def field_paths(self) -> dict[str, str]:
+        """Universal key (as produced by `to_universal`) -> typed path, for fields and checkbox groups.
+
+        Lets the UI edit typed values and attach flags to what it displays.
+        """
+        return {}
+
+    def table_paths(self) -> dict[int, tuple[str, list[str]]]:
+        """Universal table index -> (typed list path, typed attribute for each column)."""
+        return {}
+
     def parse(self, data: dict[str, Any]) -> BaseModel:
         return self.schema.model_validate(data)
 

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:33:26.812977Z",
-    "seconds": 41.34,
-    "cost_usd": 0.002114
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:41.424323Z",
+    "seconds": 29.69,
+    "cost_usd": 0.0016735
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -18,7 +18,7 @@
       {
         "label": "From:",
         "key": "from",
-        "value": "Lynnette Stevens",
+        "value": "Lynette Stevens",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -40,8 +40,8 @@
       {
         "label": "CC:",
         "key": "cc",
-        "value": "Vincent Losito George Baroody",
-        "value_type": "name",
+        "value": "Vincent Losito; George Baroody",
+        "value_type": "text",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -139,7 +139,7 @@
       {
         "label": "Geographical Area(s)",
         "key": "geographical_area",
-        "value": "AR, AZ, AK, CA, CO, FL, ID, LA, CT, ME, MASS, MN, MT, NE Tiers II & IV NV, NM, NY, ND, OK, OR, RI, SD, UT, WA, D.C., WY",
+        "value": "Tiers II & IV AR, AZ, AK, CA, CO, FL, ID, LA, CT, ME, MASS, MN, MT, NE NV, NM, NY, ND, OK, OR, RI, SD, UT, WA, D.C., WY",
         "value_type": "text",
         "source": "filled",
         "section": null,
@@ -183,8 +183,8 @@
       {
         "label": "Signature of Initiator",
         "key": "signature_of_initiator",
-        "value": "Lynnette Kayser Stevens",
-        "value_type": "name",
+        "value": "[signed]",
+        "value_type": "text",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -203,12 +203,12 @@
         "bbox": null
       },
       {
-        "label": "Analytical Requirements:",
+        "label": "Analytical Requirements",
         "key": "analytical_requirements",
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "Analytical Requirements",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -238,8 +238,8 @@
       {
         "label": "Est. Redemption",
         "key": "est_redemption",
-        "value": "13½%",
-        "value_type": "number",
+        "value": "13 1/2%",
+        "value_type": "text",
         "source": "filled",
         "section": "FOR CONTROL USE ONLY",
         "page": 1,
@@ -249,23 +249,9 @@
     ],
     "checkboxes": [],
     "tables": [],
-    "text_blocks": [
-      {
-        "text": "Don Kisling\nS. Tesh C. Hill",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "8675409",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

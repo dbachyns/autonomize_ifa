@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:35:22.504296Z",
-    "seconds": 31.04,
-    "cost_usd": 0.0018438
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:25:31.895821Z",
+    "seconds": 26.42,
+    "cost_usd": 0.0016022999999999999
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -60,7 +60,7 @@
         "bbox": null
       },
       {
-        "label": "Institution:",
+        "label": "Institution",
         "key": "institution",
         "value": null,
         "value_type": "text",
@@ -137,7 +137,7 @@
         "bbox": null
       },
       {
-        "label": "Telephone:",
+        "label": "Telephone",
         "key": "phone",
         "value": null,
         "value_type": "phone",
@@ -148,7 +148,7 @@
         "bbox": null
       },
       {
-        "label": "FAX #:",
+        "label": "FAX #",
         "key": "fax",
         "value": null,
         "value_type": "phone",
@@ -159,7 +159,7 @@
         "bbox": null
       },
       {
-        "label": "Name of guest:",
+        "label": "Name of guest",
         "key": "name_of_guest",
         "value": null,
         "value_type": "name",
@@ -192,8 +192,8 @@
         "bbox": null
       },
       {
-        "label": "Extra banquet tickets @",
-        "key": "extra_banquet_tickets",
+        "label": "Extra banquet tickets @ $40.00",
+        "key": "extra_banquet_tickets_40_00",
         "value": "$40.00",
         "value_type": "money",
         "source": "printed",
@@ -225,7 +225,7 @@
         "bbox": null
       },
       {
-        "label": "No. in Party:",
+        "label": "No. in Party",
         "key": "no_in_party",
         "value": null,
         "value_type": "number",
@@ -324,18 +324,51 @@
         "bbox": null
       },
       {
-        "label": "Mail to:",
-        "key": "mail_to",
-        "value": "Dr. Phil P. Hunter U. T. Tobacco Experiment Station Route 5 Box 113 Greeneville, TN 37743",
-        "value_type": "address",
+        "label": "Mail to: Contact",
+        "key": "mail_to_contact",
+        "value": "Dr. Phil P. Hunter",
+        "value_type": "name",
         "source": "printed",
-        "section": "Mail to:",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Telephone:",
+        "label": "Mail to: Institution",
+        "key": "mail_to_institution",
+        "value": "U. Tobacco Experiment Station",
+        "value_type": "text",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Mail to: Address",
+        "key": "mail_to_address",
+        "value": "Route 5 Box 113",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Mail to: City, State, ZIP Code",
+        "key": "mail_to_city_state_zip_code",
+        "value": "Greeneville, TN 37743",
+        "value_type": "address",
+        "source": "printed",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Telephone",
         "key": "phone",
         "value": "(615) 638-6532",
         "value_type": "phone",
@@ -346,7 +379,7 @@
         "bbox": null
       },
       {
-        "label": "FAX:",
+        "label": "FAX",
         "key": "fax",
         "value": "(615) 638-6458",
         "value_type": "phone",
@@ -370,8 +403,8 @@
     ],
     "checkboxes": [
       {
-        "label": "Registration activities",
-        "key": "registration_activities",
+        "label": "Registration options",
+        "key": "registration_options",
         "section": null,
         "page": 1,
         "options": [
@@ -383,14 +416,14 @@
             "bbox": null
           },
           {
-            "label": "Fall Foliage Tour on Tuesday",
+            "label": "Breakfast on Wednesday",
             "checked": false,
             "confidence": null,
             "method": "llm",
             "bbox": null
           },
           {
-            "label": "Breakfast on Wednesday",
+            "label": "Fall Foliage Tour on Tuesday",
             "checked": false,
             "confidence": null,
             "method": "llm",
@@ -410,5 +443,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

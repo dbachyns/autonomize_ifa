@@ -34,7 +34,20 @@ def _engine():
     return RapidOCR()
 
 
+SMALL_PAGE = 1600  # pixels wide; below this (low-res faxes, ~100 dpi) text is too small for the OCR models
+
+
 def ocr_page(image: Image.Image, offset: tuple[float, float] = (0, 0)) -> list[OCRLine]:
+    """OCR lines in page coordinates. Small pages are also read at 2x and both readings are kept:
+    upscaling recovers small or faint text, while the original size keeps a few fragments upscaling loses."""
+    lines = _ocr(image, offset)
+    if offset == (0, 0) and image.width < SMALL_PAGE:
+        big = image.convert("RGB").resize((image.width * 2, image.height * 2), Image.LANCZOS)
+        lines += [OCRLine(l.text, l.x0 / 2, l.y0 / 2, l.x1 / 2, l.y1 / 2, l.score) for l in _ocr(big, (0, 0))]
+    return lines
+
+
+def _ocr(image: Image.Image, offset: tuple[float, float]) -> list[OCRLine]:
     arr = np.asarray(image.convert("RGB"))[:, :, ::-1]  # RGB -> BGR for OpenCV-style engines
     result, _ = _engine()(arr)
     dx, dy = offset

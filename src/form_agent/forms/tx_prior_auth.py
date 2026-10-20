@@ -355,6 +355,42 @@ Field notes:
         field(S6, "Physical address of service provider or facility", "facility_address", t.facility_address, "address")
         return UniversalForm(title=self.title, fields=fields, checkboxes=groups, tables=[table])
 
+    def field_paths(self) -> dict[str, str]:
+        return {
+            "issuer_name": "submission.issuer_name", "submission_date": "submission.date",
+            "review_type": "general.review_type", "request_type": "general.request_type",
+            "clinical_reason_for_urgency": "general.clinical_reason_for_urgency",
+            "prev_auth_number": "general.prev_auth_number",
+            "patient_name": "patient.name", "patient_phone": "patient.phone", "date_of_birth": "patient.dob",
+            "sex": "patient.sex", "subscriber_name": "patient.subscriber_name", "member_id": "patient.member_id",
+            "group_number": "patient.group_number",
+            "requesting_provider_name": "requesting_provider.name", "requesting_provider_npi": "requesting_provider.npi",
+            "requesting_provider_specialty": "requesting_provider.specialty",
+            "requesting_provider_phone": "requesting_provider.phone", "requesting_provider_fax": "requesting_provider.fax",
+            "contact_name": "requesting_provider.contact_name", "contact_phone": "requesting_provider.contact_phone",
+            "signature_and_date": "requesting_provider.signature_and_date",
+            "service_provider_name": "service_provider.name", "service_provider_npi": "service_provider.npi",
+            "service_provider_specialty": "service_provider.specialty", "service_provider_phone": "service_provider.phone",
+            "pcp_name": "pcp.name", "pcp_phone": "pcp.phone", "pcp_fax": "pcp.fax",
+            "icd_version": "services.icd_version", "setting": "services.setting",
+            "setting_other": "services.setting_other",
+            "therapy_type": "services.therapy.types", "therapy_sessions": "services.therapy.sessions",
+            "therapy_duration": "services.therapy.duration", "therapy_frequency": "services.therapy.frequency",
+            "therapy_other": "services.therapy.other",
+            "home_health": "services.home_health.requested",
+            "home_health_md_order": "services.home_health.md_order_attached",
+            "home_health_nursing_assessment": "services.home_health.nursing_assessment_attached",
+            "home_health_visits": "services.home_health.visits", "home_health_duration": "services.home_health.duration",
+            "home_health_frequency": "services.home_health.frequency", "home_health_other": "services.home_health.other",
+            "dme": "services.dme.requested", "dme_md_order": "services.dme.md_order_attached",
+            "dme_title19": "services.dme.title19_attached", "dme_equipment": "services.dme.equipment",
+            "dme_duration": "services.dme.duration",
+            "facility_address": "facility_address",
+        }
+
+    def table_paths(self) -> dict[int, tuple[str, list[str]]]:
+        return {0: ("services.lines", ["service", "code", "start_date", "end_date", "diagnosis", "icd_code"])}
+
     def table_rows(self, doc_id: str, typed: TexasPriorAuth) -> dict[str, list[dict[str, Any]]]:
         """Typed tables hold normalized values (ISO dates, digit-only phones) so SQL can sort and filter."""
 

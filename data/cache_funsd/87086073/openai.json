@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:37:28.486952Z",
-    "seconds": 185.28,
-    "cost_usd": 0.0100862
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:25:07.290777Z",
+    "seconds": 25.87,
+    "cost_usd": 0.0012315
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -51,7 +51,7 @@
       {
         "label": "STRUCTURE",
         "key": "structure",
-        "value": "[Chemical structure drawing; visible labels: CH₃CH₂O and OH]",
+        "value": "[chemical structure drawn]",
         "value_type": "text",
         "source": "filled",
         "section": null,
@@ -93,6 +93,28 @@
         "bbox": null
       },
       {
+        "label": "J. D. Ergle",
+        "key": "j_d_ergle",
+        "value": "[signed] J. D. Ergle",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "R. F. Dufresne",
+        "key": "r_f_dufresne",
+        "value": "[signed] R. F. Dufresne",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
         "label": "FORM",
         "key": "form",
         "value": "145 80",
@@ -109,5 +131,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

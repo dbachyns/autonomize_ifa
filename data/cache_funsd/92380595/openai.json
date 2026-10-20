@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:37:04.183542Z",
-    "seconds": 53.49,
-    "cost_usd": 0.0089022
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:26:43.051027Z",
+    "seconds": 61.1,
+    "cost_usd": 0.0139809
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -62,7 +62,18 @@
       {
         "label": "ATTN:",
         "key": "attn",
-        "value": "MR. ARTHUR STEVENS, ESQ. A.J. STEVENS",
+        "value": "MR. ARTHUR STEVENS, ESQ.",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "RE:",
+        "key": "re",
+        "value": "LORILLARD, INC.",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -82,9 +93,9 @@
         "bbox": null
       },
       {
-        "label": "TX",
-        "key": "tx",
-        "value": "13951 U",
+        "label": "Reference number",
+        "key": "reference",
+        "value": "TX 13951 U",
         "value_type": "id",
         "source": "filled",
         "section": null,
@@ -98,40 +109,29 @@
         "value": "033052",
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Motor Carrier or Statutory",
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "RE:",
-        "key": "re",
-        "value": "LORILLARD, INC.",
-        "value_type": "name",
-        "source": "filled",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "served upon:",
+        "label": "Served upon",
         "key": "served_upon",
         "value": "UNITED STATES CORPORATION COMPANY IN TEXAS",
         "value_type": "name",
         "source": "filled",
-        "section": "NOTICE OF SERVICE OF PROCESS",
+        "section": "Notice of Service of Process",
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "on",
-        "key": "on",
+        "label": "Date of service",
+        "key": "date_of_service",
         "value": "12-13-89",
         "value_type": "date",
         "source": "filled",
-        "section": "NOTICE OF SERVICE OF PROCESS",
+        "section": "Notice of Service of Process",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -142,7 +142,7 @@
         "value": null,
         "value_type": "id",
         "source": "filled",
-        "section": "NOTICE OF SERVICE OF PROCESS",
+        "section": "Notice of Service of Process",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -153,7 +153,7 @@
         "value": "CITATION AND FIRST ORIGINAL PETITION",
         "value_type": "text",
         "source": "filled",
-        "section": "NOTICE OF SERVICE OF PROCESS",
+        "section": "Notice of Service of Process",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -164,7 +164,7 @@
         "value": "WEBSTER GREGG",
         "value_type": "name",
         "source": "filled",
-        "section": "TITLE OF ACTION",
+        "section": "Title of Action",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -175,7 +175,7 @@
         "value": "R. J. REYNOLDS TOBACCO COMPANY, ET AL",
         "value_type": "name",
         "source": "filled",
-        "section": "TITLE OF ACTION",
+        "section": "Title of Action",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -186,7 +186,7 @@
         "value": "475,592",
         "value_type": "id",
         "source": "filled",
-        "section": "TITLE OF ACTION",
+        "section": "Title of Action",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -219,7 +219,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "Tel Call Placed",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -230,7 +230,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "Tel Call Placed",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -241,7 +241,7 @@
         "value": null,
         "value_type": "name",
         "source": "filled",
-        "section": null,
+        "section": "Tel Call Placed",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -252,7 +252,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "Tel Call Placed",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -271,10 +271,21 @@
       {
         "label": "ATTORNEYS FOR CLAIMANT",
         "key": "attorneys_for_claimant",
-        "value": "Mary Ellen Felps 1000 West Ave. Austin, Tx. 78701",
+        "value": "Mary Ellen Felps",
+        "value_type": "name",
+        "source": "filled",
+        "section": "ATTORNEYS FOR CLAIMANT",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Address",
+        "key": "address",
+        "value": "1000 West Ave. Austin, Tx. 78701",
         "value_type": "address",
         "source": "filled",
-        "section": null,
+        "section": "ATTORNEYS FOR CLAIMANT",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -285,18 +296,7 @@
         "value": "512/478-4873",
         "value_type": "phone",
         "source": "filled",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Reg. Mail",
-        "key": "reg_mail",
-        "value": null,
-        "value_type": "text",
-        "source": "filled",
-        "section": "PAPERS TRANSMITTED TO CLIENT",
+        "section": "ATTORNEYS FOR CLAIMANT",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -337,9 +337,20 @@
       {
         "label": "Signed:",
         "key": "signed",
-        "value": null,
-        "value_type": "name",
+        "value": "[signed]",
+        "value_type": "text",
         "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Form number",
+        "key": "form",
+        "value": "92380595",
+        "value_type": "id",
+        "source": "printed",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -348,20 +359,20 @@
     ],
     "checkboxes": [
       {
-        "label": "Motor Carrier OR Statutory",
-        "key": "motor_carrier_or_statutory",
-        "section": null,
+        "label": "Service type",
+        "key": "service_type",
+        "section": "Motor Carrier or Statutory",
         "page": 1,
         "options": [
           {
-            "label": "Motor Carrier",
+            "label": "MOTOR CARRIER",
             "checked": false,
             "confidence": null,
             "method": "llm",
             "bbox": null
           },
           {
-            "label": "Statutory",
+            "label": "STATUTORY",
             "checked": true,
             "confidence": null,
             "method": "llm",
@@ -370,9 +381,9 @@
         ]
       },
       {
-        "label": "via:",
+        "label": "via",
         "key": "via",
-        "section": "NOTICE OF SERVICE OF PROCESS",
+        "section": "Notice of Service of Process",
         "page": 1,
         "options": [
           {
@@ -390,7 +401,7 @@
             "bbox": null
           },
           {
-            "label": "or Certified",
+            "label": "Certified",
             "checked": false,
             "confidence": null,
             "method": "llm",
@@ -401,7 +412,7 @@
       {
         "label": "Documents served",
         "key": "documents_served",
-        "section": "NOTICE OF SERVICE OF PROCESS",
+        "section": "Notice of Service of Process",
         "page": 1,
         "options": [
           {
@@ -477,13 +488,13 @@
         ]
       },
       {
-        "label": "PAPERS TRANSMITTED TO CLIENT",
-        "key": "papers_transmitted_to_client",
+        "label": "Papers transmitted",
+        "key": "papers_transmitted",
         "section": "PAPERS TRANSMITTED TO CLIENT",
         "page": 1,
         "options": [
           {
-            "label": "Fed-X",
+            "label": "Fed-Ex",
             "checked": true,
             "confidence": null,
             "method": "llm",
@@ -507,8 +518,24 @@
       }
     ],
     "tables": [],
-    "text_blocks": []
+    "text_blocks": [
+      {
+        "text": "A.J. STEVENS",
+        "label": null,
+        "section": null,
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Mary Ellen Felps\n1000 West Ave.\nAustin, Tx. 78701",
+        "label": null,
+        "section": "ATTORNEYS FOR CLAIMANT",
+        "page": 1,
+        "bbox": null
+      }
+    ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

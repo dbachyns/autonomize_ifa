@@ -53,6 +53,10 @@ class PageEvidence:
             return 1.0, None
         if target in self.loose_all or (value_kind in CODE_KINDS and _unconfuse(value) in self.unconfused_all):
             return 1.0, value
+        if len(target) > 30:  # a paragraph wrapped over several lines, possibly interleaved with other text
+            pieces = sum(len(l) for l in self.loose_lines if len(l) >= 6 and l in target)
+            if pieces >= 0.8 * len(target):
+                return 1.0, value
         best, reading = 0.0, None
         for line, loose in zip(self.lines, self.loose_lines):
             score = fuzz.partial_ratio(target, loose) / 100 if len(loose) >= len(target) else fuzz.ratio(target, loose) / 100

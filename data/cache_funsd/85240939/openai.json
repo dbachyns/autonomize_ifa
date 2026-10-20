@@ -4,15 +4,15 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:36:15.444840Z",
-    "seconds": 226.59,
-    "cost_usd": 0.0014557
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:11.538419Z",
+    "seconds": 14.12,
+    "cost_usd": 0.0008477000000000001
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
   "universal": {
-    "title": "THE TOBACCO INSTITUTE FIFTH ANNUAL COLLEGE OF TOBACCO KNOWLEDGE REGISTRATION FORM",
+    "title": "REGISTRATION FORM",
     "page_count": 1,
     "fields": [
       {
@@ -93,10 +93,10 @@
         "bbox": null
       },
       {
-        "label": "FIFTH ANNUAL COLLEGE OF TOBACCO KNOWLEDGE",
-        "key": "fifth_annual_college_of_tobacco_knowledge",
-        "value": "FEBRUARY 19-21, 1980",
-        "value_type": "date",
+        "label": "Call",
+        "key": "call",
+        "value": "Connie Drath",
+        "value_type": "name",
         "source": "printed",
         "section": null,
         "page": 1,
@@ -104,9 +104,9 @@
         "bbox": null
       },
       {
-        "label": "Any questions? Call",
-        "key": "any_questions_call",
-        "value": "Connie Drath or Carol Musgrave",
+        "label": "or",
+        "key": "or",
+        "value": "Carol Musgrave",
         "value_type": "name",
         "source": "printed",
         "section": null,
@@ -165,5 +165,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

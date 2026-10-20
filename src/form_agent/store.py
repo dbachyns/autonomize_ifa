@@ -20,7 +20,8 @@ from form_agent.normalize import label_to_key, normalize_value
 from form_agent.schema import FormRecord
 
 # Which reader's output the agent answers from when several exist for a document.
-DEFAULT_PREFERENCE = ["hybrid", "claude", "ollama", "ground_truth"]
+# A human-reviewed version always wins; ground truth is only a fallback (it is for evaluation).
+DEFAULT_PREFERENCE = ["reviewed", "hybrid", "openai", "claude", "ollama", "ground_truth"]
 
 
 # --- JSON cache --------------------------------------------------------------------------
@@ -43,7 +44,8 @@ def load_record(path: Path) -> FormRecord:
 
 def iter_records(cache_dir: Path) -> Iterable[FormRecord]:
     for path in sorted(cache_dir.glob("*/*.json")):
-        yield load_record(path)
+        if not path.name.startswith("_"):  # _layout.json etc. are not records
+            yield load_record(path)
 
 
 def pick_active(records: list[FormRecord], preference: list[str]) -> FormRecord:
@@ -104,7 +106,7 @@ CREATE TABLE table_cells (
     doc_id TEXT NOT NULL,
     page INTEGER,
     table_index INTEGER NOT NULL,
-    table_title TEXT,
+    table_name TEXT,
     row_index INTEGER NOT NULL,
     column TEXT,
     value TEXT,
@@ -250,7 +252,7 @@ def _insert_record(con: sqlite3.Connection, rec: FormRecord, active: bool) -> in
                 column = t.headers[ci] if ci < len(t.headers) else f"col{ci + 1}"
                 con.execute(
                     "INSERT INTO table_cells VALUES (?,?,?,?,?,?,?,?,?,?)",
-                    (run_id, doc, t.page, ti, t.title, ri, column, value, normalize_value(value, vtype), vtype),
+                    (run_id, doc, t.page, ti, t.name, ri, column, value, normalize_value(value, vtype), vtype),
                 )
                 if active and value:
                     con.execute("INSERT INTO search VALUES (?,?,?,?)", (doc, "table", column, value))

@@ -6,6 +6,8 @@
     eval     {tx,funsd,qa}      score extraction against ground truth, or the Q&A agent on a question set
     ask      QUESTION [--doc ID] answer a question about one form or all forms
     summarize ID                summarize one form
+    chat     [--doc ID]         interactive conversation with follow-up questions
+    layout                      locate text and checkboxes on every cached scan (local OCR, for the UI)
 """
 
 from __future__ import annotations
@@ -36,7 +38,7 @@ def cmd_extract(args: argparse.Namespace) -> int:
     todo = [p for p in paths if args.force or not record_path(args.cache, doc_id_for(p), args.reader).exists()]
     print(f"{len(paths)} documents, {len(paths) - len(todo)} already cached, extracting {len(todo)} with {args.reader}")
 
-    failures = 0
+    failures, done = 0, []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {pool.submit(reader.read, p): p for p in todo}
         for fut in as_completed(futures):
@@ -49,10 +51,19 @@ def cmd_extract(args: argparse.Namespace) -> int:
                 continue
             rec.flags = [*rec.flags, *validate(rec)]
             save_record(args.cache, rec)
+            done.append(rec)
             n_err = sum(f.severity == "error" for f in rec.flags)
             cost = f"${rec.run.cost_usd:.4f}" if rec.run.cost_usd is not None else "-"
             print(f"  {rec.doc_id[:40]:<40} {rec.form_type:<14} {rec.run.seconds:5.1f}s {cost:>8}  "
                   f"flags={len(rec.flags)} (errors={n_err})")
+    if done:  # make the new forms ready to browse and ask about, as an upload in the web UI does
+        from form_agent.layout import get_layout
+        from form_agent.store import build_index
+
+        for rec in done:
+            get_layout(args.cache, rec.doc_id, rec.source_file)
+        build_index(args.cache, args.db)
+        print(f"located values on {len(done)} scan(s) and rebuilt {args.db}")
     return 1 if failures else 0
 
 
@@ -125,6 +136,42 @@ def cmd_summarize(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_chat(args: argparse.Namespace) -> int:
+    from form_agent.agent import FormAgent
+
+    agent = FormAgent(db_path=args.db, cache_dir=args.cache, model=args.model)
+    history: list[tuple[str, str]] = []
+    print("Ask about the forms (empty line or Ctrl-D to quit).")
+    while True:
+        try:
+            question = input("\n> ").strip()
+        except EOFError:
+            break
+        if not question:
+            break
+        result = agent.ask(question, doc_id=args.doc, history=history)
+        _print_answer(result, args.trace)
+        history.append((question, result.answer))
+    return 0
+
+
+def cmd_layout(args: argparse.Namespace) -> int:
+    from form_agent.layout import get_layout, load_layout
+    from form_agent.store import iter_records
+
+    done = set()
+    for rec in iter_records(args.cache):
+        if rec.doc_id in done or (load_layout(args.cache, rec.doc_id) and not args.force):
+            done.add(rec.doc_id)
+            continue
+        done.add(rec.doc_id)
+        if args.force:
+            (args.cache / rec.doc_id / "_layout.json").unlink(missing_ok=True)
+        layout = get_layout(args.cache, rec.doc_id, rec.source_file)
+        print(f"  {rec.doc_id[:40]:<40} " + (f"{len(layout)} page(s)" if layout else "scan not found"))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="form_agent", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -137,11 +184,17 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--limit", type=int, help="only the first N documents")
     p.add_argument("--force", action="store_true", help="re-extract even if cached")
+    p.add_argument("--db", type=Path, default=settings.db_path, help="index to rebuild afterwards")
     p.set_defaults(func=cmd_extract)
 
     p = sub.add_parser("validate", help="re-run validation rules on cached records")
     p.add_argument("--cache", type=Path, default=settings.cache_dir)
     p.set_defaults(func=cmd_validate)
+
+    p = sub.add_parser("layout", help="locate text and checkboxes on cached scans (local OCR)")
+    p.add_argument("--cache", type=Path, default=settings.cache_dir)
+    p.add_argument("--force", action="store_true", help="recompute existing layouts")
+    p.set_defaults(func=cmd_layout)
 
     p = sub.add_parser("index", help="rebuild the SQLite index from the cache")
     p.add_argument("--cache", type=Path, default=settings.cache_dir)
@@ -162,11 +215,13 @@ def main(argv: list[str] | None = None) -> int:
     p.set_defaults(func=cmd_eval)
 
     for name, func, help_ in [("ask", cmd_ask, "answer a question about one form or all forms"),
-                              ("summarize", cmd_summarize, "summarize one form")]:
+                              ("summarize", cmd_summarize, "summarize one form"),
+                              ("chat", cmd_chat, "interactive conversation with follow-up questions")]:
         p = sub.add_parser(name, help=help_)
         if name == "ask":
             p.add_argument("question")
-            p.add_argument("--doc", help="restrict the question to one form (short or full id)")
+        if name in ("ask", "chat"):
+            p.add_argument("--doc", help="restrict the questions to one form (short or full id)")
             p.add_argument("--trace", action="store_true", help="print the tool calls the agent made")
         else:
             p.add_argument("doc", help="form id (short or full)")
@@ -176,7 +231,14 @@ def main(argv: list[str] | None = None) -> int:
         p.set_defaults(func=func)
 
     args = parser.parse_args(argv)
-    return args.func(args)
+    try:
+        return args.func(args)
+    except Exception as e:  # a missing key is the usual first-run problem: say how to fix it, not a traceback
+        if type(e).__name__ == "OpenAIError" and "api_key" in str(e):
+            print("No OpenAI API key. Put OPENAI_API_KEY=... in .env (cp .env.example .env) or export it.\n"
+                  "Tests, the web UI's Forms screen and `eval tx` work without a key.", file=sys.stderr)
+            return 2
+        raise
 
 
 if __name__ == "__main__":

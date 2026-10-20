@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:35:33.051670Z",
-    "seconds": 38.1,
-    "cost_usd": 0.0021352
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:25:41.944316Z",
+    "seconds": 34.65,
+    "cost_usd": 0.0019192
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -16,8 +16,8 @@
     "page_count": 1,
     "fields": [
       {
-        "label": "LOT FILE NUMBER",
-        "key": "lot_file",
+        "label": "LRC FILE NUMBER",
+        "key": "lrc_file",
         "value": "A221",
         "value_type": "id",
         "source": "filled",
@@ -71,12 +71,67 @@
         "bbox": null
       },
       {
+        "label": "MUTAGENICITY SOLVENTS",
+        "key": "mutagenicity_solvents",
+        "value": "A221 is soluble in EtOH at 0.2 g/mL, with stirring, at room temperature. Reference BC30-88.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "SOLUBILITY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "PARENTERAL",
+        "key": "parenteral",
+        "value": "A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring at room temperature. Reference BC30-88.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "SOLUBILITY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ORAL",
+        "key": "oral",
+        "value": "A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring at room temperature. Reference BC30-88.",
+        "value_type": "text",
+        "source": "filled",
+        "section": "SOLUBILITY",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "ACUTE CARDIOVASCULAR",
+        "key": "acute_cardiovascular",
+        "value": "A221 is insoluble for this procedure. Reference BC30-88.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "STORAGE RECOMMENDATIONS",
+        "key": "storage_recommendations",
+        "value": "Refrigerate in an amber glass bottle at no more than 8°C.",
+        "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
         "label": "SAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE)",
         "key": "safety_comments",
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": "SAFETY COMMENTS (SUGGESTED HANDLING PROCEDURE)",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -84,7 +139,7 @@
       {
         "label": "SIGNATURE",
         "key": "signature",
-        "value": "Elizabeth W. Crosse",
+        "value": "[signed] Elizabeth W. Crosse",
         "value_type": "name",
         "source": "filled",
         "section": null,
@@ -106,7 +161,7 @@
       {
         "label": "FORM",
         "key": "form",
-        "value": "FORM 9 (8/83)",
+        "value": "9 (8/83)",
         "value_type": "code",
         "source": "printed",
         "section": null,
@@ -119,7 +174,7 @@
       {
         "label": "COMPOUND SENSITIVE TO",
         "key": "compound_sensitive_to",
-        "section": "COMPOUND SENSITIVE TO",
+        "section": null,
         "page": 1,
         "options": [
           {
@@ -154,58 +209,9 @@
       }
     ],
     "tables": [],
-    "text_blocks": [
-      {
-        "text": "A221 is soluble in EtOH at 0.2 g/mL, with stirring, at room temperature. Reference BC30-88.",
-        "label": "MUTAGENICITY SOLVENTS",
-        "section": "SOLUBILITY",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring at room temperature. Reference BC30-88.",
-        "label": null,
-        "section": "SOLUBILITY",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "A221 forms a solution in corn oil at 0.5 g/0.5 mL, with stirring at room temperature. Reference BC30-88.",
-        "label": null,
-        "section": "ORAL",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "A221 is insoluble for this procedure. Reference BC30-88.",
-        "label": null,
-        "section": "ACUTE CARDIOVASCULAR",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "Refrigerate in an amber glass bottle at no more than 8°C.",
-        "label": null,
-        "section": "STORAGE RECOMMENDATIONS",
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "A - 13",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      },
-      {
-        "text": "87428306",
-        "label": null,
-        "section": null,
-        "page": 1,
-        "bbox": null
-      }
-    ]
+    "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

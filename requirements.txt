@@ -10,3 +10,5 @@ pytest>=8.0
 -e .
 # notebooks
 jupyter>=1.0
+# web UI
+streamlit>=1.40

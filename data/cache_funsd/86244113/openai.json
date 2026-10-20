@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:34:26.584731Z",
-    "seconds": 24.6,
-    "cost_usd": 0.0011683
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:52.165328Z",
+    "seconds": 22.43,
+    "cost_usd": 0.0011803
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -20,7 +20,7 @@
         "key": "division",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -31,7 +31,7 @@
         "key": "account",
         "value": null,
         "value_type": "id",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -42,7 +42,7 @@
         "key": "inventory_for_state",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -53,7 +53,7 @@
         "key": "dates",
         "value": null,
         "value_type": "date",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -64,6 +64,17 @@
         "key": "action_plan",
         "value": null,
         "value_type": "text",
+        "source": "filled",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Form number",
+        "key": "form",
+        "value": "86244113",
+        "value_type": "id",
         "source": "printed",
         "section": null,
         "page": 1,
@@ -103,7 +114,7 @@
             null
           ],
           [
-            "STYLE MEN, LIGHT BOX 100'S",
+            "STYLE MEN. LIGHT BOX 100'S",
             null,
             null,
             null
@@ -132,5 +143,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:39:52.400201Z",
-    "seconds": 247.29,
-    "cost_usd": 0.0137269
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:26:10.921756Z",
+    "seconds": 39.03,
+    "cost_usd": 0.0065883999999999995
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -65,18 +65,7 @@
         "value": "$2,250",
         "value_type": "money",
         "source": "filled",
-        "section": "Cost Estimate",
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Prepared by",
-        "key": "prepared_by",
-        "value": "Scott R. Benson",
-        "value_type": "name",
-        "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -87,18 +76,18 @@
         "value": "The Data Group, Inc.",
         "value_type": "name",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Evidence",
-        "key": "evidence",
+        "label": "Incidence",
+        "key": "incidence",
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -109,7 +98,7 @@
         "value": "10 minutes",
         "value_type": "text",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -120,7 +109,7 @@
         "value": "4",
         "value_type": "number",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -131,7 +120,7 @@
         "value": "1",
         "value_type": "number",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -142,7 +131,7 @@
         "value": "2 wks from start of fld.",
         "value_type": "text",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -153,7 +142,18 @@
         "value": "4 wks from start of fld.",
         "value_type": "text",
         "source": "filled",
-        "section": "Cost Estimate",
+        "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Prepared by:",
+        "key": "prepared_by",
+        "value": "[signed] Scott R. Benson",
+        "value_type": "name",
+        "source": "filled",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -161,10 +161,10 @@
       {
         "label": "Marketing Research Director",
         "key": "marketing_research_director",
-        "value": null,
+        "value": "[signed]",
         "value_type": "name",
         "source": "filled",
-        "section": "Approval",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -172,10 +172,10 @@
       {
         "label": "Product Manager",
         "key": "product_manager",
-        "value": null,
+        "value": "[signed]",
         "value_type": "name",
         "source": "filled",
-        "section": "Approval",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -183,10 +183,10 @@
       {
         "label": "Group Product Manager",
         "key": "group_product_manager",
-        "value": null,
+        "value": "[signed]",
         "value_type": "name",
         "source": "filled",
-        "section": "Approval",
+        "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -196,7 +196,7 @@
       {
         "label": "+ - 10% Contingency",
         "key": "10_contingency",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "options": [
           {
@@ -218,7 +218,7 @@
       {
         "label": "Final Report Inc.",
         "key": "final_report_inc",
-        "section": "Cost Estimate",
+        "section": null,
         "page": 1,
         "options": [
           {
@@ -262,7 +262,7 @@
         "bbox": null
       },
       {
-        "text": "Due to sample size and experience we feel 25 respondents will presently be Triumph smokers. An action standard of 75% should be utilized for judgments on product negatives only among this group.\nIf 75% of Triumph smokers mention \"harshness\" we could consider it a problem. If 50-75% of Triumph smokers mention \"harshness\" we could consider it a possible problem (look at other areas).\nIf below 50% of Triumph smokers mention \"harshness\" we could consider it not a problem.",
+        "text": "Due to sample size and experience we feel 25 respondents will presently be Triumph smokers. An action standard of 75% should be utilized for judgments on product negatives only among this group.\nIf 75% of Triumph smokers mention \"harshness\" we could consider it a problem. If 50-75% of Triumph smokers mention \"harshness\" we could consider it a possible problem. (look at other areas).\nIf below 50% of Triumph smokers mention \"harshness\" we could consider it not a problem.",
         "label": null,
         "section": "Research Limitations",
         "page": 1,
@@ -271,5 +271,6 @@
     ]
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }

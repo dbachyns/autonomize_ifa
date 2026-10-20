@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:34:01.987191Z",
-    "seconds": 91.62,
-    "cost_usd": 0.0007292
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:22.070812Z",
+    "seconds": 13.51,
+    "cost_usd": 0.0007657
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -16,66 +16,66 @@
     "page_count": 1,
     "fields": [
       {
-        "label": "Publication or station",
-        "key": "publication_or_station",
+        "label": "(Publication or station)",
+        "key": null,
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Location/address",
-        "key": "location_address",
+        "label": "(Location/address)",
+        "key": null,
         "value": null,
         "value_type": "address",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Name",
-        "key": "name",
+        "label": "(Name)",
+        "key": null,
         "value": null,
         "value_type": "name",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Position",
-        "key": "position",
+        "label": "(Position)",
+        "key": null,
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Date",
-        "key": "date",
+        "label": "(Date)",
+        "key": null,
         "value": null,
         "value_type": "date",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
         "bbox": null
       },
       {
-        "label": "Phone number",
-        "key": "phone",
+        "label": "(Phone number)",
+        "key": null,
         "value": null,
         "value_type": "phone",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -86,7 +86,7 @@
         "key": "reason_for_contact",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -97,7 +97,7 @@
         "key": "questions_responses",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -108,7 +108,7 @@
         "key": "additional_comments",
         "value": null,
         "value_type": "text",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -119,18 +119,7 @@
         "key": "inquiry_handled_by",
         "value": null,
         "value_type": "name",
-        "source": "printed",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Form number",
-        "key": "form",
-        "value": "85540866",
-        "value_type": "id",
-        "source": "printed",
+        "source": "filled",
         "section": null,
         "page": 1,
         "confidence": null,
@@ -142,5 +131,13 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [
+    {
+      "rule": "empty_extraction",
+      "severity": "error",
+      "message": "No values were extracted from this form.",
+      "fields": []
+    }
+  ],
+  "review": null
 }

@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:45.471608Z",
-    "seconds": 36.6,
-    "cost_usd": 0.0016698
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:24:11.738593Z",
+    "seconds": 31.96,
+    "cost_usd": 0.0016323
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -65,7 +65,7 @@
         "value": "JACK REILLY",
         "value_type": "name",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -76,7 +76,7 @@
         "value": "212/545-3297",
         "value_type": "phone",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -87,7 +87,7 @@
         "value": "JIM DALEY",
         "value_type": "name",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -98,7 +98,7 @@
         "value": "392",
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -109,7 +109,7 @@
         "value": "JANUARY 31, 1997",
         "value_type": "date",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -120,7 +120,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -131,7 +131,7 @@
         "value": "LORI.45048",
         "value_type": "id",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -142,7 +142,7 @@
         "value": "3",
         "value_type": "number",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -153,7 +153,7 @@
         "value": null,
         "value_type": "text",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -161,10 +161,10 @@
       {
         "label": "extension",
         "key": "extension",
-        "value": "24200",
-        "value_type": "phone",
+        "value": "32400",
+        "value_type": "number",
         "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -172,21 +172,10 @@
       {
         "label": "OPERATOR:",
         "key": "operator",
-        "value": "Hart",
+        "value": "[signed] Hart",
         "value_type": "name",
         "source": "filled",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Fax header date/time",
-        "key": "fax_header_date_time",
-        "value": "JAN. 31. 1997 11:48AM",
-        "value_type": "text",
-        "source": "filled",
-        "section": null,
+        "section": "Fax Cover",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -194,7 +183,7 @@
       {
         "label": "NO.",
         "key": "no",
-        "value": "1798",
+        "value": "1786",
         "value_type": "id",
         "source": "filled",
         "section": null,
@@ -206,18 +195,7 @@
         "label": "P.",
         "key": "p",
         "value": "1/3",
-        "value_type": "text",
-        "source": "filled",
-        "section": null,
-        "page": 1,
-        "confidence": null,
-        "bbox": null
-      },
-      {
-        "label": "Fax identifier",
-        "key": "fax_identifier",
-        "value": "83772145",
-        "value_type": "id",
+        "value_type": "number",
         "source": "filled",
         "section": null,
         "page": 1,
@@ -229,30 +207,29 @@
     "tables": [],
     "text_blocks": [
       {
-        "text": "Jack:\n\nPer your request, attached is a memo regarding the process of labeling reviewed\ndiskettes for the purpose of later identification. Please call me if you have any questions.\n\nI regret I cannot join you and the electronic document collection team for lunch today.\nI hope you agree they have done an outstanding job! I look forward to seeing you on February 5 for\nthe Legal Edge presentation.\n\nBest Regards,\n\nJim Daley.",
+        "text": "JAN. 31. 1997 11:48AM\n83772145",
         "label": null,
-        "section": "COMMENTS/MESSAGE:",
+        "section": "Fax Cover",
         "page": 1,
         "bbox": null
       },
       {
         "text": "ORIGINAL DOCUMENT WILL FOLLOW VIA FEDERAL EXPRESS.",
         "label": null,
-        "section": null,
+        "section": "Fax Cover",
+        "page": 1,
+        "bbox": null
+      },
+      {
+        "text": "Jack:\n\nPer your request, attached is a memo regarding the process of labeling reviewed diskettes for the purpose of later identification. Please call me if you have any questions.\n\nI regret I cannot join you and the electronic document collection team for lunch today.\nI hope you agree they have done an outstanding job! I look forward to seeing you on February 5 for the Legal Edge presentation.\n\nBest Regards,\n\nJim Daley.",
+        "label": null,
+        "section": "COMMENTS/MESSAGE",
         "page": 1,
         "bbox": null
       }
     ]
   },
   "typed": null,
-  "flags": [
-    {
-      "rule": "phone_length",
-      "severity": "warning",
-      "message": "Phone/fax '24200' has 5 digits; US numbers have 10.",
-      "fields": [
-        "extension"
-      ]
-    }
-  ]
+  "flags": [],
+  "review": null
 }

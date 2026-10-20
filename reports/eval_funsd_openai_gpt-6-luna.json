@@ -6,25 +6,25 @@
   "missing": [],
   "summary": {
     "pairs_found": {
-      "correct": 723,
+      "correct": 719,
       "total": 836,
-      "accuracy": 0.8648
+      "accuracy": 0.86
     },
     "pairs_exact": {
-      "correct": 680,
+      "correct": 679,
       "total": 836,
-      "accuracy": 0.8134
+      "accuracy": 0.8122
     },
     "filled_only": {
       "pairs_found": {
-        "correct": 673,
+        "correct": 706,
         "total": 836,
-        "accuracy": 0.805
+        "accuracy": 0.8445
       },
       "pairs_exact": {
-        "correct": 637,
+        "correct": 670,
         "total": 836,
-        "accuracy": 0.762
+        "accuracy": 0.8014
       }
     }
   },
@@ -43,7 +43,7 @@
       "doc_id": "82200067_0069",
       "label": "DIVISION:",
       "expected": "Portland # REPS: 6",
-      "matched_label": "DIVISION:",
+      "matched_label": "DIVISION",
       "matched_value": "Portland",
       "value_similarity": 0.762,
       "found": false
@@ -52,7 +52,7 @@
       "doc_id": "82200067_0069",
       "label": "DIVISION:",
       "expected": "Boise # REPS: 2. 5",
-      "matched_label": "DIVISION:",
+      "matched_label": "DIVISION",
       "matched_value": "Boise",
       "value_similarity": 0.625,
       "found": false
@@ -61,7 +61,7 @@
       "doc_id": "82200067_0069",
       "label": "DIVISION:",
       "expected": "Eugene # REPS: 5",
-      "matched_label": "DIVISION:",
+      "matched_label": "DIVISION",
       "matched_value": "Eugene",
       "value_similarity": 0.706,
       "found": false
@@ -79,7 +79,7 @@
       "doc_id": "82200067_0069",
       "label": "DIVISION:",
       "expected": "Seattle South # REPS: 7",
-      "matched_label": "DIVISION:",
+      "matched_label": "DIVISION",
       "matched_value": "Seattle South",
       "value_similarity": 0.828,
       "found": false
@@ -88,7 +88,7 @@
       "doc_id": "82200067_0069",
       "label": "DIVISION:",
       "expected": "Seattle North # REPS: 4",
-      "matched_label": "DIVISION:",
+      "matched_label": "DIVISION",
       "matched_value": "Seattle North",
       "value_similarity": 0.828,
       "found": false
@@ -97,7 +97,7 @@
       "doc_id": "82200067_0069",
       "label": "DIVISION:",
       "expected": "Helena # REPS: 4",
-      "matched_label": "DIVISION:",
+      "matched_label": "DIVISION",
       "matched_value": "Helena",
       "value_similarity": 0.706,
       "found": false
@@ -187,9 +187,9 @@
       "doc_id": "82251504",
       "label": "Chains:",
       "expected": "Payment\". was not place. The chains where were using the \"Flex Payment\" system we have not been las successful. The P. O. S. requirements of the P- 1 Plan with Oil Companies is difficult to obtain.",
-      "matched_label": null,
-      "matched_value": null,
-      "value_similarity": 0.0,
+      "matched_label": "Chains:",
+      "matched_value": "This program has been successful to date with chains where our \"Flex Payment\" was not in place. The chains where we were using the \"Flex Payment\" system we have not been as successful. The P.O.S. requirements of the P-1 Plan with Q1 Companies is difficult to obtain.",
+      "value_similarity": 0.717,
       "found": false
     },
     {
@@ -232,18 +232,9 @@
       "doc_id": "82253058_3059",
       "label": "PRICE POINT:",
       "expected": "FULL $ 11.89 P/ V $ (Indicate Distributor's Cost Per Carton)",
-      "matched_label": "PRICE POINT: FULL",
-      "matched_value": "$11.89",
-      "value_similarity": 0.17,
-      "found": false
-    },
-    {
-      "doc_id": "82253362_3364",
-      "label": "NAME OF ACCOUNT",
-      "expected": "Sac N Pac",
-      "matched_label": "NAME OF ACCOUNT",
-      "matched_value": "San Nac Pac",
-      "value_similarity": 0.75,
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
       "found": false
     },
     {
@@ -331,9 +322,9 @@
       "doc_id": "82573104",
       "label": "Room:",
       "expected": "803E // Pages (including cover)",
-      "matched_label": "Room:",
-      "matched_value": "803E",
-      "value_similarity": 0.296,
+      "matched_label": "Firm",
+      "matched_value": "COVINGTON & BURLING",
+      "value_similarity": 0.308,
       "found": false
     },
     {
@@ -341,8 +332,8 @@
       "label": "cc:",
       "expected": "A. H. Tisch R. H. Orcutt M. A. Peterson T. H. Mau L. Gordon J. P. Mastandrea",
       "matched_label": "CC:",
-      "matched_value": "A. H. Tisch\nR. H. Orcutt\nM. A. Peterson\nT. H. Maud\nL. Gordon\nJ. P. Mastandrea\nG. Telford\nF. J. Schultz\nA. W. Spears\nN. P. Ruffalo\nT. L. Achey\nP. J. McCann\nA. J. Giacolo\nJ. J. Tatulli\nL. H. Kersh\nJ. R. Slater\nS. T. Jones\nR. S. Goldbrunner\nE. R. Harrow",
-      "value_similarity": 0.469,
+      "matched_value": "J. P. Mastandrea",
+      "value_similarity": 0.393,
       "found": false
     },
     {
@@ -350,8 +341,8 @@
       "label": "cc:",
       "expected": "G. Telford F. J. Schultz A. W. Spears N. P. Ruffalo T. Achey P. J. McCann A. J. Giacolo",
       "matched_label": "CC:",
-      "matched_value": "A. H. Tisch\nR. H. Orcutt\nM. A. Peterson\nT. H. Maud\nL. Gordon\nJ. P. Mastandrea\nG. Telford\nF. J. Schultz\nA. W. Spears\nN. P. Ruffalo\nT. L. Achey\nP. J. McCann\nA. J. Giacolo\nJ. J. Tatulli\nL. H. Kersh\nJ. R. Slater\nS. T. Jones\nR. S. Goldbrunner\nE. R. Harrow",
-      "value_similarity": 0.525,
+      "matched_value": "F. J. Schultz",
+      "value_similarity": 0.273,
       "found": false
     },
     {
@@ -359,8 +350,8 @@
       "label": "cc:",
       "expected": "J. J. Tatulli L. H. Kersh J. R. Slater S. T. Jones R S. Goldbrenner E. R. Harrow",
       "matched_label": "CC:",
-      "matched_value": "A. H. Tisch\nR. H. Orcutt\nM. A. Peterson\nT. H. Maud\nL. Gordon\nJ. P. Mastandrea\nG. Telford\nF. J. Schultz\nA. W. Spears\nN. P. Ruffalo\nT. L. Achey\nP. J. McCann\nA. J. Giacolo\nJ. J. Tatulli\nL. H. Kersh\nJ. R. Slater\nS. T. Jones\nR. S. Goldbrunner\nE. R. Harrow",
-      "value_similarity": 0.481,
+      "matched_value": "R. S. Goldbrunner",
+      "value_similarity": 0.369,
       "found": false
     },
     {
@@ -374,11 +365,11 @@
     },
     {
       "doc_id": "83553333_3334",
-      "label": "Fax Transmittal",
-      "expected": "450 Lexington Avenue New York, NY 10017 212- 450- 4000",
-      "matched_label": null,
-      "matched_value": null,
-      "value_similarity": 0.0,
+      "label": "Recipient Phone Number",
+      "expected": "843- 720 9000",
+      "matched_label": "Recipient Phone Number",
+      "matched_value": "843-543-9000",
+      "value_similarity": 0.7,
       "found": false
     },
     {
@@ -440,8 +431,8 @@
       "label": "CC:",
       "expected": "V. LOSITO M. TAHMASEB G. BAROODY L. STEVENS B. VON DER LIPPE D. Risling",
       "matched_label": "CC:",
-      "matched_value": "V. LOSITO G. BAROODY B. VON DER LIPPE M. TAHMASEB L. STEVENS D. [illegible]",
-      "value_similarity": 0.585,
+      "matched_value": "V. LOSITO G. BAROODY B. VON DER LIPPE M. TAHMASEB L. STEVENS D. Kisling",
+      "value_similarity": 0.654,
       "found": false
     },
     {
@@ -449,8 +440,8 @@
       "label": "JOB#",
       "expected": "594",
       "matched_label": "JOB #",
-      "matched_value": "34",
-      "value_similarity": 0.4,
+      "matched_value": "324",
+      "value_similarity": 0.333,
       "found": false
     },
     {
@@ -475,9 +466,9 @@
       "doc_id": "85240939",
       "label": "Any questions?",
       "expected": "Call Connie Drath or Carol Musgrave at 800/424- 9876.",
-      "matched_label": "Any questions? Call",
-      "matched_value": "Connie Drath or Carol Musgrave",
-      "value_similarity": 0.765,
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
       "found": false
     },
     {
@@ -487,6 +478,15 @@
       "matched_label": "Circulation (#)",
       "matched_value": "APPROX. 600,000",
       "value_similarity": 0.444,
+      "found": false
+    },
+    {
+      "doc_id": "86075409_5410",
+      "label": "Don Kisling",
+      "expected": "S. Tesh C. Hill",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
       "found": false
     },
     {
@@ -508,12 +508,21 @@
       "found": false
     },
     {
+      "doc_id": "86075409_5410",
+      "label": "Est. Redemption",
+      "expected": "13%",
+      "matched_label": "Est. Redemption",
+      "matched_value": "13 1/2%",
+      "value_similarity": 0.667,
+      "found": false
+    },
+    {
       "doc_id": "86230203_0206",
       "label": "NAME OF ACCOUNT",
       "expected": "Litco",
       "matched_label": "NAME OF ACCOUNT",
-      "matched_value": "Lite",
-      "value_similarity": 0.667,
+      "matched_value": "Liteo",
+      "value_similarity": 0.8,
       "found": false
     },
     {
@@ -548,17 +557,8 @@
       "label": "INDEX BINDERS CONSOLIDATED BY:",
       "expected": "N /A",
       "matched_label": "INDEX BINDER RE-LABELED BY:",
-      "matched_value": "Connie Mallory",
-      "value_similarity": 0.267,
-      "found": false
-    },
-    {
-      "doc_id": "86263525",
-      "label": "INDEX BINDER RE- LABELED BY:",
-      "expected": "Mallery",
-      "matched_label": "INDEX BINDER RE-LABELED BY:",
-      "matched_value": "Connie Mallory",
-      "value_similarity": 0.6,
+      "matched_value": "[signed] Kevin Mallery",
+      "value_similarity": 0.2,
       "found": false
     },
     {
@@ -568,6 +568,15 @@
       "matched_label": null,
       "matched_value": null,
       "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "86263525",
+      "label": "RECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:",
+      "expected": "Wayne Boughan",
+      "matched_label": "RECORDS RETENTION SCHEDULE PLACED IN INDEX BINDER AND IN FILE BY:",
+      "matched_value": "[signed] Wayne Baughan",
+      "value_similarity": 0.733,
       "found": false
     },
     {
@@ -590,9 +599,18 @@
     },
     {
       "doc_id": "86328049_8050",
+      "label": "Name:",
+      "expected": "Ever Hurwitz",
+      "matched_label": "Name:",
+      "matched_value": "Evan Hurwitz",
+      "value_similarity": 0.818,
+      "found": false
+    },
+    {
+      "doc_id": "86328049_8050",
       "label": "Telecopier Nos.",
       "expected": "(804) 788- 8218 (804) 788- 8219 (804) 788- 8669",
-      "matched_label": "Telephone",
+      "matched_label": "2nd Floor Telecopier",
       "matched_value": "(804)788-8200",
       "value_similarity": 0.5,
       "found": false
@@ -602,8 +620,8 @@
       "label": "STRUCTURE",
       "expected": "CH3CH2O OH",
       "matched_label": "STRUCTURE",
-      "matched_value": "[Chemical structure drawing; visible labels: CH\u2083CH\u2082O and OH]",
-      "value_similarity": 0.25,
+      "matched_value": "[chemical structure drawn]",
+      "value_similarity": 0.194,
       "found": false
     },
     {
@@ -635,29 +653,11 @@
     },
     {
       "doc_id": "87093315_87093318",
-      "label": "Kind",
-      "expected": "OG Lt.",
-      "matched_label": "Kind",
-      "matched_value": "3.3/35,000 OG Lt.",
-      "value_similarity": 0.533,
-      "found": false
-    },
-    {
-      "doc_id": "87093315_87093318",
       "label": "FINAL FLAVOR",
       "expected": "None",
       "matched_label": null,
       "matched_value": null,
       "value_similarity": 0.0,
-      "found": false
-    },
-    {
-      "doc_id": "87093315_87093318",
-      "label": "Section A",
-      "expected": "27 mm",
-      "matched_label": "Filter Production",
-      "matched_value": "MG.",
-      "value_similarity": 0.333,
       "found": false
     },
     {
@@ -672,37 +672,28 @@
     {
       "doc_id": "87093315_87093318",
       "label": "Section A",
-      "expected": "OG Lt.",
-      "matched_label": "Filter Production",
-      "matched_value": "MG.",
-      "value_similarity": 0.333,
-      "found": false
-    },
-    {
-      "doc_id": "87093315_87093318",
-      "label": "Section A",
       "expected": "108 mm",
-      "matched_label": "Filter Production",
-      "matched_value": "MG.",
-      "value_similarity": 0.286,
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.444,
       "found": false
     },
     {
       "doc_id": "87093315_87093318",
       "label": "Section A",
       "expected": "400 mm",
-      "matched_label": "Filter Production",
-      "matched_value": "MG.",
-      "value_similarity": 0.286,
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.444,
       "found": false
     },
     {
       "doc_id": "87093315_87093318",
       "label": "Section A",
       "expected": "24.45 mm",
-      "matched_label": "Filter Production",
-      "matched_value": "MG.",
-      "value_similarity": 0.25,
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.6,
       "found": false
     },
     {
@@ -718,18 +709,18 @@
       "doc_id": "87093315_87093318",
       "label": "Section A",
       "expected": "7 % Kent",
-      "matched_label": "Cartons",
-      "matched_value": "White",
-      "value_similarity": 0.2,
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.222,
       "found": false
     },
     {
       "doc_id": "87093315_87093318",
       "label": "Section A",
       "expected": "84- 52- 28",
-      "matched_label": null,
-      "matched_value": null,
-      "value_similarity": 0.0,
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.2,
       "found": false
     },
     {
@@ -745,9 +736,9 @@
       "doc_id": "87093315_87093318",
       "label": "Section B",
       "expected": "mm",
-      "matched_label": "Filter Production",
-      "matched_value": "MG.",
-      "value_similarity": 0.5,
+      "matched_label": "Section A",
+      "matched_value": "27 mm",
+      "value_similarity": 0.667,
       "found": false
     },
     {
@@ -814,6 +805,15 @@
       "found": false
     },
     {
+      "doc_id": "87332450",
+      "label": "Mail to:",
+      "expected": "Dr. Phil P. Hunter U. T. Tobacco Experiment Station Route 5 Box 113 Greeneville, TN 37743",
+      "matched_label": "Mail to: Institution",
+      "matched_value": "U. Tobacco Experiment Station",
+      "value_similarity": 0.532,
+      "found": false
+    },
+    {
       "doc_id": "87428306",
       "label": "SOLUBILITY",
       "expected": "MUTAGENICITY SOLVENTS A221 is soluble EtOH at 0.2 g/ ml, with stirring, at room temperature. Reference BC30- 88.",
@@ -836,8 +836,8 @@
       "label": "Change",
       "expected": "8410059",
       "matched_label": "Change Order Number",
-      "matched_value": "8660059",
-      "value_similarity": 0.714,
+      "matched_value": "866059",
+      "value_similarity": 0.615,
       "found": false
     },
     {
@@ -850,39 +850,21 @@
       "found": false
     },
     {
+      "doc_id": "87528321",
+      "label": "Proposed Effective Date",
+      "expected": "9/8/88",
+      "matched_label": "Proposed Effective Date:",
+      "matched_value": "9/1/88",
+      "value_similarity": 0.75,
+      "found": false
+    },
+    {
       "doc_id": "87528380",
       "label": "SIZE:",
       "expected": "171/4 x 231/2 \"",
       "matched_label": "SIZE:",
-      "matched_value": "17\u00be x 23\u00bd\"",
+      "matched_value": "17\u00bd x 23\u00bd\"",
       "value_similarity": 0.714,
-      "found": false
-    },
-    {
-      "doc_id": "87594142_87594144",
-      "label": "THRU",
-      "expected": "12/31/94",
-      "matched_label": null,
-      "matched_value": null,
-      "value_similarity": 0.0,
-      "found": false
-    },
-    {
-      "doc_id": "87594142_87594144",
-      "label": "THRU",
-      "expected": "12/31/95",
-      "matched_label": null,
-      "matched_value": null,
-      "value_similarity": 0.0,
-      "found": false
-    },
-    {
-      "doc_id": "87594142_87594144",
-      "label": "THRU",
-      "expected": "12/31/96",
-      "matched_label": null,
-      "matched_value": null,
-      "value_similarity": 0.0,
       "found": false
     },
     {
@@ -892,6 +874,42 @@
       "matched_label": null,
       "matched_value": null,
       "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87594142_87594144",
+      "label": "INCLUSIVE DATE",
+      "expected": "01/01/94",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87594142_87594144",
+      "label": "INCLUSIVE DATE",
+      "expected": "01/01/95",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87594142_87594144",
+      "label": "INCLUSIVE DATE",
+      "expected": "01/01/96",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "87594142_87594144",
+      "label": "(c) TELEPHONE",
+      "expected": "(410) 955-3515/955-0299",
+      "matched_label": "(C) Telephone #",
+      "matched_value": "(410) 955-3515",
+      "value_similarity": 0.741,
       "found": false
     },
     {
@@ -907,9 +925,9 @@
       "doc_id": "89856243",
       "label": "Research Limitations",
       "expected": "If 75% of Triumph smokers mention harshness we could consider it a 50- 75% problem If of Triumph smokers mention \"harshness\" we could it a look consider possible problem at other areas).",
-      "matched_label": "Research Firm",
-      "matched_value": "The Data Group, Inc.",
-      "value_similarity": 0.049,
+      "matched_label": "Marketing Research Director",
+      "matched_value": "[signed]",
+      "value_similarity": 0.052,
       "found": false
     },
     {
@@ -961,7 +979,7 @@
       "doc_id": "91814768_91814769",
       "label": "4. Question No.",
       "expected": "1 relating to Tobacco Excise Tax Increase",
-      "matched_label": "Question No.",
+      "matched_label": "4. Question No.",
       "matched_value": "1",
       "value_similarity": 0.056,
       "found": false
@@ -1004,6 +1022,24 @@
     },
     {
       "doc_id": "92380595",
+      "label": "ATTN:",
+      "expected": "MR. ARTHUR STEVENS, ESQ A. J. STEVENS",
+      "matched_label": "ATTN:",
+      "matched_value": "MR. ARTHUR STEVENS, ESQ.",
+      "value_similarity": 0.8,
+      "found": false
+    },
+    {
+      "doc_id": "92380595",
+      "label": "MOTOR CARRIER",
+      "expected": "x",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
+      "found": false
+    },
+    {
+      "doc_id": "92380595",
       "label": "We enclose the following documents which were served upon:",
       "expected": "UNITED STATES CORPORATION COMPANY IN TEXAS",
       "matched_label": null,
@@ -1030,12 +1066,12 @@
       "found": false
     },
     {
-      "doc_id": "93106788",
-      "label": "ATTN:",
-      "expected": "JOYCE WINSTON",
-      "matched_label": "CAPTION:",
-      "matched_value": "FOUNTAIN COUPLE",
-      "value_similarity": 0.308,
+      "doc_id": "92380595",
+      "label": "Fed X",
+      "expected": "X",
+      "matched_label": null,
+      "matched_value": null,
+      "value_similarity": 0.0,
       "found": false
     },
     {
@@ -1048,6 +1084,6 @@
       "found": false
     }
   ],
-  "cost_usd": 0.1359,
-  "seconds": 3603.9
+  "cost_usd": 0.1123,
+  "seconds": 1487.0
 }

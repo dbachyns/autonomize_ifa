@@ -68,3 +68,20 @@ def test_ground_truth_files_validate(path):
     assert (DATA / rec.source_file).exists()
     typed = get_plugin(rec.form_type).parse(rec.typed)
     assert get_plugin(rec.form_type).to_universal(typed) == rec.universal
+
+
+def test_table_tidy_unfolds_side_by_side_and_numbers_repeats():
+    from form_agent.schema import Table
+
+    side = Table(section="Accounts within the region", headers=["NAME OF ACCOUNT", "IND/OR VOLUME", "NO. OF STORES",
+                                                                "NAME OF ACCOUNT", "IND/LOR VOLUME", "NO. OF STORES"],
+                 rows=[["Sheetz", "521/42", "150", "Kroger", None, "21"], ["CVS", None, "87", None, None, None]],
+                 column_types=["text", "text", "number"] * 2).tidy()
+    assert side.headers == ["NAME OF ACCOUNT", "IND/OR VOLUME", "NO. OF STORES"]
+    assert side.rows == [["Sheetz", "521/42", "150"], ["CVS", None, "87"], ["Kroger", None, "21"]]
+    assert side.name == "Accounts within the region"
+    # Different left/right categories are two real columns, not a repeat: keep them, number the repeats.
+    split = Table(headers=["NATIONAL CHAIN ACCOUNTS", "NO. OF STORES", "REGIONAL CHAIN ACCOUNTS", "NO. OF STORES"],
+                  rows=[["A", "1", "B", "2"]]).tidy()
+    assert split.headers == ["NATIONAL CHAIN ACCOUNTS", "NO. OF STORES", "REGIONAL CHAIN ACCOUNTS", "NO. OF STORES (2)"]
+    assert split.rows == [["A", "1", "B", "2"]]

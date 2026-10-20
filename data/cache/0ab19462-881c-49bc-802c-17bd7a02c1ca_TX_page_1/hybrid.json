@@ -961,7 +961,7 @@
           "Start Date",
           "End Date",
           "Diagnosis Description (ICD version 10)",
-          "Code"
+          "Code (2)"
         ],
         "rows": [
           [
@@ -1135,5 +1135,6 @@
         "submission.date"
       ]
     }
-  ]
+  ],
+  "review": null
 }

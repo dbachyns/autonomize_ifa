@@ -4,10 +4,10 @@
   "run": {
     "reader": "openai",
     "model": "gpt-6-luna",
-    "prompt_version": "v2",
-    "created_at": "2026-10-19T21:32:00.835115Z",
-    "seconds": 23.49,
-    "cost_usd": 0.0012343
+    "prompt_version": "v4",
+    "created_at": "2026-10-20T06:23:39.292089Z",
+    "seconds": 27.59,
+    "cost_usd": 0.0014173
   },
   "form_type": "unknown",
   "form_type_confidence": 0.0,
@@ -93,12 +93,34 @@
         "bbox": null
       },
       {
-        "label": "Message:",
+        "label": "Message",
         "key": "message",
         "value": null,
         "value_type": "text",
         "source": "filled",
         "section": null,
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax Transmittal",
+        "key": "fax_transmittal",
+        "value": "450 Lexington Avenue, New York, NY 10017",
+        "value_type": "address",
+        "source": "printed",
+        "section": "Fax Transmittal",
+        "page": 1,
+        "confidence": null,
+        "bbox": null
+      },
+      {
+        "label": "Fax Transmittal",
+        "key": "fax_transmittal",
+        "value": "212-450-4000",
+        "value_type": "phone",
+        "source": "printed",
+        "section": "Fax Transmittal",
         "page": 1,
         "confidence": null,
         "bbox": null
@@ -127,7 +149,7 @@
             "Joseph F. Rice",
             "843-720-9290",
             "Ness, Motley, Loadholt, Richardson & Poole",
-            "843-720-9000"
+            "843-543-9000"
           ],
           [
             "Robert V. Costello Jeffrey D. Woolf",
@@ -159,5 +181,6 @@
     "text_blocks": []
   },
   "typed": null,
-  "flags": []
+  "flags": [],
+  "review": null
 }
